@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T16:45:04+00:00",
+  "generatedAt": "2026-03-08T16:57:22+00:00",
   "sourceFile": "recommandations-de-vote-des-partis.xlsx",
   "stats": {
     "objects": 702,
@@ -37301,8 +37301,8 @@
       "id": "2026-001",
       "year": 2026,
       "object": "Initiative \"Oui à une monnaie suisse libre et indépendante sous forme de pièces ou de billets (l’argent liquide, c’est la liberté)»",
-      "yesPercent": 45.6,
-      "noPercent": 54.4,
+      "yesPercent": 45.58,
+      "noPercent": 54.42,
       "result": "non",
       "recommendations": [
         {
@@ -37360,8 +37360,8 @@
       "id": "2026-002",
       "year": 2026,
       "object": "Contre-projet direct (arrêté fédéral sur la monnaie suisse et l’approvisionnement en numéraire)",
-      "yesPercent": 73.41,
-      "noPercent": 26.59,
+      "yesPercent": 73.42,
+      "noPercent": 26.58,
       "result": "oui",
       "recommendations": [
         {
@@ -37419,8 +37419,8 @@
       "id": "2026-003",
       "year": 2026,
       "object": "Initiative populaire « 200 francs, ça suffit ! » (initiative SSR)",
-      "yesPercent": 38.09,
-      "noPercent": 61.91,
+      "yesPercent": 38.08,
+      "noPercent": 61.92,
       "result": "non",
       "recommendations": [
         {
@@ -37537,8 +37537,8 @@
       "id": "2026-005",
       "year": 2026,
       "object": "Loi fédérale sur l’imposition individuelle",
-      "yesPercent": 54.22,
-      "noPercent": 45.78,
+      "yesPercent": 54.23,
+      "noPercent": 45.77,
       "result": "oui",
       "recommendations": [
         {
