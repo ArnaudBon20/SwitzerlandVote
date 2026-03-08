@@ -921,19 +921,24 @@ footer {
 
   .hero {
     padding-top: 2.4rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .hero h1,
+  .hero-copy,
+  .dataset-meta {
+    width: 100%;
+    max-width: none;
   }
 
   .hero-copy {
     white-space: normal;
     font-size: 1.03rem;
-    margin-inline: auto;
-    max-width: 36ch;
+    margin-inline: 0;
   }
 
   .dataset-meta {
     font-size: 0.98rem;
-    margin-inline: auto;
   }
 
   .panel {

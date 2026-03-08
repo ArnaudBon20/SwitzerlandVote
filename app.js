@@ -1,4 +1,6 @@
-const PAGE_SIZE = 40;
+const PAGE_SIZE_DESKTOP = 40;
+const PAGE_SIZE_MOBILE = 10;
+const MOBILE_LAYOUT_MAX_WIDTH = 740;
 const TOP_LIMIT = 15;
 const HISTORICAL_PARTY_IDS = new Set(["pbd", "prd", "pls"]);
 const LEGISLATURE_ELECTION_YEARS = [
@@ -24,7 +26,7 @@ const state = {
   data: null,
   randomVote: null,
   filteredVotes: [],
-  visibleCount: PAGE_SIZE,
+  visibleCount: getPageSize(),
   activeTab: "explorer",
   showHistoricalParties: false,
   filters: {
@@ -271,7 +273,7 @@ function bindEvents() {
   });
 
   els.loadMore.addEventListener("click", () => {
-    state.visibleCount += PAGE_SIZE;
+    state.visibleCount += getPageSize();
     renderVotes();
   });
 
@@ -1022,6 +1024,13 @@ function formatDate(isoDate) {
   });
 }
 
+function getPageSize() {
+  if (window.matchMedia(`(max-width: ${MOBILE_LAYOUT_MAX_WIDTH}px)`).matches) {
+    return PAGE_SIZE_MOBILE;
+  }
+  return PAGE_SIZE_DESKTOP;
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -1043,5 +1052,5 @@ function domSafeId(value) {
 }
 
 function resetVisible() {
-  state.visibleCount = PAGE_SIZE;
+  state.visibleCount = getPageSize();
 }
