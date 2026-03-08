@@ -1,0 +1,39 @@
+name: Build Dataset
+
+on:
+  pull_request:
+    paths:
+      - "data/source/**"
+      - "scripts/build_data.py"
+      - ".github/workflows/build-data.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "data/source/**"
+      - "scripts/build_data.py"
+      - ".github/workflows/build-data.yml"
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate JSON dataset
+        run: |
+          python scripts/build_data.py \
+            --input data/source/recommandations-de-vote-des-partis.xlsx \
+            --output data/votes.json
+
+      - name: Ensure committed dataset is up to date
+        run: |
+          git diff -- data/votes.json
+          git diff --exit-code -- data/votes.json

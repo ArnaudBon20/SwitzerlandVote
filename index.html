@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SwitzerlandVote | Recommandations des partis suisses</title>
+    <meta
+      name="description"
+      content="Interface publique pour consulter les recommandations de vote des partis suisses, de 1848 à aujourd'hui."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-left" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-right" aria-hidden="true"></div>
+
+    <header class="hero reveal">
+      <p class="eyebrow">SwitzerlandVote</p>
+      <h1>Recommandations des partis suisses depuis 1848</h1>
+      <p class="hero-copy">
+        Consultez les objets soumis au vote fédéral, comparez les positions des partis, et suivez les objets déjà planifiés.
+      </p>
+      <p class="dataset-meta" id="dataset-meta"></p>
+    </header>
+
+    <main>
+      <section class="panel controls reveal">
+        <div class="section-head">
+          <h2>Filtres</h2>
+          <button id="reset-filters" class="ghost" type="button">Réinitialiser</button>
+        </div>
+
+        <form id="filters" class="control-grid" autocomplete="off">
+          <label>
+            Recherche d'objet
+            <input id="search" name="search" type="search" placeholder="ex. initiative, AVS, énergie..." />
+          </label>
+
+          <label>
+            De l'année
+            <select id="year-from" name="year-from"></select>
+          </label>
+
+          <label>
+            À l'année
+            <select id="year-to" name="year-to"></select>
+          </label>
+
+          <label>
+            Résultat
+            <select id="result-filter" name="result-filter">
+              <option value="all">Tous</option>
+              <option value="oui">Accepté (oui)</option>
+              <option value="non">Refusé (non)</option>
+              <option value="upcoming">À venir</option>
+            </select>
+          </label>
+
+          <label>
+            Parti
+            <select id="party-filter" name="party-filter">
+              <option value="all">Tous les partis</option>
+            </select>
+          </label>
+
+          <label>
+            Recommandation
+            <select id="recommendation-filter" name="recommendation-filter">
+              <option value="all">Toutes</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+              <option value="liberte de vote">Liberté de vote</option>
+              <option value="neutre">Neutre</option>
+              <option value="pas de position">Pas de position</option>
+            </select>
+          </label>
+
+          <label>
+            Tri
+            <select id="sort-by" name="sort-by">
+              <option value="year-desc">Plus récent</option>
+              <option value="year-asc">Plus ancien</option>
+              <option value="yes-desc">% Oui décroissant</option>
+              <option value="no-desc">% Non décroissant</option>
+            </select>
+          </label>
+        </form>
+      </section>
+
+      <section class="stats-grid reveal">
+        <article class="panel stat">
+          <p class="stat-label">Objets filtrés</p>
+          <p id="stat-total" class="stat-value">-</p>
+        </article>
+        <article class="panel stat">
+          <p class="stat-label">Période affichée</p>
+          <p id="stat-period" class="stat-value">-</p>
+        </article>
+        <article class="panel stat">
+          <p class="stat-label">Objets à venir</p>
+          <p id="stat-upcoming" class="stat-value">-</p>
+        </article>
+        <article class="panel stat">
+          <p class="stat-label">Taux moyen de oui</p>
+          <p id="stat-yes-average" class="stat-value">-</p>
+        </article>
+      </section>
+
+      <section class="panel reveal">
+        <div class="section-head">
+          <h2>Alignement des partis (sur la sélection)</h2>
+        </div>
+        <div id="party-stats" class="party-stats"></div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="section-head">
+          <h2>Objets de votation</h2>
+          <p id="result-count" class="result-count"></p>
+        </div>
+        <div id="votes-list" class="votes-list"></div>
+        <button id="load-more" class="ghost wide" type="button">Charger plus</button>
+      </section>
+
+      <section class="panel info reveal">
+        <h2>Mise à jour rapide des données</h2>
+        <ol>
+          <li>Remplacer le fichier source Excel dans <code>data/source/recommandations-de-vote-des-partis.xlsx</code>.</li>
+          <li>Régénérer la base JSON locale.</li>
+          <li>Commit + push sur <code>main</code> pour publier automatiquement.</li>
+        </ol>
+        <pre><code>./scripts/build_data.py --input data/source/recommandations-de-vote-des-partis.xlsx --output data/votes.json</code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Données: fichier source fourni par l'utilisateur. Projet open source via GitHub Pages.
+      </p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
