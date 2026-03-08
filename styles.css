@@ -147,21 +147,6 @@ main {
     );
 }
 
-.random-spotlight::before {
-  content: "ARCHIVES";
-  position: absolute;
-  right: 1rem;
-  top: 0.9rem;
-  border: 2px solid rgba(144, 41, 41, 0.36);
-  color: rgba(144, 41, 41, 0.78);
-  border-radius: 999px;
-  padding: 0.08rem 0.56rem;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 0.74rem;
-  letter-spacing: 0.16em;
-  transform: rotate(8deg);
-}
-
 .random-spotlight .section-head h2 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -868,13 +853,6 @@ footer {
 
   .position-toggle {
     min-height: 36px;
-  }
-
-  .random-spotlight::before {
-    right: 0.62rem;
-    top: 0.66rem;
-    font-size: 0.67rem;
-    letter-spacing: 0.12em;
   }
 
   .table-wrap {
