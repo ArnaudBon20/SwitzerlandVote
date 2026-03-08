@@ -299,6 +299,19 @@ button:focus {
   font-size: 1rem;
 }
 
+.party-row-historical {
+  border-style: dashed;
+  background: color-mix(in srgb, var(--surface-strong) 92%, #d9d9d9 8%);
+}
+
+.historical-label {
+  margin-left: 0.45rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #766c66;
+}
+
 .party-row p {
   margin: 0.43rem 0 0;
   color: var(--muted);
@@ -377,6 +390,19 @@ button:focus {
 .vote-title {
   margin: 0;
   font-size: 1.02rem;
+}
+
+.vote-title a,
+.rank-object a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(28, 25, 23, 0.35);
+  text-underline-offset: 0.14em;
+}
+
+.vote-title a:hover,
+.rank-object a:hover {
+  text-decoration-color: var(--accent);
 }
 
 .percent-row {

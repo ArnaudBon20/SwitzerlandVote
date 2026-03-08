@@ -1,5 +1,6 @@
 const PAGE_SIZE = 40;
 const TOP_LIMIT = 15;
+const HISTORICAL_PARTY_IDS = new Set(["pbd", "prd", "pls"]);
 const LEGISLATURE_ELECTION_YEARS = [
   1848, 1851, 1854, 1857, 1860, 1863, 1866, 1869, 1872, 1875, 1878, 1881, 1884, 1887, 1890, 1893, 1896, 1899,
   1902, 1905, 1908, 1911, 1914, 1917, 1919, 1922, 1925, 1928, 1931, 1935, 1939, 1943, 1947, 1951, 1955, 1959,
@@ -329,13 +330,16 @@ function renderRandomVote() {
   const noWidth = hasPercent ? clamp(no, 0, 100) : 0;
   const resultLabel = vote.result === "oui" ? "Accepté" : vote.result === "non" ? "Refusé" : "À venir";
   const resultClass = vote.result ? `result-${vote.result}` : "result-upcoming";
+  const voteTitle = vote.url
+    ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
+    : escapeHtml(vote.object);
 
   els.randomVoteCard.innerHTML = `
     <div class="vote-top">
       <span class="year-badge">${vote.year}</span>
       <span class="result-pill ${resultClass}">${resultLabel}</span>
     </div>
-    <h3 class="vote-title">${escapeHtml(vote.object)}</h3>
+    <h3 class="vote-title">${voteTitle}</h3>
     ${
       hasPercent
         ? `
@@ -439,6 +443,7 @@ function renderPartyStats() {
 
   for (const party of state.data.parties) {
     stats.set(party.id, {
+      partyId: party.id,
       party: party.name,
       recommendations: 0,
       oui: 0,
@@ -479,11 +484,14 @@ function renderPartyStats() {
       const totalOutcomes = row.wins + row.losses;
       const align = totalOutcomes > 0 ? ((row.wins / totalOutcomes) * 100).toFixed(1) : null;
       const barWidth = align ? Number(align) : 0;
+      const isHistorical = HISTORICAL_PARTY_IDS.has(row.partyId);
+      const historicalClass = isHistorical ? " party-row-historical" : "";
+      const historicalLabel = isHistorical ? '<span class="historical-label">historique</span>' : "";
 
       return `
-        <article class="party-row">
+        <article class="party-row${historicalClass}">
           <header>
-            <h3>${escapeHtml(row.party)}</h3>
+            <h3>${escapeHtml(row.party)}${historicalLabel}</h3>
             <span>${align ? `${align} %` : "n/a"}</span>
           </header>
           <div class="bar"><span style="width: ${barWidth}%"></span></div>
@@ -529,6 +537,9 @@ function renderVotes() {
 
     const resultLabel = vote.result === "oui" ? "Accepté" : vote.result === "non" ? "Refusé" : "À venir";
     const resultClass = vote.result ? `result-${vote.result}` : "result-upcoming";
+    const voteTitle = vote.url
+      ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
+      : escapeHtml(vote.object);
 
     const yesWidth = hasPercent ? clamp(yes, 0, 100) : 0;
     const noWidth = hasPercent ? clamp(no, 0, 100) : 0;
@@ -539,7 +550,7 @@ function renderVotes() {
           <span class="year-badge">${vote.year}</span>
           <span class="result-pill ${resultClass}">${resultLabel}</span>
         </div>
-        <h3 class="vote-title">${escapeHtml(vote.object)}</h3>
+        <h3 class="vote-title">${voteTitle}</h3>
         ${
           hasPercent
             ? `
@@ -586,6 +597,9 @@ function renderRankingList(items, percentField, tone) {
   return items
     .map((vote, index) => {
       const percent = vote[percentField];
+      const objectLabel = vote.url
+        ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
+        : escapeHtml(vote.object);
       return `
         <li>
           <p class="rank-line">
@@ -593,7 +607,7 @@ function renderRankingList(items, percentField, tone) {
             <span class="rank-percent rank-${tone}">${percent.toFixed(2)} %</span>
             <span class="rank-year">${vote.year}</span>
           </p>
-          <p class="rank-object">${escapeHtml(vote.object)}</p>
+          <p class="rank-object">${objectLabel}</p>
         </li>
       `;
     })

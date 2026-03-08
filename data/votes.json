@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T15:20:32+00:00",
+  "generatedAt": "2026-03-08T15:36:09+00:00",
   "sourceFile": "recommandations-de-vote-des-partis.xlsx",
   "stats": {
     "objects": 702,
@@ -214,7 +214,8 @@
           "recommendation": "pas de position",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18480606/det1.html"
     },
     {
       "id": "1866-001",
@@ -230,7 +231,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det2.html"
     },
     {
       "id": "1866-002",
@@ -246,7 +248,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det3.html"
     },
     {
       "id": "1866-003",
@@ -262,7 +265,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det4.html"
     },
     {
       "id": "1866-004",
@@ -278,7 +282,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det5.html"
     },
     {
       "id": "1866-005",
@@ -294,7 +299,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det6.html"
     },
     {
       "id": "1866-006",
@@ -310,7 +316,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det7.html"
     },
     {
       "id": "1866-007",
@@ -326,7 +333,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det8.html"
     },
     {
       "id": "1866-008",
@@ -342,7 +350,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det9.html"
     },
     {
       "id": "1866-009",
@@ -358,7 +367,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18660114/det10.html"
     },
     {
       "id": "1872-001",
@@ -374,7 +384,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18720512/det11.html"
     },
     {
       "id": "1874-001",
@@ -390,7 +401,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18740419/det12.html"
     },
     {
       "id": "1875-001",
@@ -406,7 +418,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18750523/det13.html"
     },
     {
       "id": "1875-002",
@@ -422,7 +435,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18750523/det14.html"
     },
     {
       "id": "1876-001",
@@ -438,7 +452,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18760423/det15.html"
     },
     {
       "id": "1876-002",
@@ -454,7 +469,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18760709/det16.html"
     },
     {
       "id": "1877-001",
@@ -470,7 +486,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18771021/det17.html"
     },
     {
       "id": "1877-002",
@@ -486,7 +503,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18771021/det18.html"
     },
     {
       "id": "1877-003",
@@ -502,7 +520,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18771021/det19.html"
     },
     {
       "id": "1879-001",
@@ -518,7 +537,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18790119/det20.html"
     },
     {
       "id": "1879-002",
@@ -534,7 +554,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18790518/det21.html"
     },
     {
       "id": "1880-001",
@@ -550,7 +571,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18801031/det22.html"
     },
     {
       "id": "1882-001",
@@ -566,7 +588,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18820730/det23.html"
     },
     {
       "id": "1882-002",
@@ -582,7 +605,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18820730/det24.html"
     },
     {
       "id": "1882-003",
@@ -598,7 +622,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18821126/det25.html"
     },
     {
       "id": "1884-001",
@@ -614,7 +639,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18840511/det26.html"
     },
     {
       "id": "1884-002",
@@ -630,7 +656,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18840511/det27.html"
     },
     {
       "id": "1884-003",
@@ -646,7 +673,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18840511/det28.html"
     },
     {
       "id": "1884-004",
@@ -662,7 +690,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18840511/det29.html"
     },
     {
       "id": "1885-001",
@@ -678,7 +707,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18851025/det30.html"
     },
     {
       "id": "1887-001",
@@ -694,7 +724,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18870515/det31.html"
     },
     {
       "id": "1887-002",
@@ -710,7 +741,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18870710/det32.html"
     },
     {
       "id": "1889-001",
@@ -732,7 +764,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18891117/det33.html"
     },
     {
       "id": "1890-001",
@@ -754,7 +787,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18901026/det34.html"
     },
     {
       "id": "1891-001",
@@ -776,7 +810,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18910315/det35.html"
     },
     {
       "id": "1891-002",
@@ -798,7 +833,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18910705/det36.html"
     },
     {
       "id": "1891-003",
@@ -820,7 +856,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18911018/det37.html"
     },
     {
       "id": "1891-004",
@@ -842,7 +879,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18911018/det38.html"
     },
     {
       "id": "1891-005",
@@ -864,7 +902,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18911206/det39.html"
     },
     {
       "id": "1893-001",
@@ -886,7 +925,8 @@
           "recommendation": "pas de position",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18930820/det40.html"
     },
     {
       "id": "1894-001",
@@ -920,7 +960,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18940304/det41.html"
     },
     {
       "id": "1894-002",
@@ -954,7 +995,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18940603/det42.html"
     },
     {
       "id": "1894-003",
@@ -988,7 +1030,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18941104/det43.html"
     },
     {
       "id": "1895-001",
@@ -1022,7 +1065,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18950203/det44.html"
     },
     {
       "id": "1895-002",
@@ -1056,7 +1100,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18950929/det45.html"
     },
     {
       "id": "1895-003",
@@ -1090,7 +1135,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18951103/det46.html"
     },
     {
       "id": "1896-001",
@@ -1124,7 +1170,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18961004/det47.html"
     },
     {
       "id": "1896-002",
@@ -1158,7 +1205,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18961004/det48.html"
     },
     {
       "id": "1896-003",
@@ -1192,7 +1240,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18961004/det49.html"
     },
     {
       "id": "1897-001",
@@ -1226,7 +1275,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18970228/det50.html"
     },
     {
       "id": "1897-002",
@@ -1260,7 +1310,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18970711/det51.html"
     },
     {
       "id": "1897-003",
@@ -1294,7 +1345,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18970711/det52.html"
     },
     {
       "id": "1898-001",
@@ -1328,7 +1380,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18980220/det53.html"
     },
     {
       "id": "1898-002",
@@ -1362,7 +1415,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18981113/det54.html"
     },
     {
       "id": "1898-003",
@@ -1396,7 +1450,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/18981113/det55.html"
     },
     {
       "id": "1900-001",
@@ -1430,7 +1485,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19000520/det56.html"
     },
     {
       "id": "1900-002",
@@ -1464,7 +1520,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19001104/det57.html"
     },
     {
       "id": "1900-003",
@@ -1498,7 +1555,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19001104/det58.html"
     },
     {
       "id": "1902-001",
@@ -1532,7 +1590,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19021123/det59.html"
     },
     {
       "id": "1903-001",
@@ -1566,7 +1625,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19030315/det60.html"
     },
     {
       "id": "1903-002",
@@ -1600,7 +1660,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19031025/det61.html"
     },
     {
       "id": "1903-003",
@@ -1634,7 +1695,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19031025/det62.html"
     },
     {
       "id": "1903-004",
@@ -1668,7 +1730,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19031025/det63.html"
     },
     {
       "id": "1905-001",
@@ -1702,7 +1765,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19050319/det64.html"
     },
     {
       "id": "1906-001",
@@ -1736,7 +1800,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19060610/det65.html"
     },
     {
       "id": "1907-001",
@@ -1770,7 +1835,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19071103/det66.html"
     },
     {
       "id": "1908-001",
@@ -1804,7 +1870,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19080705/det67.html"
     },
     {
       "id": "1908-002",
@@ -1838,7 +1905,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19080705/det68.html"
     },
     {
       "id": "1908-003",
@@ -1872,7 +1940,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19081025/det69.html"
     },
     {
       "id": "1910-001",
@@ -1906,7 +1975,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19101023/det70.html"
     },
     {
       "id": "1912-001",
@@ -1946,7 +2016,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19120204/det71.html"
     },
     {
       "id": "1913-001",
@@ -1986,7 +2057,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19130504/det72.html"
     },
     {
       "id": "1914-001",
@@ -2026,7 +2098,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19141025/det73.html"
     },
     {
       "id": "1915-001",
@@ -2072,7 +2145,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19150606/det74.html"
     },
     {
       "id": "1917-001",
@@ -2112,7 +2186,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19170513/det75.html"
     },
     {
       "id": "1918-001",
@@ -2152,7 +2227,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19180602/det76.html"
     },
     {
       "id": "1918-002",
@@ -2198,7 +2274,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19181013/det77.html"
     },
     {
       "id": "1919-001",
@@ -2238,7 +2315,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19190504/det78.html"
     },
     {
       "id": "1919-002",
@@ -2278,7 +2356,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19190504/det79.html"
     },
     {
       "id": "1919-003",
@@ -2318,7 +2397,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19190810/det80.html"
     },
     {
       "id": "1920-001",
@@ -2364,7 +2444,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19200321/det81.html"
     },
     {
       "id": "1920-002",
@@ -2410,7 +2491,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19200321/det82.html"
     },
     {
       "id": "1920-003",
@@ -2456,7 +2538,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19200321/det82.html"
     },
     {
       "id": "1920-004",
@@ -2502,7 +2585,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19200516/det83.html"
     },
     {
       "id": "1920-005",
@@ -2548,7 +2632,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19201031/det84.html"
     },
     {
       "id": "1921-001",
@@ -2594,7 +2679,8 @@
           "recommendation": "liberte de vote",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19210130/det85.html"
     },
     {
       "id": "1921-002",
@@ -2640,7 +2726,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19210130/det86.html"
     },
     {
       "id": "1921-003",
@@ -2686,7 +2773,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19210522/det87.html"
     },
     {
       "id": "1921-004",
@@ -2732,7 +2820,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19210522/det88.html"
     },
     {
       "id": "1922-001",
@@ -2778,7 +2867,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19220611/det89.html"
     },
     {
       "id": "1922-002",
@@ -2824,7 +2914,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19220611/det90.html"
     },
     {
       "id": "1922-003",
@@ -2870,7 +2961,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19220611/det91.html"
     },
     {
       "id": "1922-004",
@@ -2916,7 +3008,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19220924/det92.html"
     },
     {
       "id": "1922-005",
@@ -2962,7 +3055,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19221203/det93.html"
     },
     {
       "id": "1923-001",
@@ -3008,7 +3102,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19230218/det94.html"
     },
     {
       "id": "1923-002",
@@ -3054,7 +3149,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19230218/det95.html"
     },
     {
       "id": "1923-003",
@@ -3100,7 +3196,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19230415/det96.html"
     },
     {
       "id": "1923-004",
@@ -3146,7 +3243,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19230603/det97.html"
     },
     {
       "id": "1924-001",
@@ -3192,7 +3290,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19240217/det98.html"
     },
     {
       "id": "1925-001",
@@ -3238,7 +3337,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19250524/det99.html"
     },
     {
       "id": "1925-002",
@@ -3284,7 +3384,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19251025/det100.html"
     },
     {
       "id": "1925-003",
@@ -3330,7 +3431,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19251206/det101.html"
     },
     {
       "id": "1926-001",
@@ -3376,7 +3478,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19261205/det102.html"
     },
     {
       "id": "1927-001",
@@ -3416,7 +3519,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19270515/det103.html"
     },
     {
       "id": "1927-002",
@@ -3462,7 +3566,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19270515/det104.html"
     },
     {
       "id": "1928-001",
@@ -3508,7 +3613,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19280520/det105.html"
     },
     {
       "id": "1928-002",
@@ -3548,7 +3654,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19281202/det106.html"
     },
     {
       "id": "1929-001",
@@ -3594,7 +3701,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19290303/det107.html"
     },
     {
       "id": "1929-002",
@@ -3634,7 +3742,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19290303/det107.html"
     },
     {
       "id": "1929-003",
@@ -3680,7 +3789,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19290303/det108.html"
     },
     {
       "id": "1929-004",
@@ -3726,7 +3836,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19290512/det109.html"
     },
     {
       "id": "1929-005",
@@ -3772,7 +3883,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19290512/det110.html"
     },
     {
       "id": "1930-001",
@@ -3818,7 +3930,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19300406/det111.html"
     },
     {
       "id": "1931-001",
@@ -3864,7 +3977,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19310208/det112.html"
     },
     {
       "id": "1931-002",
@@ -3910,7 +4024,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19310315/det113.html"
     },
     {
       "id": "1931-003",
@@ -3956,7 +4071,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19310315/det114.html"
     },
     {
       "id": "1931-004",
@@ -4002,7 +4118,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19311206/det115.html"
     },
     {
       "id": "1931-005",
@@ -4048,7 +4165,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19311206/det116.html"
     },
     {
       "id": "1933-001",
@@ -4094,7 +4212,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19330528/det117.html"
     },
     {
       "id": "1934-001",
@@ -4146,7 +4265,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19340311/det118.html"
     },
     {
       "id": "1935-001",
@@ -4192,7 +4312,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19350224/det119.html"
     },
     {
       "id": "1935-002",
@@ -4238,7 +4359,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19350505/det120.html"
     },
     {
       "id": "1935-003",
@@ -4284,7 +4406,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19350602/det121.html"
     },
     {
       "id": "1935-004",
@@ -4336,7 +4459,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19350908/det122.html"
     },
     {
       "id": "1937-001",
@@ -4382,7 +4506,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19371128/det123.html"
     },
     {
       "id": "1938-001",
@@ -4428,7 +4553,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19380220/det124.html"
     },
     {
       "id": "1938-002",
@@ -4474,7 +4600,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19380220/det125.html"
     },
     {
       "id": "1938-003",
@@ -4520,7 +4647,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19380220/det126.html"
     },
     {
       "id": "1938-004",
@@ -4566,7 +4694,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19380220/det126.html"
     },
     {
       "id": "1938-005",
@@ -4612,7 +4741,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19380703/det127.html"
     },
     {
       "id": "1938-006",
@@ -4658,7 +4788,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19381127/det128.html"
     },
     {
       "id": "1939-001",
@@ -4704,7 +4835,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19390122/det129.html"
     },
     {
       "id": "1939-002",
@@ -4750,7 +4882,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19390122/det130.html"
     },
     {
       "id": "1939-003",
@@ -4796,7 +4929,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19390604/det131.html"
     },
     {
       "id": "1939-004",
@@ -4842,7 +4976,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19391203/det132.html"
     },
     {
       "id": "1940-001",
@@ -4888,7 +5023,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19401201/det133.html"
     },
     {
       "id": "1941-001",
@@ -4934,7 +5070,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19410309/det134.html"
     },
     {
       "id": "1942-001",
@@ -4980,7 +5117,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19420125/det135.html"
     },
     {
       "id": "1942-002",
@@ -5026,7 +5164,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19420503/det136.html"
     },
     {
       "id": "1944-001",
@@ -5072,7 +5211,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19441029/det137.html"
     },
     {
       "id": "1945-001",
@@ -5118,7 +5258,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19450121/det138.html"
     },
     {
       "id": "1945-002",
@@ -5164,7 +5305,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19451125/det139.html"
     },
     {
       "id": "1946-001",
@@ -5210,7 +5352,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19460210/det140.html"
     },
     {
       "id": "1946-002",
@@ -5256,7 +5399,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19461208/det141.html"
     },
     {
       "id": "1947-001",
@@ -5302,7 +5446,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19470518/det142.html"
     },
     {
       "id": "1947-002",
@@ -5354,7 +5499,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19470706/det143.html"
     },
     {
       "id": "1947-003",
@@ -5406,7 +5552,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19470706/det144.html"
     },
     {
       "id": "1948-001",
@@ -5452,7 +5599,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19480314/det145.html"
     },
     {
       "id": "1949-001",
@@ -5498,7 +5646,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19490522/det146.html"
     },
     {
       "id": "1949-002",
@@ -5544,7 +5693,8 @@
           "recommendation": "neutre",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19490522/det147.html"
     },
     {
       "id": "1949-003",
@@ -5590,7 +5740,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19490911/det148.html"
     },
     {
       "id": "1949-004",
@@ -5642,7 +5793,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19491211/det149.html"
     },
     {
       "id": "1950-001",
@@ -5688,7 +5840,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19500129/det150.html"
     },
     {
       "id": "1950-002",
@@ -5734,7 +5887,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19500604/det151.html"
     },
     {
       "id": "1950-003",
@@ -5786,7 +5940,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19501001/det152.html"
     },
     {
       "id": "1950-004",
@@ -5832,7 +5987,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19501203/det153.html"
     },
     {
       "id": "1950-005",
@@ -5878,7 +6034,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19501203/det154.html"
     },
     {
       "id": "1951-001",
@@ -5924,7 +6081,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19510225/det155.html"
     },
     {
       "id": "1951-002",
@@ -5970,7 +6128,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19510415/det156.html"
     },
     {
       "id": "1951-003",
@@ -6010,7 +6169,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19510415/det156.html"
     },
     {
       "id": "1951-004",
@@ -6056,7 +6216,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19510708/det157.html"
     },
     {
       "id": "1952-001",
@@ -6102,7 +6263,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19520302/det158.html"
     },
     {
       "id": "1952-002",
@@ -6148,7 +6310,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19520330/det159.html"
     },
     {
       "id": "1952-003",
@@ -6200,7 +6363,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19520420/det160.html"
     },
     {
       "id": "1952-004",
@@ -6246,7 +6410,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19520518/det161.html"
     },
     {
       "id": "1952-005",
@@ -6292,7 +6457,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19520706/det162.html"
     },
     {
       "id": "1952-006",
@@ -6344,7 +6510,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19521005/det163.html"
     },
     {
       "id": "1952-007",
@@ -6390,7 +6557,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19521005/det164.html"
     },
     {
       "id": "1952-008",
@@ -6442,7 +6610,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19521123/det165.html"
     },
     {
       "id": "1952-009",
@@ -6494,7 +6663,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19521123/det166.html"
     },
     {
       "id": "1953-001",
@@ -6540,7 +6710,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19530419/det167.html"
     },
     {
       "id": "1953-002",
@@ -6586,7 +6757,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19531206/det168.html"
     },
     {
       "id": "1953-003",
@@ -6632,7 +6804,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19531206/det169.html"
     },
     {
       "id": "1954-001",
@@ -6684,7 +6857,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19540620/det170.html"
     },
     {
       "id": "1954-002",
@@ -6730,7 +6904,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19540620/det171.html"
     },
     {
       "id": "1954-003",
@@ -6776,7 +6951,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19541024/det172.html"
     },
     {
       "id": "1954-004",
@@ -6822,7 +6998,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19541205/det173.html"
     },
     {
       "id": "1955-001",
@@ -6874,7 +7051,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19550313/det174.html"
     },
     {
       "id": "1955-002",
@@ -6920,7 +7098,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19550313/det174.html"
     },
     {
       "id": "1956-001",
@@ -6972,7 +7151,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19560304/det175.html"
     },
     {
       "id": "1956-002",
@@ -7018,7 +7198,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19560513/det176.html"
     },
     {
       "id": "1956-003",
@@ -7070,7 +7251,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19560513/det177.html"
     },
     {
       "id": "1956-004",
@@ -7122,7 +7304,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19560930/det178.html"
     },
     {
       "id": "1956-005",
@@ -7174,7 +7357,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19560930/det179.html"
     },
     {
       "id": "1957-001",
@@ -7220,7 +7404,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19570303/det180.html"
     },
     {
       "id": "1957-002",
@@ -7266,7 +7451,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19570303/det181.html"
     },
     {
       "id": "1957-003",
@@ -7318,7 +7504,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19571124/det182.html"
     },
     {
       "id": "1957-004",
@@ -7370,7 +7557,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19571124/det183.html"
     },
     {
       "id": "1958-001",
@@ -7416,7 +7604,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19580126/det184.html"
     },
     {
       "id": "1958-002",
@@ -7462,7 +7651,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19580511/det185.html"
     },
     {
       "id": "1958-003",
@@ -7514,7 +7704,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19580706/det186.html"
     },
     {
       "id": "1958-004",
@@ -7566,7 +7757,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19580706/det187.html"
     },
     {
       "id": "1958-005",
@@ -7612,7 +7804,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19581026/det188.html"
     },
     {
       "id": "1958-006",
@@ -7658,7 +7851,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19581207/det189.html"
     },
     {
       "id": "1958-007",
@@ -7704,7 +7898,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19581207/det190.html"
     },
     {
       "id": "1959-001",
@@ -7750,7 +7945,8 @@
           "recommendation": "liberte de vote",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19590201/det191.html"
     },
     {
       "id": "1959-002",
@@ -7796,7 +7992,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19590524/det192.html"
     },
     {
       "id": "1960-001",
@@ -7842,7 +8039,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19600529/det193.html"
     },
     {
       "id": "1960-002",
@@ -7888,7 +8086,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19601204/det194.html"
     },
     {
       "id": "1961-001",
@@ -7940,7 +8139,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19610305/det195.html"
     },
     {
       "id": "1961-002",
@@ -7986,7 +8186,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19610305/det196.html"
     },
     {
       "id": "1961-003",
@@ -8032,7 +8233,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19611022/det197.html"
     },
     {
       "id": "1961-004",
@@ -8078,7 +8280,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19611203/det198.html"
     },
     {
       "id": "1962-001",
@@ -8130,7 +8333,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19620401/det199.html"
     },
     {
       "id": "1962-002",
@@ -8182,7 +8386,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19620527/det200.html"
     },
     {
       "id": "1962-003",
@@ -8228,7 +8433,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19620527/det201.html"
     },
     {
       "id": "1962-004",
@@ -8274,7 +8480,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19621104/det202.html"
     },
     {
       "id": "1963-001",
@@ -8320,7 +8527,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19630526/det203.html"
     },
     {
       "id": "1963-002",
@@ -8366,7 +8574,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19631208/det204.html"
     },
     {
       "id": "1963-003",
@@ -8418,7 +8627,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19631208/det205.html"
     },
     {
       "id": "1964-001",
@@ -8470,7 +8680,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19640202/det206.html"
     },
     {
       "id": "1964-002",
@@ -8522,7 +8733,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19640524/det207.html"
     },
     {
       "id": "1964-003",
@@ -8574,7 +8786,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19641206/det208.html"
     },
     {
       "id": "1965-001",
@@ -8620,7 +8833,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19650228/det209.html"
     },
     {
       "id": "1965-002",
@@ -8666,7 +8880,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19650228/det210.html"
     },
     {
       "id": "1965-003",
@@ -8712,7 +8927,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19650516/det211.html"
     },
     {
       "id": "1966-001",
@@ -8758,7 +8974,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19661016/det212.html"
     },
     {
       "id": "1966-002",
@@ -8810,7 +9027,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19661016/det213.html"
     },
     {
       "id": "1967-001",
@@ -8856,7 +9074,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19670702/det214.html"
     },
     {
       "id": "1968-001",
@@ -8902,7 +9121,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19680218/det215.html"
     },
     {
       "id": "1968-002",
@@ -8948,7 +9168,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19680519/det216.html"
     },
     {
       "id": "1969-001",
@@ -8994,7 +9215,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19690601/det217.html"
     },
     {
       "id": "1969-002",
@@ -9046,7 +9268,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19690914/det218.html"
     },
     {
       "id": "1970-001",
@@ -9098,7 +9321,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19700201/det219.html"
     },
     {
       "id": "1970-002",
@@ -9150,7 +9374,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19700607/det220.html"
     },
     {
       "id": "1970-003",
@@ -9202,7 +9427,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19700927/det221.html"
     },
     {
       "id": "1970-004",
@@ -9254,7 +9480,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19700927/det222.html"
     },
     {
       "id": "1970-005",
@@ -9306,7 +9533,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19701115/det223.html"
     },
     {
       "id": "1971-001",
@@ -9358,7 +9586,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19710207/det224.html"
     },
     {
       "id": "1971-002",
@@ -9410,7 +9639,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19710606/det225.html"
     },
     {
       "id": "1971-003",
@@ -9462,7 +9692,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19710606/det226.html"
     },
     {
       "id": "1972-001",
@@ -9514,7 +9745,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19720305/det227.html"
     },
     {
       "id": "1972-002",
@@ -9554,7 +9786,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19720305/det227.html"
     },
     {
       "id": "1972-003",
@@ -9606,7 +9839,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19720305/det228.html"
     },
     {
       "id": "1972-004",
@@ -9658,7 +9892,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19720604/det229.html"
     },
     {
       "id": "1972-005",
@@ -9710,7 +9945,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19720604/det230.html"
     },
     {
       "id": "1972-006",
@@ -9762,7 +9998,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19720924/det231.html"
     },
     {
       "id": "1972-007",
@@ -9814,7 +10051,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19721203/det232.html"
     },
     {
       "id": "1972-008",
@@ -9854,7 +10092,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19721203/det232.html"
     },
     {
       "id": "1972-009",
@@ -9906,7 +10145,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19721203/det233.html"
     },
     {
       "id": "1973-001",
@@ -9958,7 +10198,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19730304/det234.html"
     },
     {
       "id": "1973-002",
@@ -10010,7 +10251,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19730304/det235.html"
     },
     {
       "id": "1973-003",
@@ -10062,7 +10304,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19730520/det236.html"
     },
     {
       "id": "1973-004",
@@ -10114,7 +10357,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19731202/det237.html"
     },
     {
       "id": "1973-005",
@@ -10166,7 +10410,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19731202/det238.html"
     },
     {
       "id": "1973-006",
@@ -10218,7 +10463,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19731202/det239.html"
     },
     {
       "id": "1973-007",
@@ -10270,7 +10516,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19731202/det240.html"
     },
     {
       "id": "1973-008",
@@ -10322,7 +10569,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19731202/det241.html"
     },
     {
       "id": "1974-001",
@@ -10374,7 +10622,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19741020/det242.html"
     },
     {
       "id": "1974-002",
@@ -10426,7 +10675,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19741208/det243.html"
     },
     {
       "id": "1974-003",
@@ -10478,7 +10728,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19741208/det244.html"
     },
     {
       "id": "1974-004",
@@ -10530,7 +10781,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19741208/det245.html"
     },
     {
       "id": "1974-005",
@@ -10570,7 +10822,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19741208/det245.html"
     },
     {
       "id": "1975-001",
@@ -10622,7 +10875,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19750302/det246.html"
     },
     {
       "id": "1975-002",
@@ -10674,7 +10928,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19750608/det247.html"
     },
     {
       "id": "1975-003",
@@ -10726,7 +10981,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19750608/det248.html"
     },
     {
       "id": "1975-004",
@@ -10778,7 +11034,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19750608/det249.html"
     },
     {
       "id": "1975-005",
@@ -10830,7 +11087,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19750608/det250.html"
     },
     {
       "id": "1975-006",
@@ -10882,7 +11140,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19750608/det251.html"
     },
     {
       "id": "1975-007",
@@ -10934,7 +11193,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19751207/det252.html"
     },
     {
       "id": "1975-008",
@@ -10986,7 +11246,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19751207/det253.html"
     },
     {
       "id": "1975-009",
@@ -11038,7 +11299,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19751207/det254.html"
     },
     {
       "id": "1976-001",
@@ -11090,7 +11352,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760321/det255.html"
     },
     {
       "id": "1976-002",
@@ -11130,7 +11393,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760321/det255.html"
     },
     {
       "id": "1976-003",
@@ -11182,7 +11446,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760321/det256.html"
     },
     {
       "id": "1976-004",
@@ -11234,7 +11499,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760613/det257.html"
     },
     {
       "id": "1976-005",
@@ -11286,7 +11552,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760613/det258.html"
     },
     {
       "id": "1976-006",
@@ -11338,7 +11605,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760613/det259.html"
     },
     {
       "id": "1976-007",
@@ -11390,7 +11658,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760926/det260.html"
     },
     {
       "id": "1976-008",
@@ -11442,7 +11711,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19760926/det261.html"
     },
     {
       "id": "1976-009",
@@ -11494,7 +11764,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19761205/det262.html"
     },
     {
       "id": "1976-010",
@@ -11546,7 +11817,8 @@
           "recommendation": "liberte de vote",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19761205/det263.html"
     },
     {
       "id": "1976-011",
@@ -11598,7 +11870,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19761205/det264.html"
     },
     {
       "id": "1977-001",
@@ -11650,7 +11923,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770313/det265.html"
     },
     {
       "id": "1977-002",
@@ -11702,7 +11976,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770313/det266.html"
     },
     {
       "id": "1977-003",
@@ -11754,7 +12029,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770313/det267.html"
     },
     {
       "id": "1977-004",
@@ -11794,7 +12070,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770313/det267.html"
     },
     {
       "id": "1977-005",
@@ -11846,7 +12123,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770612/det268.html"
     },
     {
       "id": "1977-006",
@@ -11898,7 +12176,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770612/det269.html"
     },
     {
       "id": "1977-007",
@@ -11950,7 +12229,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770925/det270.html"
     },
     {
       "id": "1977-008",
@@ -11990,7 +12270,8 @@
           "recommendation": null,
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770925/det270.html"
     },
     {
       "id": "1977-009",
@@ -12042,7 +12323,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770925/det271.html"
     },
     {
       "id": "1977-010",
@@ -12094,7 +12376,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770925/det272.html"
     },
     {
       "id": "1977-011",
@@ -12146,7 +12429,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770925/det273.html"
     },
     {
       "id": "1977-012",
@@ -12198,7 +12482,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19770925/det274.html"
     },
     {
       "id": "1977-013",
@@ -12250,7 +12535,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19771204/det275.html"
     },
     {
       "id": "1977-014",
@@ -12302,7 +12588,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19771204/det276.html"
     },
     {
       "id": "1977-015",
@@ -12354,7 +12641,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19771204/det277.html"
     },
     {
       "id": "1977-016",
@@ -12406,7 +12694,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19771204/det278.html"
     },
     {
       "id": "1978-001",
@@ -12458,7 +12747,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780226/det279.html"
     },
     {
       "id": "1978-002",
@@ -12510,7 +12800,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780226/det280.html"
     },
     {
       "id": "1978-003",
@@ -12562,7 +12853,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780226/det281.html"
     },
     {
       "id": "1978-004",
@@ -12614,7 +12906,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780226/det282.html"
     },
     {
       "id": "1978-005",
@@ -12666,7 +12959,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780528/det283.html"
     },
     {
       "id": "1978-006",
@@ -12718,7 +13012,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780528/det284.html"
     },
     {
       "id": "1978-007",
@@ -12770,7 +13065,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780528/det285.html"
     },
     {
       "id": "1978-008",
@@ -12822,7 +13118,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780528/det286.html"
     },
     {
       "id": "1978-009",
@@ -12874,7 +13171,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780528/det287.html"
     },
     {
       "id": "1978-010",
@@ -12926,7 +13224,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19780924/det288.html"
     },
     {
       "id": "1978-011",
@@ -12978,7 +13277,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19781203/det289.html"
     },
     {
       "id": "1978-012",
@@ -13030,7 +13330,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19781203/det290.html"
     },
     {
       "id": "1978-013",
@@ -13082,7 +13383,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19781203/det291.html"
     },
     {
       "id": "1978-014",
@@ -13134,7 +13436,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19781203/det292.html"
     },
     {
       "id": "1979-001",
@@ -13186,7 +13489,8 @@
           "recommendation": "liberte de vote",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19790218/det293.html"
     },
     {
       "id": "1979-002",
@@ -13238,7 +13542,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19790218/det294.html"
     },
     {
       "id": "1979-003",
@@ -13290,7 +13595,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19790218/det295.html"
     },
     {
       "id": "1979-004",
@@ -13342,7 +13648,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19790218/det296.html"
     },
     {
       "id": "1979-005",
@@ -13394,7 +13701,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19790520/det297.html"
     },
     {
       "id": "1979-006",
@@ -13446,7 +13754,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19790520/det298.html"
     },
     {
       "id": "1980-001",
@@ -13498,7 +13807,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19800302/det299.html"
     },
     {
       "id": "1980-002",
@@ -13550,7 +13860,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19800302/det300.html"
     },
     {
       "id": "1980-003",
@@ -13602,7 +13913,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19801130/det301.html"
     },
     {
       "id": "1980-004",
@@ -13654,7 +13966,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19801130/det302.html"
     },
     {
       "id": "1980-005",
@@ -13706,7 +14019,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19801130/det303.html"
     },
     {
       "id": "1980-006",
@@ -13758,7 +14072,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19801130/det304.html"
     },
     {
       "id": "1981-001",
@@ -13810,7 +14125,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19810405/det305.html"
     },
     {
       "id": "1981-002",
@@ -13862,7 +14178,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19810614/det306.html"
     },
     {
       "id": "1981-003",
@@ -13914,7 +14231,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19810614/det307.html"
     },
     {
       "id": "1981-004",
@@ -13966,7 +14284,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19811129/det308.html"
     },
     {
       "id": "1982-001",
@@ -14018,7 +14337,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19820606/det309.html"
     },
     {
       "id": "1982-002",
@@ -14070,7 +14390,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19820606/det310.html"
     },
     {
       "id": "1982-003",
@@ -14122,7 +14443,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19821128/det311.html"
     },
     {
       "id": "1982-004",
@@ -14174,7 +14496,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19821128/det311.html"
     },
     {
       "id": "1983-001",
@@ -14232,7 +14555,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19830227/det312.html"
     },
     {
       "id": "1983-002",
@@ -14290,7 +14614,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19830227/det313.html"
     },
     {
       "id": "1983-003",
@@ -14348,7 +14673,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19831204/det314.html"
     },
     {
       "id": "1983-004",
@@ -14406,7 +14732,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19831204/det315.html"
     },
     {
       "id": "1984-001",
@@ -14464,7 +14791,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840226/det316.html"
     },
     {
       "id": "1984-002",
@@ -14522,7 +14850,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840226/det317.html"
     },
     {
       "id": "1984-003",
@@ -14580,7 +14909,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840226/det318.html"
     },
     {
       "id": "1984-004",
@@ -14638,7 +14968,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840520/det319.html"
     },
     {
       "id": "1984-005",
@@ -14696,7 +15027,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840520/det320.html"
     },
     {
       "id": "1984-006",
@@ -14754,7 +15086,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840923/det321.html"
     },
     {
       "id": "1984-007",
@@ -14812,7 +15145,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19840923/det322.html"
     },
     {
       "id": "1984-008",
@@ -14870,7 +15204,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19841202/det323.html"
     },
     {
       "id": "1984-009",
@@ -14928,7 +15263,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19841202/det324.html"
     },
     {
       "id": "1984-010",
@@ -14986,7 +15322,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19841202/det325.html"
     },
     {
       "id": "1985-001",
@@ -15044,7 +15381,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850310/det326.html"
     },
     {
       "id": "1985-002",
@@ -15102,7 +15440,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850310/det327.html"
     },
     {
       "id": "1985-003",
@@ -15160,7 +15499,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850310/det328.html"
     },
     {
       "id": "1985-004",
@@ -15218,7 +15558,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850310/det329.html"
     },
     {
       "id": "1985-005",
@@ -15276,7 +15617,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850609/det330.html"
     },
     {
       "id": "1985-006",
@@ -15334,7 +15676,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850609/det331.html"
     },
     {
       "id": "1985-007",
@@ -15392,7 +15735,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850609/det332.html"
     },
     {
       "id": "1985-008",
@@ -15450,7 +15794,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850609/det333.html"
     },
     {
       "id": "1985-009",
@@ -15508,7 +15853,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850922/det334.html"
     },
     {
       "id": "1985-010",
@@ -15566,7 +15912,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850922/det335.html"
     },
     {
       "id": "1985-011",
@@ -15624,7 +15971,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19850922/det336.html"
     },
     {
       "id": "1985-012",
@@ -15682,7 +16030,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19851201/det337.html"
     },
     {
       "id": "1986-001",
@@ -15740,7 +16089,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19860316/det338.html"
     },
     {
       "id": "1986-002",
@@ -15798,7 +16148,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19860928/det339.html"
     },
     {
       "id": "1986-003",
@@ -15856,7 +16207,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19860928/det339.html"
     },
     {
       "id": "1986-004",
@@ -15914,7 +16266,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19860928/det340.html"
     },
     {
       "id": "1986-005",
@@ -15972,7 +16325,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19860928/det341.html"
     },
     {
       "id": "1986-006",
@@ -16030,7 +16384,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19861207/det342.html"
     },
     {
       "id": "1986-007",
@@ -16088,7 +16443,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19861207/det343.html"
     },
     {
       "id": "1987-001",
@@ -16146,7 +16502,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19870405/det344.html"
     },
     {
       "id": "1987-002",
@@ -16204,7 +16561,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19870405/det345.html"
     },
     {
       "id": "1987-003",
@@ -16262,7 +16620,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19870405/det346.html"
     },
     {
       "id": "1987-004",
@@ -16320,7 +16679,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19870405/det347.html"
     },
     {
       "id": "1987-005",
@@ -16378,7 +16738,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19871206/det348.html"
     },
     {
       "id": "1987-006",
@@ -16436,7 +16797,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19871206/det349.html"
     },
     {
       "id": "1987-007",
@@ -16494,7 +16856,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19871206/det350.html"
     },
     {
       "id": "1988-001",
@@ -16552,7 +16915,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19880612/det351.html"
     },
     {
       "id": "1988-002",
@@ -16610,7 +16974,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19880612/det352.html"
     },
     {
       "id": "1988-003",
@@ -16668,7 +17033,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19881204/det353.html"
     },
     {
       "id": "1988-004",
@@ -16726,7 +17092,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19881204/det354.html"
     },
     {
       "id": "1988-005",
@@ -16784,7 +17151,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19881204/det355.html"
     },
     {
       "id": "1989-001",
@@ -16842,7 +17210,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19890604/det356.html"
     },
     {
       "id": "1989-002",
@@ -16900,7 +17269,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19891126/det357.html"
     },
     {
       "id": "1989-003",
@@ -16958,7 +17328,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19891126/det358.html"
     },
     {
       "id": "1990-001",
@@ -17016,7 +17387,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900401/det359.html"
     },
     {
       "id": "1990-002",
@@ -17074,7 +17446,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900401/det360.html"
     },
     {
       "id": "1990-003",
@@ -17132,7 +17505,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900401/det361.html"
     },
     {
       "id": "1990-004",
@@ -17190,7 +17564,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900401/det362.html"
     },
     {
       "id": "1990-005",
@@ -17248,7 +17623,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900401/det363.html"
     },
     {
       "id": "1990-006",
@@ -17306,7 +17682,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900401/det364.html"
     },
     {
       "id": "1990-007",
@@ -17364,7 +17741,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900923/det365.html"
     },
     {
       "id": "1990-008",
@@ -17422,7 +17800,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900923/det366.html"
     },
     {
       "id": "1990-009",
@@ -17480,7 +17859,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900923/det367.html"
     },
     {
       "id": "1990-010",
@@ -17538,7 +17918,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19900923/det368.html"
     },
     {
       "id": "1991-001",
@@ -17596,7 +17977,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19910303/det369.html"
     },
     {
       "id": "1991-002",
@@ -17654,7 +18036,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19910303/det370.html"
     },
     {
       "id": "1991-003",
@@ -17712,7 +18095,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19910602/det371.html"
     },
     {
       "id": "1991-004",
@@ -17770,7 +18154,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19910602/det372.html"
     },
     {
       "id": "1992-001",
@@ -17828,7 +18213,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920216/det373.html"
     },
     {
       "id": "1992-002",
@@ -17886,7 +18272,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920216/det374.html"
     },
     {
       "id": "1992-003",
@@ -17944,7 +18331,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det375.html"
     },
     {
       "id": "1992-004",
@@ -18002,7 +18390,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det376.html"
     },
     {
       "id": "1992-005",
@@ -18060,7 +18449,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det377.html"
     },
     {
       "id": "1992-006",
@@ -18118,7 +18508,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det378.html"
     },
     {
       "id": "1992-007",
@@ -18176,7 +18567,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det379.html"
     },
     {
       "id": "1992-008",
@@ -18234,7 +18626,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det380.html"
     },
     {
       "id": "1992-009",
@@ -18292,7 +18685,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920517/det381.html"
     },
     {
       "id": "1992-010",
@@ -18350,7 +18744,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920927/det382.html"
     },
     {
       "id": "1992-011",
@@ -18408,7 +18803,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920927/det383.html"
     },
     {
       "id": "1992-012",
@@ -18466,7 +18862,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920927/det384.html"
     },
     {
       "id": "1992-013",
@@ -18524,7 +18921,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920927/det385.html"
     },
     {
       "id": "1992-014",
@@ -18582,7 +18980,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920927/det386.html"
     },
     {
       "id": "1992-015",
@@ -18640,7 +19039,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19920927/det387.html"
     },
     {
       "id": "1992-016",
@@ -18698,7 +19098,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19921206/det388.html"
     },
     {
       "id": "1993-001",
@@ -18756,7 +19157,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930307/det389.html"
     },
     {
       "id": "1993-002",
@@ -18814,7 +19216,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930307/det390.html"
     },
     {
       "id": "1993-003",
@@ -18872,7 +19275,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930307/det391.html"
     },
     {
       "id": "1993-004",
@@ -18930,7 +19334,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930606/det392.html"
     },
     {
       "id": "1993-005",
@@ -18988,7 +19393,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930606/det393.html"
     },
     {
       "id": "1993-006",
@@ -19046,7 +19452,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930926/det394.html"
     },
     {
       "id": "1993-007",
@@ -19104,7 +19511,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930926/det395.html"
     },
     {
       "id": "1993-008",
@@ -19162,7 +19570,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930926/det396.html"
     },
     {
       "id": "1993-009",
@@ -19220,7 +19629,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930926/det397.html"
     },
     {
       "id": "1993-010",
@@ -19278,7 +19688,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19930926/det398.html"
     },
     {
       "id": "1993-011",
@@ -19336,7 +19747,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19931128/det399.html"
     },
     {
       "id": "1993-012",
@@ -19394,7 +19806,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19931128/det400.html"
     },
     {
       "id": "1993-013",
@@ -19452,7 +19865,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19931128/det401.html"
     },
     {
       "id": "1993-014",
@@ -19510,7 +19924,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19931128/det402.html"
     },
     {
       "id": "1993-015",
@@ -19568,7 +19983,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19931128/det403.html"
     },
     {
       "id": "1993-016",
@@ -19626,7 +20042,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19931128/det404.html"
     },
     {
       "id": "1994-001",
@@ -19684,7 +20101,8 @@
           "recommendation": "liberte de vote",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940220/det405.html"
     },
     {
       "id": "1994-002",
@@ -19742,7 +20160,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940220/det406.html"
     },
     {
       "id": "1994-003",
@@ -19800,7 +20219,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940220/det407.html"
     },
     {
       "id": "1994-004",
@@ -19858,7 +20278,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940220/det408.html"
     },
     {
       "id": "1994-005",
@@ -19916,7 +20337,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940220/det409.html"
     },
     {
       "id": "1994-006",
@@ -19974,7 +20396,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940612/det410.html"
     },
     {
       "id": "1994-007",
@@ -20032,7 +20455,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940612/det411.html"
     },
     {
       "id": "1994-008",
@@ -20090,7 +20514,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940612/det412.html"
     },
     {
       "id": "1994-009",
@@ -20148,7 +20573,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940925/det413.html"
     },
     {
       "id": "1994-010",
@@ -20206,7 +20632,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19940925/det414.html"
     },
     {
       "id": "1994-011",
@@ -20264,7 +20691,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19941204/det415.html"
     },
     {
       "id": "1994-012",
@@ -20322,7 +20750,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19941204/det416.html"
     },
     {
       "id": "1994-013",
@@ -20380,7 +20809,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19941204/det417.html"
     },
     {
       "id": "1995-001",
@@ -20438,7 +20868,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950312/det418.html"
     },
     {
       "id": "1995-002",
@@ -20496,7 +20927,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950312/det419.html"
     },
     {
       "id": "1995-003",
@@ -20542,7 +20974,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950312/det420.html"
     },
     {
       "id": "1995-004",
@@ -20600,7 +21033,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950312/det421.html"
     },
     {
       "id": "1995-005",
@@ -20658,7 +21092,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950625/det422.html"
     },
     {
       "id": "1995-006",
@@ -20716,7 +21151,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950625/det423.html"
     },
     {
       "id": "1995-007",
@@ -20774,7 +21210,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19950625/det424.html"
     },
     {
       "id": "1996-001",
@@ -20832,7 +21269,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960310/det425.html"
     },
     {
       "id": "1996-002",
@@ -20890,7 +21328,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960310/det426.html"
     },
     {
       "id": "1996-003",
@@ -20948,7 +21387,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960310/det427.html"
     },
     {
       "id": "1996-004",
@@ -21006,7 +21446,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960310/det428.html"
     },
     {
       "id": "1996-005",
@@ -21064,7 +21505,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960310/det429.html"
     },
     {
       "id": "1996-006",
@@ -21122,7 +21564,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960609/det430.html"
     },
     {
       "id": "1996-007",
@@ -21180,7 +21623,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19960609/det431.html"
     },
     {
       "id": "1996-008",
@@ -21238,7 +21682,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19961201/det432.html"
     },
     {
       "id": "1996-009",
@@ -21296,7 +21741,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19961201/det433.html"
     },
     {
       "id": "1997-001",
@@ -21354,7 +21800,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19970608/det434.html"
     },
     {
       "id": "1997-002",
@@ -21412,7 +21859,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19970608/det435.html"
     },
     {
       "id": "1997-003",
@@ -21470,7 +21918,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19970608/det436.html"
     },
     {
       "id": "1997-004",
@@ -21528,7 +21977,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19970928/det437.html"
     },
     {
       "id": "1997-005",
@@ -21586,7 +22036,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19970928/det438.html"
     },
     {
       "id": "1998-001",
@@ -21644,7 +22095,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19980607/det439.html"
     },
     {
       "id": "1998-002",
@@ -21702,7 +22154,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19980607/det440.html"
     },
     {
       "id": "1998-003",
@@ -21760,7 +22213,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19980607/det441.html"
     },
     {
       "id": "1998-004",
@@ -21818,7 +22272,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19980927/det442.html"
     },
     {
       "id": "1998-005",
@@ -21876,7 +22331,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19980927/det443.html"
     },
     {
       "id": "1998-006",
@@ -21934,7 +22390,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19980927/det444.html"
     },
     {
       "id": "1998-007",
@@ -21992,7 +22449,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19981129/det445.html"
     },
     {
       "id": "1998-008",
@@ -22050,7 +22508,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19981129/det446.html"
     },
     {
       "id": "1998-009",
@@ -22108,7 +22567,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19981129/det447.html"
     },
     {
       "id": "1998-010",
@@ -22166,7 +22626,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19981129/det448.html"
     },
     {
       "id": "1999-001",
@@ -22224,7 +22685,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990207/det449.html"
     },
     {
       "id": "1999-002",
@@ -22282,7 +22744,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990207/det450.html"
     },
     {
       "id": "1999-003",
@@ -22340,7 +22803,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990207/det451.html"
     },
     {
       "id": "1999-004",
@@ -22398,7 +22862,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990207/det452.html"
     },
     {
       "id": "1999-005",
@@ -22456,7 +22921,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990418/det453.html"
     },
     {
       "id": "1999-006",
@@ -22514,7 +22980,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990613/det454.html"
     },
     {
       "id": "1999-007",
@@ -22572,7 +23039,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990613/det455.html"
     },
     {
       "id": "1999-008",
@@ -22630,7 +23098,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990613/det456.html"
     },
     {
       "id": "1999-009",
@@ -22688,7 +23157,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990613/det457.html"
     },
     {
       "id": "1999-010",
@@ -22746,7 +23216,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/19990613/det458.html"
     },
     {
       "id": "2000-001",
@@ -22804,7 +23275,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000312/det459.html"
     },
     {
       "id": "2000-002",
@@ -22862,7 +23334,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000312/det460.html"
     },
     {
       "id": "2000-003",
@@ -22920,7 +23393,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000312/det461.html"
     },
     {
       "id": "2000-004",
@@ -22978,7 +23452,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000312/det462.html"
     },
     {
       "id": "2000-005",
@@ -23036,7 +23511,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000312/det463.html"
     },
     {
       "id": "2000-006",
@@ -23094,7 +23570,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000521/det464.html"
     },
     {
       "id": "2000-007",
@@ -23152,7 +23629,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000924/det465.html"
     },
     {
       "id": "2000-008",
@@ -23210,7 +23688,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000924/det465.html"
     },
     {
       "id": "2000-009",
@@ -23268,7 +23747,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000924/det466.html"
     },
     {
       "id": "2000-010",
@@ -23326,7 +23806,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000924/det467.html"
     },
     {
       "id": "2000-011",
@@ -23384,7 +23865,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20000924/det468.html"
     },
     {
       "id": "2000-012",
@@ -23442,7 +23924,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20001126/det469.html"
     },
     {
       "id": "2000-013",
@@ -23500,7 +23983,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20001126/det470.html"
     },
     {
       "id": "2000-014",
@@ -23558,7 +24042,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20001126/det471.html"
     },
     {
       "id": "2000-015",
@@ -23616,7 +24101,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20001126/det472.html"
     },
     {
       "id": "2000-016",
@@ -23674,7 +24160,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20001126/det473.html"
     },
     {
       "id": "2001-001",
@@ -23732,7 +24219,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20010304/det474.html"
     },
     {
       "id": "2001-002",
@@ -23790,7 +24278,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20010304/det475.html"
     },
     {
       "id": "2001-003",
@@ -23848,7 +24337,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20010304/det476.html"
     },
     {
       "id": "2001-004",
@@ -23906,7 +24396,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20010610/det477.html"
     },
     {
       "id": "2001-005",
@@ -23952,7 +24443,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20010610/det478.html"
     },
     {
       "id": "2001-006",
@@ -24010,7 +24502,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20010610/det479.html"
     },
     {
       "id": "2001-007",
@@ -24068,7 +24561,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20011202/det480.html"
     },
     {
       "id": "2001-008",
@@ -24126,7 +24620,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20011202/det481.html"
     },
     {
       "id": "2001-009",
@@ -24184,7 +24679,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20011202/det482.html"
     },
     {
       "id": "2001-010",
@@ -24242,7 +24738,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20011202/det483.html"
     },
     {
       "id": "2001-011",
@@ -24300,7 +24797,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20011202/det484.html"
     },
     {
       "id": "2002-001",
@@ -24358,7 +24856,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020303/det485.html"
     },
     {
       "id": "2002-002",
@@ -24416,7 +24915,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020303/det486.html"
     },
     {
       "id": "2002-003",
@@ -24474,7 +24974,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020602/det487.html"
     },
     {
       "id": "2002-004",
@@ -24532,7 +25033,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020602/det488.html"
     },
     {
       "id": "2002-005",
@@ -24590,7 +25092,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020922/det489.html"
     },
     {
       "id": "2002-006",
@@ -24648,7 +25151,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020922/det489.html"
     },
     {
       "id": "2002-007",
@@ -24706,7 +25210,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20020922/det490.html"
     },
     {
       "id": "2002-008",
@@ -24764,7 +25269,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20021124/det491.html"
     },
     {
       "id": "2002-009",
@@ -24822,7 +25328,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20021124/det492.html"
     },
     {
       "id": "2003-001",
@@ -24880,7 +25387,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030209/det493.html"
     },
     {
       "id": "2003-002",
@@ -24938,7 +25446,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030209/det494.html"
     },
     {
       "id": "2003-003",
@@ -24996,7 +25505,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det495.html"
     },
     {
       "id": "2003-004",
@@ -25054,7 +25564,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det496.html"
     },
     {
       "id": "2003-005",
@@ -25112,7 +25623,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det497.html"
     },
     {
       "id": "2003-006",
@@ -25170,7 +25682,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det498.html"
     },
     {
       "id": "2003-007",
@@ -25228,7 +25741,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det499.html"
     },
     {
       "id": "2003-008",
@@ -25286,7 +25800,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det500.html"
     },
     {
       "id": "2003-009",
@@ -25344,7 +25859,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det501.html"
     },
     {
       "id": "2003-010",
@@ -25402,7 +25918,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det502.html"
     },
     {
       "id": "2003-011",
@@ -25460,7 +25977,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20030518/det503.html"
     },
     {
       "id": "2004-001",
@@ -25518,7 +26036,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040208/det504.html"
     },
     {
       "id": "2004-002",
@@ -25576,7 +26095,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040208/det505.html"
     },
     {
       "id": "2004-003",
@@ -25634,7 +26154,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040208/det506.html"
     },
     {
       "id": "2004-004",
@@ -25692,7 +26213,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040516/det507.html"
     },
     {
       "id": "2004-005",
@@ -25750,7 +26272,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040516/det508.html"
     },
     {
       "id": "2004-006",
@@ -25808,7 +26331,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040516/det509.html"
     },
     {
       "id": "2004-007",
@@ -25866,7 +26390,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040926/det510.html"
     },
     {
       "id": "2004-008",
@@ -25924,7 +26449,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040926/det511.html"
     },
     {
       "id": "2004-009",
@@ -25982,7 +26508,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040926/det512.html"
     },
     {
       "id": "2004-010",
@@ -26040,7 +26567,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20040926/det513.html"
     },
     {
       "id": "2004-011",
@@ -26098,7 +26626,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20041128/det514.html"
     },
     {
       "id": "2004-012",
@@ -26156,7 +26685,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20041128/det515.html"
     },
     {
       "id": "2004-013",
@@ -26214,7 +26744,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20041128/det516.html"
     },
     {
       "id": "2005-001",
@@ -26272,7 +26803,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20050605/det517.html"
     },
     {
       "id": "2005-002",
@@ -26330,7 +26862,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20050605/det518.html"
     },
     {
       "id": "2005-003",
@@ -26388,7 +26921,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20050925/det519.html"
     },
     {
       "id": "2005-004",
@@ -26446,7 +26980,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20051127/det520.html"
     },
     {
       "id": "2005-005",
@@ -26504,7 +27039,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20051127/det521.html"
     },
     {
       "id": "2006-001",
@@ -26562,7 +27098,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20060521/det522.html"
     },
     {
       "id": "2006-002",
@@ -26620,7 +27157,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20060924/det523.html"
     },
     {
       "id": "2006-003",
@@ -26678,7 +27216,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20060924/det524.html"
     },
     {
       "id": "2006-004",
@@ -26736,7 +27275,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20060924/det525.html"
     },
     {
       "id": "2006-005",
@@ -26794,7 +27334,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20061126/det526.html"
     },
     {
       "id": "2006-006",
@@ -26852,7 +27393,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20061126/det527.html"
     },
     {
       "id": "2007-001",
@@ -26916,7 +27458,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20070311/det528.html"
     },
     {
       "id": "2007-002",
@@ -26980,7 +27523,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20070617/det529.html"
     },
     {
       "id": "2008-001",
@@ -27050,7 +27594,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20080224/det530.html"
     },
     {
       "id": "2008-002",
@@ -27120,7 +27665,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20080224/det531.html"
     },
     {
       "id": "2008-003",
@@ -27190,7 +27736,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20080601/det532.html"
     },
     {
       "id": "2008-004",
@@ -27260,7 +27807,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20080601/det533.html"
     },
     {
       "id": "2008-005",
@@ -27330,7 +27878,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20080601/det534.html"
     },
     {
       "id": "2008-006",
@@ -27406,7 +27955,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20081130/det535.html"
     },
     {
       "id": "2008-007",
@@ -27482,7 +28032,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20081130/det536.html"
     },
     {
       "id": "2008-008",
@@ -27558,7 +28109,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20081130/det537.html"
     },
     {
       "id": "2008-009",
@@ -27634,7 +28186,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20081130/det538.html"
     },
     {
       "id": "2008-010",
@@ -27710,7 +28263,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20081130/det539.html"
     },
     {
       "id": "2009-001",
@@ -27786,7 +28340,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20090208/det540.html"
     },
     {
       "id": "2009-002",
@@ -27850,7 +28405,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20090517/det541.html"
     },
     {
       "id": "2009-003",
@@ -27914,7 +28470,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20090517/det542.html"
     },
     {
       "id": "2009-004",
@@ -27978,7 +28535,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20090927/det543.html"
     },
     {
       "id": "2009-005",
@@ -28042,7 +28600,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20090927/det544.html"
     },
     {
       "id": "2009-006",
@@ -28106,7 +28665,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20091129/det545.html"
     },
     {
       "id": "2009-007",
@@ -28170,7 +28730,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20091129/det546.html"
     },
     {
       "id": "2009-008",
@@ -28234,7 +28795,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20091129/det547.html"
     },
     {
       "id": "2010-001",
@@ -28298,7 +28860,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20100307/det548.html"
     },
     {
       "id": "2010-002",
@@ -28362,7 +28925,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20100307/det549.html"
     },
     {
       "id": "2010-003",
@@ -28426,7 +28990,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20100307/det550.html"
     },
     {
       "id": "2010-004",
@@ -28490,7 +29055,8 @@
           "recommendation": "liberte de vote",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20100926/det551.html"
     },
     {
       "id": "2010-005",
@@ -28554,7 +29120,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20101128/det552.html"
     },
     {
       "id": "2010-006",
@@ -28618,7 +29185,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20101128/det552.html"
     },
     {
       "id": "2010-007",
@@ -28682,7 +29250,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20101128/det553.html"
     },
     {
       "id": "2011-001",
@@ -28746,7 +29315,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20110213/det554.html"
     },
     {
       "id": "2012-001",
@@ -28810,7 +29380,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120311/det555.html"
     },
     {
       "id": "2012-002",
@@ -28874,7 +29445,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120311/det556.html"
     },
     {
       "id": "2012-003",
@@ -28938,7 +29510,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120311/det557.html"
     },
     {
       "id": "2012-004",
@@ -29002,7 +29575,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120311/det558.html"
     },
     {
       "id": "2012-005",
@@ -29066,7 +29640,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120311/det559.html"
     },
     {
       "id": "2012-006",
@@ -29130,7 +29705,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120617/det560.html"
     },
     {
       "id": "2012-007",
@@ -29194,7 +29770,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120617/det561.html"
     },
     {
       "id": "2012-008",
@@ -29258,7 +29835,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120617/det562.html"
     },
     {
       "id": "2012-009",
@@ -29322,7 +29900,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120923/det563.html"
     },
     {
       "id": "2012-010",
@@ -29386,7 +29965,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120923/det564.html"
     },
     {
       "id": "2012-011",
@@ -29450,7 +30030,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20120923/det565.html"
     },
     {
       "id": "2012-012",
@@ -29514,7 +30095,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20121125/det566.html"
     },
     {
       "id": "2013-001",
@@ -29578,7 +30160,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130303/det567.html"
     },
     {
       "id": "2013-002",
@@ -29642,7 +30225,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130303/det568.html"
     },
     {
       "id": "2013-003",
@@ -29706,7 +30290,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130303/det569.html"
     },
     {
       "id": "2013-004",
@@ -29770,7 +30355,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130609/det570.html"
     },
     {
       "id": "2013-005",
@@ -29834,7 +30420,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130609/det571.html"
     },
     {
       "id": "2013-006",
@@ -29898,7 +30485,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130922/det572.html"
     },
     {
       "id": "2013-007",
@@ -29962,7 +30550,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130922/det573.html"
     },
     {
       "id": "2013-008",
@@ -30026,7 +30615,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20130922/det574.html"
     },
     {
       "id": "2013-009",
@@ -30090,7 +30680,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20131124/det575.html"
     },
     {
       "id": "2013-010",
@@ -30154,7 +30745,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20131124/det576.html"
     },
     {
       "id": "2013-011",
@@ -30218,7 +30810,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20131124/det577.html"
     },
     {
       "id": "2014-001",
@@ -30282,7 +30875,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140209/det578.html"
     },
     {
       "id": "2014-002",
@@ -30346,7 +30940,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140209/det579.html"
     },
     {
       "id": "2014-003",
@@ -30410,7 +31005,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140209/det580.html"
     },
     {
       "id": "2014-004",
@@ -30474,7 +31070,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140518/det581.html"
     },
     {
       "id": "2014-005",
@@ -30538,7 +31135,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140518/det582.html"
     },
     {
       "id": "2014-006",
@@ -30602,7 +31200,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140518/det583.html"
     },
     {
       "id": "2014-007",
@@ -30666,7 +31265,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140518/det584.html"
     },
     {
       "id": "2014-008",
@@ -30730,7 +31330,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140928/det585.html"
     },
     {
       "id": "2014-009",
@@ -30794,7 +31395,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20140928/det586.html"
     },
     {
       "id": "2014-010",
@@ -30858,7 +31460,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20141130/det587.html"
     },
     {
       "id": "2014-011",
@@ -30922,7 +31525,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20141130/det588.html"
     },
     {
       "id": "2014-012",
@@ -30986,7 +31590,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20141130/det589.html"
     },
     {
       "id": "2015-001",
@@ -31050,7 +31655,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20150308/det590.html"
     },
     {
       "id": "2015-002",
@@ -31114,7 +31720,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20150308/det591.html"
     },
     {
       "id": "2015-003",
@@ -31178,7 +31785,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20150614/det592.html"
     },
     {
       "id": "2015-004",
@@ -31242,7 +31850,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20150614/det593.html"
     },
     {
       "id": "2015-005",
@@ -31306,7 +31915,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20150614/det594.html"
     },
     {
       "id": "2015-006",
@@ -31370,7 +31980,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20150614/det595.html"
     },
     {
       "id": "2016-001",
@@ -31434,7 +32045,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160228/det596.html"
     },
     {
       "id": "2016-002",
@@ -31498,7 +32110,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160228/det597.html"
     },
     {
       "id": "2016-003",
@@ -31562,7 +32175,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160228/det598.html"
     },
     {
       "id": "2016-004",
@@ -31626,7 +32240,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160228/det599.html"
     },
     {
       "id": "2016-005",
@@ -31690,7 +32305,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160605/det600.html"
     },
     {
       "id": "2016-006",
@@ -31754,7 +32370,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160605/det601.html"
     },
     {
       "id": "2016-007",
@@ -31818,7 +32435,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160605/det602.html"
     },
     {
       "id": "2016-008",
@@ -31882,7 +32500,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160605/det603.html"
     },
     {
       "id": "2016-009",
@@ -31946,7 +32565,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160605/det604.html"
     },
     {
       "id": "2016-010",
@@ -32010,7 +32630,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160925/det605.html"
     },
     {
       "id": "2016-011",
@@ -32074,7 +32695,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160925/det606.html"
     },
     {
       "id": "2016-012",
@@ -32138,7 +32760,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20160925/det607.html"
     },
     {
       "id": "2016-013",
@@ -32202,7 +32825,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20161127/det608.html"
     },
     {
       "id": "2017-001",
@@ -32266,7 +32890,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170212/det609.html"
     },
     {
       "id": "2017-002",
@@ -32330,7 +32955,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170212/det610.html"
     },
     {
       "id": "2017-003",
@@ -32394,7 +33020,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170212/det611.html"
     },
     {
       "id": "2017-004",
@@ -32458,7 +33085,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170521/det612.html"
     },
     {
       "id": "2017-005",
@@ -32522,7 +33150,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170924/det613.html"
     },
     {
       "id": "2017-006",
@@ -32586,7 +33215,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170924/det614.html"
     },
     {
       "id": "2017-007",
@@ -32650,7 +33280,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20170924/det615.html"
     },
     {
       "id": "2018-001",
@@ -32714,7 +33345,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180304/det616.html"
     },
     {
       "id": "2018-002",
@@ -32778,7 +33410,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180304/det617.html"
     },
     {
       "id": "2018-003",
@@ -32842,7 +33475,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180610/det618.html"
     },
     {
       "id": "2018-004",
@@ -32906,7 +33540,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180610/det619.html"
     },
     {
       "id": "2018-005",
@@ -32970,7 +33605,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180923/det620.html"
     },
     {
       "id": "2018-006",
@@ -33034,7 +33670,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180923/det621.html"
     },
     {
       "id": "2018-007",
@@ -33098,7 +33735,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20180923/det622.html"
     },
     {
       "id": "2018-008",
@@ -33162,7 +33800,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20181125/det623.html"
     },
     {
       "id": "2018-009",
@@ -33226,7 +33865,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20181125/det624.html"
     },
     {
       "id": "2018-010",
@@ -33290,7 +33930,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20181125/det625.html"
     },
     {
       "id": "2019-001",
@@ -33354,7 +33995,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20190210/det626.html"
     },
     {
       "id": "2019-002",
@@ -33418,7 +34060,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20190519/det627.html"
     },
     {
       "id": "2019-003",
@@ -33482,7 +34125,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20190519/det628.html"
     },
     {
       "id": "2020-001",
@@ -33546,7 +34190,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200209/det629.html"
     },
     {
       "id": "2020-002",
@@ -33610,7 +34255,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200209/det630.html"
     },
     {
       "id": "2020-003",
@@ -33674,7 +34320,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200927/det631.html"
     },
     {
       "id": "2020-004",
@@ -33738,7 +34385,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200927/det632.html"
     },
     {
       "id": "2020-005",
@@ -33802,7 +34450,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200927/det633.html"
     },
     {
       "id": "2020-006",
@@ -33866,7 +34515,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200927/det634.html"
     },
     {
       "id": "2020-007",
@@ -33930,7 +34580,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20200927/det635.html"
     },
     {
       "id": "2020-008",
@@ -33994,7 +34645,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20201129/det636.html"
     },
     {
       "id": "2020-009",
@@ -34058,7 +34710,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20201129/det637.html"
     },
     {
       "id": "2021-001",
@@ -34116,7 +34769,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210307/det638.html"
     },
     {
       "id": "2021-002",
@@ -34174,7 +34828,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210307/det639.html"
     },
     {
       "id": "2021-003",
@@ -34232,7 +34887,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210307/det640.html"
     },
     {
       "id": "2021-004",
@@ -34290,7 +34946,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210613/det641.html"
     },
     {
       "id": "2021-005",
@@ -34348,7 +35005,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210613/det642.html"
     },
     {
       "id": "2021-006",
@@ -34406,7 +35064,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210613/det643.html"
     },
     {
       "id": "2021-007",
@@ -34464,7 +35123,8 @@
           "recommendation": "liberte de vote",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210613/det644.html"
     },
     {
       "id": "2021-008",
@@ -34522,7 +35182,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210613/det645.html"
     },
     {
       "id": "2021-009",
@@ -34580,7 +35241,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210926/det646.html"
     },
     {
       "id": "2021-010",
@@ -34638,7 +35300,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20210926/det647.html"
     },
     {
       "id": "2021-011",
@@ -34696,7 +35359,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20211128/det648.html"
     },
     {
       "id": "2021-012",
@@ -34754,7 +35418,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20211128/det649.html"
     },
     {
       "id": "2021-013",
@@ -34806,7 +35471,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20211128/det650.html"
     },
     {
       "id": "2022-001",
@@ -34864,7 +35530,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220213/det651.html"
     },
     {
       "id": "2022-002",
@@ -34922,7 +35589,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220213/det652.html"
     },
     {
       "id": "2022-003",
@@ -34980,7 +35648,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220213/det653.html"
     },
     {
       "id": "2022-004",
@@ -35038,7 +35707,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220213/det654.html"
     },
     {
       "id": "2022-005",
@@ -35096,7 +35766,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220515/det655.html"
     },
     {
       "id": "2022-006",
@@ -35154,7 +35825,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220515/det656.html"
     },
     {
       "id": "2022-007",
@@ -35212,7 +35884,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220515/det657.html"
     },
     {
       "id": "2022-008",
@@ -35270,7 +35943,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220925/det658.html"
     },
     {
       "id": "2022-009",
@@ -35328,7 +36002,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220925/det659.html"
     },
     {
       "id": "2022-010",
@@ -35386,7 +36061,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220925/det660.html"
     },
     {
       "id": "2022-011",
@@ -35444,7 +36120,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20220925/det661.html"
     },
     {
       "id": "2023-001",
@@ -35502,7 +36179,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20230618/det662.html"
     },
     {
       "id": "2023-002",
@@ -35560,7 +36238,8 @@
           "recommendation": "liberte de vote",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20230618/det663.html"
     },
     {
       "id": "2023-003",
@@ -35618,7 +36297,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20230618/det664.html"
     },
     {
       "id": "2024-001",
@@ -35676,7 +36356,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240303/det665.html"
     },
     {
       "id": "2024-002",
@@ -35734,7 +36415,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240303/det666.html"
     },
     {
       "id": "2024-003",
@@ -35792,7 +36474,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240609/det667.html"
     },
     {
       "id": "2024-004",
@@ -35850,7 +36533,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240609/det668.html"
     },
     {
       "id": "2024-005",
@@ -35908,7 +36592,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240609/det669.html"
     },
     {
       "id": "2024-006",
@@ -35966,7 +36651,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240609/det670.html"
     },
     {
       "id": "2024-007",
@@ -36024,7 +36710,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240922/det671.html"
     },
     {
       "id": "2024-008",
@@ -36082,7 +36769,8 @@
           "recommendation": "non",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20240922/det672.html"
     },
     {
       "id": "2024-009",
@@ -36140,7 +36828,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20241124/det673.html"
     },
     {
       "id": "2024-010",
@@ -36198,7 +36887,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20241124/det674.html"
     },
     {
       "id": "2024-011",
@@ -36250,7 +36940,8 @@
           "recommendation": "oui",
           "won": false
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20241124/det675.html"
     },
     {
       "id": "2024-012",
@@ -36308,7 +36999,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20241124/det676.html"
     },
     {
       "id": "2025-001",
@@ -36366,7 +37058,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250209/det677.html"
     },
     {
       "id": "2025-002",
@@ -36424,7 +37117,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250928/det678.html"
     },
     {
       "id": "2025-003",
@@ -36482,7 +37176,8 @@
           "recommendation": "oui",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250928/det679.html"
     },
     {
       "id": "2025-004",
@@ -36540,7 +37235,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20251130/det680.html"
     },
     {
       "id": "2025-005",
@@ -36598,7 +37294,8 @@
           "recommendation": "non",
           "won": true
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20251130/det681.html"
     },
     {
       "id": "2026-001",
@@ -36656,7 +37353,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det682.html"
     },
     {
       "id": "2026-002",
@@ -36714,7 +37412,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det682.html"
     },
     {
       "id": "2026-003",
@@ -36772,7 +37471,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det683.html"
     },
     {
       "id": "2026-004",
@@ -36830,7 +37530,8 @@
           "recommendation": "non",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det684.html"
     },
     {
       "id": "2026-005",
@@ -36888,7 +37589,8 @@
           "recommendation": "oui",
           "won": null
         }
-      ]
+      ],
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det685.html"
     }
   ]
 }

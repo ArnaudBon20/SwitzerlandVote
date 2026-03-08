@@ -9,9 +9,12 @@ from __future__ import annotations
 
 import argparse
 import csv
+import html
 import json
 import re
 import unicodedata
+import urllib.error
+import urllib.request
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -29,6 +32,8 @@ XML_NS = {
 
 SOURCE_DEFAULT = Path("data/source/recommandations-de-vote-des-partis.xlsx")
 OUTPUT_DEFAULT = Path("data/votes.json")
+BK_CHRONOLOGY_URL = "https://www.bk.admin.ch/ch/f/pore/va/vab_2_2_4_1_gesamt.html"
+BK_LINKS_CACHE_DEFAULT = Path("data/source/bk-objects-links.json")
 
 MATCH_YEAR_OFFSETS = (0, -1, 1, -2, 2, -3, 3)
 GENERIC_MATCH_WORDS = {
@@ -621,6 +626,120 @@ def merge_supplemental_recommendations(votes: list[dict[str, Any]], supplemental
                 existing["won"] = rec["won"]
 
 
+def fetch_bk_vote_links(url: str = BK_CHRONOLOGY_URL) -> list[dict[str, Any]]:
+    request = urllib.request.Request(url, headers={"User-Agent": "SwitzerlandVote/1.0"})
+    content = urllib.request.urlopen(request, timeout=30).read().decode("utf-8", "ignore")
+
+    anchor_pattern = re.compile(r'<a[^>]+href="([^"]*det[0-9]+\.html)"[^>]*>(.*?)</a>', re.IGNORECASE | re.DOTALL)
+    links: list[dict[str, Any]] = []
+
+    for href, label in anchor_pattern.findall(content):
+        clean_text = html.unescape(re.sub(r"<[^>]+>", "", label))
+        clean_text = normalize_spaces(clean_text)
+        if not clean_text:
+            continue
+
+        full_url = href
+        if not full_url.startswith("http"):
+            full_url = f"https://www.bk.admin.ch/ch/f/pore/va/{full_url.lstrip('/')}"
+
+        match_year = re.search(r"/va/([0-9]{4})[0-9]{4}/", full_url)
+        if not match_year:
+            continue
+
+        links.append(
+            {
+                "year": int(match_year.group(1)),
+                "text": clean_text,
+                "url": full_url,
+                "key": build_match_key(clean_text),
+                "norm": normalize_match_text(clean_text),
+            }
+        )
+
+    if not links:
+        raise ValueError("BK page parsed successfully but produced zero object links.")
+
+    return links
+
+
+def load_bk_vote_links(cache_path: Path = BK_LINKS_CACHE_DEFAULT) -> list[dict[str, Any]]:
+    try:
+        links = fetch_bk_vote_links(BK_CHRONOLOGY_URL)
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_text(json.dumps(links, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return links
+    except Exception:
+        if cache_path.exists():
+            return json.loads(cache_path.read_text(encoding="utf-8"))
+        return []
+
+
+def attach_bk_urls(votes: list[dict[str, Any]], bk_links: list[dict[str, Any]]) -> None:
+    if not bk_links:
+        return
+
+    links_by_year: dict[int, list[tuple[int, dict[str, Any]]]] = defaultdict(list)
+    for idx, link in enumerate(bk_links):
+        links_by_year[link["year"]].append((idx, link))
+
+    votes_by_year: dict[int, list[int]] = defaultdict(list)
+    for vote_idx, vote in enumerate(votes):
+        votes_by_year[vote["year"]].append(vote_idx)
+
+    used_links: set[int] = set()
+
+    # First pass: when counts match for a year, assign in chronological order.
+    for year, vote_indices in votes_by_year.items():
+        year_links = links_by_year.get(year, [])
+        if len(vote_indices) != len(year_links):
+            continue
+        for vote_idx, (link_idx, link) in zip(vote_indices, year_links):
+            votes[vote_idx]["url"] = link["url"]
+            used_links.add(link_idx)
+
+    by_year_key: dict[tuple[int, str], list[int]] = defaultdict(list)
+    by_year: dict[int, list[int]] = defaultdict(list)
+    for idx, link in enumerate(bk_links):
+        by_year_key[(link["year"], link["key"])].append(idx)
+        by_year[link["year"]].append(idx)
+
+    for vote in votes:
+        if vote.get("url"):
+            continue
+
+        key = build_match_key(vote["object"])
+        norm = normalize_match_text(vote["object"])
+        matched_idx: int | None = None
+
+        for offset in MATCH_YEAR_OFFSETS:
+            candidate_indices = by_year_key.get((vote["year"] + offset, key), [])
+            for candidate_idx in candidate_indices:
+                if candidate_idx not in used_links:
+                    matched_idx = candidate_idx
+                    break
+            if matched_idx is not None:
+                break
+
+        if matched_idx is None:
+            best_ratio = 0.0
+            best_idx: int | None = None
+            for candidate_year in range(vote["year"] - 3, vote["year"] + 4):
+                for candidate_idx in by_year.get(candidate_year, []):
+                    if candidate_idx in used_links:
+                        continue
+                    ratio = SequenceMatcher(None, norm, bk_links[candidate_idx]["norm"]).ratio()
+                    if ratio > best_ratio:
+                        best_ratio = ratio
+                        best_idx = candidate_idx
+            if best_idx is not None and best_ratio >= 0.92:
+                matched_idx = best_idx
+
+        if matched_idx is not None:
+            vote["url"] = bk_links[matched_idx]["url"]
+            used_links.add(matched_idx)
+
+
 def parse_records(rows: list[list[str]], source_name: str) -> dict[str, Any]:
     if not rows:
         raise ValueError("No data rows found")
@@ -766,7 +885,9 @@ def main() -> None:
     if source.suffix.lower() == ".xlsx":
         supplemental_records = collect_supplemental_records_from_xlsx(source)
         merge_supplemental_recommendations(payload["votes"], supplemental_records)
-        payload = build_payload(payload["votes"], source.name)
+
+    attach_bk_urls(payload["votes"], load_bk_vote_links(BK_LINKS_CACHE_DEFAULT))
+    payload = build_payload(payload["votes"], source.name)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

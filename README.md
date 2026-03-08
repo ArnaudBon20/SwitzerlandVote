@@ -8,11 +8,12 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - Bloc d'accueil avec un résultat tiré au hasard (renouvelé à chaque refresh).
 - Recherche plein texte sur les objets de votation.
 - Filtres par période, résultat, parti et type de recommandation.
-- Vue synthétique des partis (alignement gagné/perdu sur la sélection).
+- Vue synthétique des partis (alignement gagné/perdu sur la sélection), avec distinction visuelle des partis historiques (PBD, PRD, PLS).
 - Fusion automatique des recommandations historiques complémentaires:
   - JLR;
   - Parti radical (PRD);
   - Parti libéral (PLS).
+- Lien externe officiel sur chaque objet vers la page correspondante de la Chancellerie fédérale (BK).
 - Onglet **Statistiques** avec:
   - votations les plus acceptées;
   - votations les plus refusées;
@@ -23,6 +24,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 
 - `index.html`, `styles.css`, `app.js`: interface web statique.
 - `data/source/recommandations-de-vote-des-partis.xlsx`: source brute.
+- `data/source/bk-objects-links.json`: cache local des liens officiels BK.
 - `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json` (avec fusion des feuilles `JLR` et `PRD-PLS`).
 - `data/votes.json`: base de données consommée par le frontend.
 - `.github/workflows/deploy-pages.yml`: publication automatique GitHub Pages.
