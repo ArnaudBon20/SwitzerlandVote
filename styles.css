@@ -383,6 +383,72 @@ button:focus {
   font-size: 1.02rem;
 }
 
+.vote-details {
+  margin-top: 0.12rem;
+  border-top: 1px solid rgba(131, 115, 102, 0.25);
+  padding-top: 0.35rem;
+}
+
+.vote-details-summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(131, 115, 102, 0.4);
+  padding: 0.2rem 0.56rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.vote-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.vote-details-summary::marker {
+  display: none;
+}
+
+.vote-details-more {
+  display: inline;
+}
+
+.vote-details-less {
+  display: none;
+}
+
+.vote-details[open] .vote-details-more {
+  display: none;
+}
+
+.vote-details[open] .vote-details-less {
+  display: inline;
+}
+
+.vote-details-body {
+  margin-top: 0.58rem;
+  display: grid;
+  gap: 0.56rem;
+}
+
+@media (min-width: 741px) {
+  .vote-details-summary {
+    display: none;
+  }
+
+  .vote-details {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .vote-details-body {
+    margin-top: 0;
+  }
+}
+
 .vote-title a,
 .rank-object a {
   color: inherit;
@@ -797,18 +863,33 @@ footer {
 }
 
 @media (max-width: 740px) {
+  body {
+    font-size: 17px;
+    line-height: 1.48;
+  }
+
   header,
   main,
   footer {
-    width: calc(100% - 1.2rem);
+    width: 100%;
+    padding-inline: 0.85rem;
   }
 
   .hero {
     padding-top: 2.4rem;
+    text-align: center;
   }
 
   .hero-copy {
     white-space: normal;
+    font-size: 1.03rem;
+    margin-inline: auto;
+    max-width: 36ch;
+  }
+
+  .dataset-meta {
+    font-size: 0.98rem;
+    margin-inline: auto;
   }
 
   .panel {
@@ -828,6 +909,7 @@ footer {
   .tab-button {
     flex: 1;
     text-align: center;
+    font-size: 0.96rem;
   }
 
   .control-grid,
@@ -855,6 +937,27 @@ footer {
   .ghost,
   .tab-button {
     min-height: 44px;
+  }
+
+  .vote-title {
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  .section-note,
+  .result-count {
+    font-size: 0.91rem;
+  }
+
+  .stance-chip {
+    font-size: 0.8rem;
+    padding: 0.24rem 0.58rem;
+  }
+
+  .vote-details-summary {
+    min-height: 40px;
+    padding: 0.32rem 0.72rem;
+    font-size: 0.82rem;
   }
 
   .position-toggle {
@@ -928,7 +1031,8 @@ footer {
   header,
   main,
   footer {
-    width: calc(100% - 1rem);
+    width: 100%;
+    padding-inline: 0.72rem;
   }
 
   .stats-grid,
@@ -945,7 +1049,8 @@ footer {
   header,
   main,
   footer {
-    width: calc(100% - 0.75rem);
+    width: 100%;
+    padding-inline: 0.62rem;
   }
 
   .hero {
@@ -959,6 +1064,6 @@ footer {
   .section-note,
   .result-count,
   .party-row p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }

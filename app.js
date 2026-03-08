@@ -406,6 +406,14 @@ function renderRandomVote() {
   const voteTitle = vote.url
     ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
     : escapeHtml(vote.object);
+  const detailsBody = `
+    ${
+      hasPercent
+        ? buildResultBreakdown(yes, no)
+        : '<p class="percent-row">Résultat officiel non disponible</p>'
+    }
+    ${recommendationGroups}
+  `;
 
   els.randomVoteCard.innerHTML = `
     <div class="vote-top">
@@ -413,12 +421,7 @@ function renderRandomVote() {
       <span class="result-pill ${resultClass}">${resultLabel}</span>
     </div>
     <h3 class="vote-title">${voteTitle}</h3>
-    ${
-      hasPercent
-        ? buildResultBreakdown(yes, no)
-        : '<p class="percent-row">Résultat officiel non disponible</p>'
-    }
-    ${recommendationGroups}
+    ${renderVoteDetailsSection(detailsBody)}
   `;
 }
 
@@ -596,6 +599,14 @@ function renderVotes() {
     const voteTitle = vote.url
       ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
       : escapeHtml(vote.object);
+    const detailsBody = `
+      ${
+        hasPercent
+          ? buildResultBreakdown(yes, no)
+          : '<p class="percent-row">Résultat officiel non disponible</p>'
+      }
+      ${recommendationGroups}
+    `;
 
     return `
       <article class="vote-card">
@@ -604,12 +615,7 @@ function renderVotes() {
           <span class="result-pill ${resultClass}">${resultLabel}</span>
         </div>
         <h3 class="vote-title">${voteTitle}</h3>
-        ${
-          hasPercent
-            ? buildResultBreakdown(yes, no)
-            : '<p class="percent-row">Résultat officiel non disponible</p>'
-        }
-        ${recommendationGroups}
+        ${renderVoteDetailsSection(detailsBody)}
       </article>
     `;
   });
@@ -678,6 +684,19 @@ function buildResultBreakdown(yes, no) {
         </p>
       </div>
     </div>
+  `;
+}
+
+function renderVoteDetailsSection(contentHtml) {
+  const openAttr = window.matchMedia("(min-width: 741px)").matches ? " open" : "";
+  return `
+    <details class="vote-details"${openAttr}>
+      <summary class="vote-details-summary">
+        <span class="vote-details-more">Voir plus</span>
+        <span class="vote-details-less">Voir moins</span>
+      </summary>
+      <div class="vote-details-body">${contentHtml}</div>
+    </details>
   `;
 }
 
