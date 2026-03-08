@@ -36,4 +36,19 @@ jobs:
       - name: Ensure committed dataset is up to date
         run: |
           git diff -- data/votes.json
-          git diff --exit-code -- data/votes.json
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+
+          current = json.loads(Path("data/votes.json").read_text(encoding="utf-8"))
+          committed = json.loads(
+              subprocess.check_output(["git", "show", "HEAD:data/votes.json"], text=True)
+          )
+
+          current.pop("generatedAt", None)
+          committed.pop("generatedAt", None)
+
+          if current != committed:
+              raise SystemExit("Dataset drift detected (excluding generatedAt).")
+          PY
