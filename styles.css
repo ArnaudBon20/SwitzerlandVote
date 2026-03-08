@@ -89,15 +89,17 @@ h1 {
 }
 
 .hero-copy {
-  max-width: 60ch;
+  max-width: none;
   margin: 0;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .dataset-meta {
   margin-top: 1rem;
   color: var(--muted);
   font-size: 0.92rem;
+  font-style: italic;
 }
 
 main {
@@ -803,6 +805,10 @@ footer {
 
   .hero {
     padding-top: 2.4rem;
+  }
+
+  .hero-copy {
+    white-space: normal;
   }
 
   .panel {
