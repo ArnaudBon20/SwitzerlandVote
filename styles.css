@@ -553,6 +553,10 @@ button:focus {
   gap: 0.36rem;
 }
 
+.position-chip-list[hidden] {
+  display: none;
+}
+
 .position-empty {
   margin: 0;
   font-size: 0.8rem;
