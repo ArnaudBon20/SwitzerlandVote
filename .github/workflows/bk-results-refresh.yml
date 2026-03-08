@@ -1,10 +1,10 @@
-name: Update BK Results
+name: Refresh BK Results
 
 on:
   schedule:
     - cron: "30 18 * * 0"
     - cron: "30 20 * * 0"
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -25,17 +25,14 @@ jobs:
       - name: Check if today is a federal voting day
         id: gate
         run: |
-          run_update=false
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            run_update=true
+          is_voting_day="$(python scripts/is_votation_sunday.py)"
+          echo "Voting day according to BK calendar: ${is_voting_day}"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${is_voting_day}" = "true" ]; then
+            echo "run_update=true" >> "$GITHUB_OUTPUT"
           else
-            is_voting_day="$(python scripts/is_votation_sunday.py)"
-            echo "Voting day according to BK calendar: ${is_voting_day}"
-            if [ "${is_voting_day}" = "true" ]; then
-              run_update=true
-            fi
+            echo "run_update=false" >> "$GITHUB_OUTPUT"
           fi
-          echo "run_update=${run_update}" >> "$GITHUB_OUTPUT"
 
       - name: Regenerate dataset with BK official pages
         if: steps.gate.outputs.run_update == 'true'

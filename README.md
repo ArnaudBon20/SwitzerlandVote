@@ -39,7 +39,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - `data/votes.json`: base de données consommée par le frontend.
 - `.github/workflows/deploy-pages.yml`: publication automatique GitHub Pages.
 - `.github/workflows/build-data.yml`: vérification que `data/votes.json` est synchronisé.
-- `.github/workflows/update-results.yml`: rafraîchissement automatique des résultats BK les soirs de votation.
+- `.github/workflows/bk-results-refresh.yml`: rafraîchissement automatique des résultats BK les soirs de votation.
 
 ## Lancer localement
 
@@ -81,7 +81,7 @@ Notes:
 
 ## Automatisation du soir de votation
 
-- Le workflow `.github/workflows/update-results.yml` tourne chaque dimanche soir (`18:30` et `20:30` UTC).
+- Le workflow `.github/workflows/bk-results-refresh.yml` tourne chaque dimanche soir (`18:30` et `20:30` UTC).
 - Avant toute mise à jour, il vérifie la date du jour (timezone `Europe/Zurich`) via le calendrier BK et le répertoire chronologique BK.
 - Si oui, il régénère `data/votes.json` avec les résultats BK publiés, commit et push sur `main`.
 - Le push déclenche ensuite automatiquement la publication GitHub Pages.
