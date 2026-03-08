@@ -680,6 +680,12 @@ function buildLegislatureRows(votes) {
     const legislature = getLegislatureForYear(vote.year);
 
     for (const rec of vote.recommendations) {
+      // PLR exists as a merged party from 2009 onward.
+      // Before 2009, statistics should reflect PRD/PLS instead.
+      if (rec.partyId === "plr" && vote.year < 2009) {
+        continue;
+      }
+
       if (!rec.recommendation && rec.won === null) {
         continue;
       }
