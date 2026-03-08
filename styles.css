@@ -675,24 +675,26 @@ button:focus {
 
 .ranking-list {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.35rem;
   display: grid;
-  gap: 0.56rem;
+  gap: 0.62rem;
 }
 
 .ranking-list li {
   color: var(--ink);
 }
 
+.ranking-list li::marker {
+  color: #6d625c;
+  font-weight: 700;
+}
+
 .rank-line {
   margin: 0;
   display: flex;
-  gap: 0.42rem;
-  align-items: baseline;
-}
-
-.rank-index {
-  color: var(--muted);
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: center;
 }
 
 .rank-percent {
@@ -708,8 +710,13 @@ button:focus {
 }
 
 .rank-year {
-  color: var(--muted);
-  font-size: 0.82rem;
+  color: #2f2a26;
+  font-size: 0.86rem;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  background: #e8dece;
+  border-radius: 999px;
+  padding: 0.12rem 0.5rem;
 }
 
 .rank-object {
@@ -729,33 +736,79 @@ button:focus {
   margin-bottom: 0.75rem;
 }
 
-.table-wrap {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+.legislature-groups {
+  display: grid;
+  gap: 0.76rem;
+  margin-top: 0.65rem;
+}
+
+.legislature-group {
+  background: var(--surface-strong);
   border: 1px solid rgba(136, 117, 103, 0.28);
   border-radius: 12px;
+  padding: 0.72rem;
 }
 
-.legislature-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 960px;
-  background: var(--surface-strong);
+.legislature-group-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.65rem;
+  margin-bottom: 0.62rem;
 }
 
-.legislature-table th,
-.legislature-table td {
-  text-align: left;
-  padding: 0.56rem 0.62rem;
-  border-bottom: 1px solid rgba(136, 117, 103, 0.22);
+.legislature-group-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.legislature-group-head p {
+  margin: 0;
   font-size: 0.84rem;
+  color: var(--muted);
 }
 
-.legislature-table th {
-  position: sticky;
-  top: 0;
-  background: #efe5d6;
-  z-index: 1;
+.legislature-party-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.56rem;
+}
+
+.legislature-party-card {
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(136, 117, 103, 0.24);
+  border-radius: 10px;
+  padding: 0.58rem;
+}
+
+.legislature-party-card header {
+  width: 100%;
+  margin: 0 0 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.legislature-party-card h4 {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.align-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  padding: 0.1rem 0.45rem;
+  background: color-mix(in srgb, var(--ok) 18%, white 82%);
+  color: var(--ok);
+}
+
+.legislature-party-card p {
+  margin: 0.22rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
 .table-empty {
@@ -858,6 +911,10 @@ footer {
   }
 
   .legislature-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .legislature-party-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -964,66 +1021,22 @@ footer {
     min-height: 36px;
   }
 
-  .table-wrap {
-    border: 0;
-    border-radius: 0;
-    overflow: visible;
+  .legislature-group {
+    padding: 0.64rem;
   }
 
-  .legislature-table {
-    min-width: 0;
-    background: transparent;
-    border-collapse: separate;
-    border-spacing: 0;
+  .legislature-group-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.28rem;
   }
 
-  .legislature-table thead {
-    display: none;
+  .legislature-party-card p {
+    font-size: 0.84rem;
   }
 
-  .legislature-table tbody {
-    display: grid;
-    gap: 0.6rem;
-  }
-
-  .legislature-table tr {
-    display: grid;
-    gap: 0;
-    background: var(--surface-strong);
-    border: 1px solid rgba(136, 117, 103, 0.24);
-    border-radius: 12px;
-    padding: 0.4rem 0.68rem;
-  }
-
-  .legislature-table td {
-    display: grid;
-    grid-template-columns: minmax(7.8rem, 45%) minmax(0, 1fr);
-    gap: 0.4rem;
-    align-items: baseline;
-    padding: 0.35rem 0;
-    border-bottom: 1px dashed rgba(136, 117, 103, 0.22);
-    font-size: 0.82rem;
-  }
-
-  .legislature-table td:last-child {
-    border-bottom: 0;
-  }
-
-  .legislature-table td::before {
-    content: attr(data-label);
-    color: var(--muted);
-    font-weight: 600;
+  .align-pill {
     font-size: 0.78rem;
-  }
-
-  .legislature-table td.table-empty {
-    display: block;
-    padding: 0.28rem 0;
-    border-bottom: 0;
-  }
-
-  .legislature-table td.table-empty::before {
-    content: none;
   }
 }
 

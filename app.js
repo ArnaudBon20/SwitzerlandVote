@@ -39,6 +39,7 @@ const state = {
   statistics: {
     rows: [],
     legislatureMeta: [],
+    showAllLegislatures: false,
     filters: {
       partyId: "all",
       legislatureId: "all",
@@ -48,6 +49,7 @@ const state = {
 
 const els = {
   datasetMeta: document.getElementById("dataset-meta"),
+  randomArchives: document.getElementById("random-archives"),
   randomizeVote: document.getElementById("randomize-vote"),
   randomVoteCard: document.getElementById("random-vote-card"),
   tabButtons: [...document.querySelectorAll(".tab-button")],
@@ -74,7 +76,8 @@ const els = {
   legislaturePartyFilter: document.getElementById("legislature-party-filter"),
   legislatureFilter: document.getElementById("legislature-filter"),
   legislatureSummary: document.getElementById("legislature-summary"),
-  legislatureTableBody: document.getElementById("legislature-table-body"),
+  legislatureBlocks: document.getElementById("legislature-blocks"),
+  legislatureShowMore: document.getElementById("legislature-show-more"),
   historicalToggles: [...document.querySelectorAll("[data-toggle-historical]")],
 };
 
@@ -274,11 +277,18 @@ function bindEvents() {
 
   els.legislaturePartyFilter.addEventListener("change", () => {
     state.statistics.filters.partyId = els.legislaturePartyFilter.value;
+    state.statistics.showAllLegislatures = false;
     renderLegislatureTable();
   });
 
   els.legislatureFilter.addEventListener("change", () => {
     state.statistics.filters.legislatureId = els.legislatureFilter.value;
+    state.statistics.showAllLegislatures = false;
+    renderLegislatureTable();
+  });
+
+  els.legislatureShowMore.addEventListener("click", () => {
+    state.statistics.showAllLegislatures = !state.statistics.showAllLegislatures;
     renderLegislatureTable();
   });
 
@@ -288,6 +298,7 @@ function bindEvents() {
       refreshPartyFilterOptions();
       updateHistoricalToggleButtons();
       resetVisible();
+      state.statistics.showAllLegislatures = false;
       render();
     });
   });
@@ -352,6 +363,9 @@ function setActiveTab(tab, syncHash) {
 
   els.viewExplorer.classList.toggle("hidden", state.activeTab !== "explorer");
   els.viewStatistics.classList.toggle("hidden", state.activeTab !== "statistics");
+  if (els.randomArchives) {
+    els.randomArchives.classList.toggle("hidden", state.activeTab !== "explorer");
+  }
 
   if (syncHash) {
     const nextHash = state.activeTab === "statistics" ? "#statistics" : "#explorer";
@@ -645,7 +659,7 @@ function renderRankingList(items, percentField, tone) {
   }
 
   return items
-    .map((vote, index) => {
+    .map((vote) => {
       const percent = vote[percentField];
       const objectLabel = vote.url
         ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
@@ -653,9 +667,8 @@ function renderRankingList(items, percentField, tone) {
       return `
         <li>
           <p class="rank-line">
-            <span class="rank-index">${index + 1}.</span>
-            <span class="rank-percent rank-${tone}">${percent.toFixed(2)} %</span>
             <span class="rank-year">${vote.year}</span>
+            <span class="rank-percent rank-${tone}">${percent.toFixed(2)} %</span>
           </p>
           <p class="rank-object">${objectLabel}</p>
         </li>
@@ -806,33 +819,78 @@ function renderLegislatureTable() {
   });
 
   if (!filteredRows.length) {
-    els.legislatureSummary.textContent = "0 ligne";
-    els.legislatureTableBody.innerHTML =
-      '<tr><td colspan="10" class="table-empty">Aucun résultat pour ce filtre.</td></tr>';
+    els.legislatureSummary.textContent = "0 législature";
+    els.legislatureBlocks.innerHTML = '<p class="table-empty">Aucun résultat pour ce filtre.</p>';
+    els.legislatureShowMore.style.display = "none";
     return;
   }
 
-  els.legislatureSummary.textContent = `${filteredRows.length} ligne(s) affichée(s)`;
+  const groupsByLegislature = new Map();
+  for (const row of filteredRows) {
+    if (!groupsByLegislature.has(row.legislatureId)) {
+      groupsByLegislature.set(row.legislatureId, {
+        id: row.legislatureId,
+        number: row.legislatureNumber,
+        period: row.period,
+        rows: [],
+      });
+    }
+    groupsByLegislature.get(row.legislatureId).rows.push(row);
+  }
 
-  els.legislatureTableBody.innerHTML = filteredRows
-    .map((row) => {
-      const alignment = row.alignmentRate === null ? "-" : `${row.alignmentRate.toFixed(1)} %`;
+  const grouped = [...groupsByLegislature.values()].sort((a, b) => b.number - a.number);
+  const totalGroups = grouped.length;
+  const hasSpecificLegislatureFilter = legislatureId !== "all";
+  const visibleGroups =
+    state.statistics.showAllLegislatures || hasSpecificLegislatureFilter ? grouped : grouped.slice(0, 4);
+
+  els.legislatureSummary.textContent = `${visibleGroups.length} législature(s) affichée(s) sur ${totalGroups} · ${
+    filteredRows.length
+  } ligne(s) parti`;
+
+  els.legislatureBlocks.innerHTML = visibleGroups
+    .map((group) => {
+      const partyRows = group.rows
+        .map((row) => {
+          const alignment = row.alignmentRate === null ? "n/a" : `${row.alignmentRate.toFixed(1)} %`;
+          return `
+            <article class="legislature-party-card">
+              <header>
+                <h4>${escapeHtml(row.party)}</h4>
+                <span class="align-pill">${alignment}</span>
+              </header>
+              <p>Recommandations: ${row.recommendations} · Oui: ${row.oui} · Non: ${row.non} · Autres: ${row.other}</p>
+              <p>Gagné: ${row.wins} · Perdu: ${row.losses}</p>
+            </article>
+          `;
+        })
+        .join("");
+
       return `
-        <tr>
-          <td data-label="Législature">${row.legislatureId}</td>
-          <td data-label="Période">${row.period}</td>
-          <td data-label="Parti">${escapeHtml(row.party)}</td>
-          <td data-label="Recommandations">${row.recommendations}</td>
-          <td data-label="Oui">${row.oui}</td>
-          <td data-label="Non">${row.non}</td>
-          <td data-label="Autres">${row.other}</td>
-          <td data-label="Gagné">${row.wins}</td>
-          <td data-label="Perdu">${row.losses}</td>
-          <td data-label="Alignement">${alignment}</td>
-        </tr>
+        <article class="legislature-group">
+          <div class="legislature-group-head">
+            <h3>${group.id}</h3>
+            <p>${group.period}</p>
+          </div>
+          <div class="legislature-party-grid">
+            ${partyRows}
+          </div>
+        </article>
       `;
     })
     .join("");
+
+  const canCollapse = !hasSpecificLegislatureFilter && totalGroups > 4;
+  if (!canCollapse) {
+    els.legislatureShowMore.style.display = "none";
+    return;
+  }
+  els.legislatureShowMore.style.display = "inline-flex";
+  if (state.statistics.showAllLegislatures) {
+    els.legislatureShowMore.textContent = "Voir moins";
+  } else {
+    els.legislatureShowMore.textContent = `Voir plus (${totalGroups - 4} anciennes législatures)`;
+  }
 }
 
 function sortRecommendations(recommendations, selectedPartyId) {

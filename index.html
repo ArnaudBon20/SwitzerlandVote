@@ -39,7 +39,7 @@
         </button>
       </nav>
 
-      <section class="panel random-spotlight reveal">
+      <section id="random-archives" class="panel random-spotlight reveal">
         <div class="section-head">
           <h2>Archives</h2>
           <button id="randomize-vote" class="ghost" type="button">Nouvelle archive</button>
@@ -152,7 +152,7 @@
       <section id="view-statistics" class="view hidden">
         <section class="panel reveal">
           <div class="section-head">
-            <h2>Votations les plus marquées</h2>
+            <h2>Votations les plus acceptées / refusées</h2>
           </div>
           <p class="section-note">
             Classement basé sur le pourcentage national de oui/non pour les objets avec résultat officiel.
@@ -197,26 +197,8 @@
           </form>
 
           <p id="legislature-summary" class="result-count"></p>
-
-          <div class="table-wrap">
-            <table class="legislature-table">
-              <thead>
-                <tr>
-                  <th>Législature</th>
-                  <th>Période</th>
-                  <th>Parti</th>
-                  <th>Recommandations</th>
-                  <th>Oui</th>
-                  <th>Non</th>
-                  <th>Autres</th>
-                  <th>Gagné</th>
-                  <th>Perdu</th>
-                  <th>Alignement</th>
-                </tr>
-              </thead>
-              <tbody id="legislature-table-body"></tbody>
-            </table>
-          </div>
+          <div id="legislature-blocks" class="legislature-groups"></div>
+          <button id="legislature-show-more" class="ghost wide" type="button">Voir plus</button>
         </section>
       </section>
 
