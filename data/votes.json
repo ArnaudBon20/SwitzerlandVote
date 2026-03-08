@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T16:57:22+00:00",
+  "generatedAt": "2026-03-08T17:08:00+00:00",
   "sourceFile": "recommandations-de-vote-des-partis.xlsx",
   "stats": {
     "objects": 702,
@@ -11,7 +11,7 @@
   "parties": [
     {
       "id": "conseil-federal",
-      "name": "Conseil federal"
+      "name": "Conseil fédéral"
     },
     {
       "id": "jlr",
@@ -57,7 +57,7 @@
   "partyStats": [
     {
       "partyId": "conseil-federal",
-      "party": "Conseil federal",
+      "party": "Conseil fédéral",
       "recommendations": 573,
       "oui": 330,
       "non": 236,
@@ -210,7 +210,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         }
@@ -227,7 +227,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -244,7 +244,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -261,7 +261,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -278,7 +278,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -295,7 +295,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -312,7 +312,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -329,7 +329,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -346,7 +346,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -363,7 +363,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -380,7 +380,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -397,7 +397,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -414,7 +414,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -431,7 +431,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -448,7 +448,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -465,7 +465,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -482,7 +482,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -499,7 +499,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -516,7 +516,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -533,7 +533,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -550,7 +550,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -567,7 +567,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -584,7 +584,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -601,7 +601,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -618,7 +618,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -635,7 +635,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -652,7 +652,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -669,7 +669,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -686,7 +686,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -703,7 +703,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -720,7 +720,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -737,7 +737,7 @@
       "recommendations": [
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -760,7 +760,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -783,7 +783,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -806,7 +806,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -829,7 +829,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -852,7 +852,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -875,7 +875,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -898,7 +898,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -921,7 +921,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         }
@@ -950,7 +950,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -985,7 +985,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         },
@@ -1020,7 +1020,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -1055,7 +1055,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -1090,7 +1090,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1125,7 +1125,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1160,7 +1160,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -1195,7 +1195,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -1230,7 +1230,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -1265,7 +1265,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -1300,7 +1300,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1335,7 +1335,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1370,7 +1370,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -1405,7 +1405,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1440,7 +1440,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1475,7 +1475,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -1510,7 +1510,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -1545,7 +1545,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -1580,7 +1580,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1615,7 +1615,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -1650,7 +1650,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -1685,7 +1685,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -1720,7 +1720,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1755,7 +1755,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1790,7 +1790,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -1825,7 +1825,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -1860,7 +1860,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1895,7 +1895,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -1930,7 +1930,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -1965,7 +1965,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -2006,7 +2006,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -2047,7 +2047,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2088,7 +2088,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2129,7 +2129,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2176,7 +2176,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2217,7 +2217,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -2258,7 +2258,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -2305,7 +2305,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2346,7 +2346,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2387,7 +2387,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2434,7 +2434,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -2481,7 +2481,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -2528,7 +2528,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2575,7 +2575,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2622,7 +2622,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -2669,7 +2669,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -2716,7 +2716,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -2763,7 +2763,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2810,7 +2810,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -2857,7 +2857,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -2904,7 +2904,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -2951,7 +2951,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         },
@@ -2998,7 +2998,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -3045,7 +3045,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3092,7 +3092,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3139,7 +3139,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -3186,7 +3186,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3233,7 +3233,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -3280,7 +3280,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -3327,7 +3327,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3374,7 +3374,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -3421,7 +3421,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -3468,7 +3468,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -3515,7 +3515,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -3556,7 +3556,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -3603,7 +3603,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -3650,7 +3650,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -3691,7 +3691,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3738,7 +3738,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -3779,7 +3779,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -3826,7 +3826,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3873,7 +3873,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -3920,7 +3920,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -3967,7 +3967,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4014,7 +4014,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4061,7 +4061,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4108,7 +4108,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -4155,7 +4155,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -4202,7 +4202,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -4249,7 +4249,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -4302,7 +4302,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -4349,7 +4349,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -4396,7 +4396,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -4443,7 +4443,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         },
@@ -4496,7 +4496,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -4543,7 +4543,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -4590,7 +4590,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -4637,7 +4637,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -4684,7 +4684,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4731,7 +4731,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -4778,7 +4778,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4825,7 +4825,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -4872,7 +4872,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4919,7 +4919,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -4966,7 +4966,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -5013,7 +5013,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -5060,7 +5060,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -5107,7 +5107,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -5154,7 +5154,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -5201,7 +5201,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -5248,7 +5248,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -5295,7 +5295,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -5342,7 +5342,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -5389,7 +5389,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -5436,7 +5436,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -5483,7 +5483,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -5536,7 +5536,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -5589,7 +5589,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -5636,7 +5636,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -5683,7 +5683,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -5730,7 +5730,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -5777,7 +5777,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -5830,7 +5830,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -5877,7 +5877,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -5924,7 +5924,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -5977,7 +5977,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6024,7 +6024,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6071,7 +6071,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -6118,7 +6118,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -6165,7 +6165,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -6206,7 +6206,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -6253,7 +6253,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -6300,7 +6300,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -6347,7 +6347,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -6400,7 +6400,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -6447,7 +6447,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6494,7 +6494,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -6547,7 +6547,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -6594,7 +6594,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6647,7 +6647,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6700,7 +6700,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -6747,7 +6747,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6794,7 +6794,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -6841,7 +6841,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -6894,7 +6894,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -6941,7 +6941,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -6988,7 +6988,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -7035,7 +7035,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -7088,7 +7088,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7135,7 +7135,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7188,7 +7188,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -7235,7 +7235,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -7288,7 +7288,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7341,7 +7341,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7394,7 +7394,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7441,7 +7441,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7488,7 +7488,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7541,7 +7541,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7594,7 +7594,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -7641,7 +7641,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7688,7 +7688,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7741,7 +7741,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7794,7 +7794,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -7841,7 +7841,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7888,7 +7888,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -7935,7 +7935,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -7982,7 +7982,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8029,7 +8029,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8076,7 +8076,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -8123,7 +8123,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8176,7 +8176,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -8223,7 +8223,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -8270,7 +8270,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -8317,7 +8317,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -8370,7 +8370,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8423,7 +8423,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -8470,7 +8470,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8517,7 +8517,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -8564,7 +8564,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8611,7 +8611,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8664,7 +8664,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8717,7 +8717,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -8770,7 +8770,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8823,7 +8823,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8870,7 +8870,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -8917,7 +8917,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -8964,7 +8964,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9011,7 +9011,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -9064,7 +9064,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -9111,7 +9111,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9158,7 +9158,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -9205,7 +9205,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -9252,7 +9252,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9305,7 +9305,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -9358,7 +9358,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -9411,7 +9411,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9464,7 +9464,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -9517,7 +9517,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9570,7 +9570,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9623,7 +9623,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -9676,7 +9676,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9729,7 +9729,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -9782,7 +9782,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -9823,7 +9823,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9876,7 +9876,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9929,7 +9929,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -9982,7 +9982,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -10035,7 +10035,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -10088,7 +10088,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -10129,7 +10129,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10182,7 +10182,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10235,7 +10235,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10288,7 +10288,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10341,7 +10341,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10394,7 +10394,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10447,7 +10447,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10500,7 +10500,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10553,7 +10553,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -10606,7 +10606,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -10659,7 +10659,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10712,7 +10712,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10765,7 +10765,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -10818,7 +10818,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -10859,7 +10859,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -10912,7 +10912,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -10965,7 +10965,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -11018,7 +11018,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -11071,7 +11071,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11124,7 +11124,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11177,7 +11177,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11230,7 +11230,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -11283,7 +11283,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -11336,7 +11336,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -11389,7 +11389,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -11430,7 +11430,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -11483,7 +11483,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -11536,7 +11536,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -11589,7 +11589,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11642,7 +11642,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11695,7 +11695,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -11748,7 +11748,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11801,7 +11801,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -11854,7 +11854,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -11907,7 +11907,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -11960,7 +11960,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12013,7 +12013,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12066,7 +12066,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -12107,7 +12107,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -12160,7 +12160,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         },
@@ -12213,7 +12213,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12266,7 +12266,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": null,
           "won": false
         }
@@ -12307,7 +12307,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12360,7 +12360,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -12413,7 +12413,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -12466,7 +12466,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12519,7 +12519,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12572,7 +12572,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -12625,7 +12625,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -12678,7 +12678,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -12731,7 +12731,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12784,7 +12784,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -12837,7 +12837,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -12890,7 +12890,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -12943,7 +12943,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -12996,7 +12996,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13049,7 +13049,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -13102,7 +13102,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -13155,7 +13155,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -13208,7 +13208,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13261,7 +13261,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13314,7 +13314,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13367,7 +13367,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -13420,7 +13420,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13473,7 +13473,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         },
@@ -13526,7 +13526,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13579,7 +13579,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -13632,7 +13632,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -13685,7 +13685,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -13738,7 +13738,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13791,7 +13791,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -13844,7 +13844,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13897,7 +13897,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -13950,7 +13950,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14003,7 +14003,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14056,7 +14056,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14109,7 +14109,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -14162,7 +14162,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14215,7 +14215,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14268,7 +14268,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14321,7 +14321,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14374,7 +14374,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -14427,7 +14427,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -14480,7 +14480,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -14539,7 +14539,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14598,7 +14598,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14657,7 +14657,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14716,7 +14716,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -14775,7 +14775,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14834,7 +14834,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -14893,7 +14893,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -14952,7 +14952,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15011,7 +15011,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15070,7 +15070,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15129,7 +15129,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15188,7 +15188,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15247,7 +15247,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15306,7 +15306,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15365,7 +15365,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15424,7 +15424,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15483,7 +15483,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -15542,7 +15542,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15601,7 +15601,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -15660,7 +15660,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15719,7 +15719,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15778,7 +15778,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15837,7 +15837,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -15896,7 +15896,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -15955,7 +15955,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -16014,7 +16014,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -16073,7 +16073,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -16132,7 +16132,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -16191,7 +16191,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -16250,7 +16250,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -16309,7 +16309,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -16368,7 +16368,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -16427,7 +16427,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -16486,7 +16486,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -16545,7 +16545,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -16604,7 +16604,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -16663,7 +16663,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -16722,7 +16722,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -16781,7 +16781,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -16840,7 +16840,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -16899,7 +16899,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -16958,7 +16958,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17017,7 +17017,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17076,7 +17076,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17135,7 +17135,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17194,7 +17194,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17253,7 +17253,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17312,7 +17312,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17371,7 +17371,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17430,7 +17430,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17489,7 +17489,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17548,7 +17548,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17607,7 +17607,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -17666,7 +17666,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -17725,7 +17725,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -17784,7 +17784,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -17843,7 +17843,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -17902,7 +17902,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -17961,7 +17961,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18020,7 +18020,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -18079,7 +18079,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -18138,7 +18138,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18197,7 +18197,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -18256,7 +18256,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -18315,7 +18315,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18374,7 +18374,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18433,7 +18433,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18492,7 +18492,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -18551,7 +18551,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18610,7 +18610,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18669,7 +18669,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18728,7 +18728,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18787,7 +18787,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -18846,7 +18846,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -18905,7 +18905,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -18964,7 +18964,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19023,7 +19023,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19082,7 +19082,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -19141,7 +19141,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19200,7 +19200,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19259,7 +19259,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -19318,7 +19318,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -19377,7 +19377,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -19436,7 +19436,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19495,7 +19495,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19554,7 +19554,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19613,7 +19613,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19672,7 +19672,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19731,7 +19731,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19790,7 +19790,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19849,7 +19849,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19908,7 +19908,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -19967,7 +19967,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -20026,7 +20026,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -20085,7 +20085,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20144,7 +20144,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20203,7 +20203,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20262,7 +20262,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -20321,7 +20321,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20380,7 +20380,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20439,7 +20439,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20498,7 +20498,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -20557,7 +20557,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20616,7 +20616,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20675,7 +20675,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20734,7 +20734,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -20793,7 +20793,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -20852,7 +20852,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -20911,7 +20911,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -20970,7 +20970,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -21017,7 +21017,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21076,7 +21076,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21135,7 +21135,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -21194,7 +21194,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -21253,7 +21253,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21312,7 +21312,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21371,7 +21371,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -21430,7 +21430,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21489,7 +21489,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21548,7 +21548,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21607,7 +21607,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -21666,7 +21666,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -21725,7 +21725,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "pas de position",
           "won": false
         },
@@ -21784,7 +21784,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -21843,7 +21843,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -21902,7 +21902,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -21961,7 +21961,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -22020,7 +22020,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22079,7 +22079,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22138,7 +22138,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22197,7 +22197,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22256,7 +22256,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22315,7 +22315,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22374,7 +22374,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22433,7 +22433,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22492,7 +22492,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22551,7 +22551,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22610,7 +22610,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22669,7 +22669,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22728,7 +22728,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22787,7 +22787,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -22846,7 +22846,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22905,7 +22905,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -22964,7 +22964,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -23023,7 +23023,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -23082,7 +23082,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -23141,7 +23141,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -23200,7 +23200,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -23259,7 +23259,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -23318,7 +23318,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23377,7 +23377,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23436,7 +23436,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23495,7 +23495,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23554,7 +23554,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -23613,7 +23613,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23672,7 +23672,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -23731,7 +23731,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -23790,7 +23790,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23849,7 +23849,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23908,7 +23908,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -23967,7 +23967,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24026,7 +24026,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24085,7 +24085,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24144,7 +24144,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -24203,7 +24203,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24262,7 +24262,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24321,7 +24321,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24380,7 +24380,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -24439,7 +24439,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -24486,7 +24486,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -24545,7 +24545,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -24604,7 +24604,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24663,7 +24663,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24722,7 +24722,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24781,7 +24781,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24840,7 +24840,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -24899,7 +24899,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -24958,7 +24958,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -25017,7 +25017,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25076,7 +25076,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25135,7 +25135,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -25194,7 +25194,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -25253,7 +25253,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25312,7 +25312,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -25371,7 +25371,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -25430,7 +25430,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -25489,7 +25489,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -25548,7 +25548,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -25607,7 +25607,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25666,7 +25666,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25725,7 +25725,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25784,7 +25784,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25843,7 +25843,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25902,7 +25902,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -25961,7 +25961,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -26020,7 +26020,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26079,7 +26079,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26138,7 +26138,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -26197,7 +26197,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26256,7 +26256,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26315,7 +26315,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26374,7 +26374,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26433,7 +26433,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -26492,7 +26492,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -26551,7 +26551,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26610,7 +26610,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26669,7 +26669,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26728,7 +26728,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26787,7 +26787,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26846,7 +26846,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26905,7 +26905,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -26964,7 +26964,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -27023,7 +27023,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27082,7 +27082,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27141,7 +27141,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -27200,7 +27200,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27259,7 +27259,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27318,7 +27318,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27377,7 +27377,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27436,7 +27436,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -27501,7 +27501,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27572,7 +27572,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -27643,7 +27643,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -27714,7 +27714,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -27785,7 +27785,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -27856,7 +27856,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -27933,7 +27933,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -28010,7 +28010,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -28087,7 +28087,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -28164,7 +28164,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -28241,7 +28241,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28318,7 +28318,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28395,7 +28395,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28460,7 +28460,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28525,7 +28525,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28590,7 +28590,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28655,7 +28655,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28720,7 +28720,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -28785,7 +28785,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -28850,7 +28850,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -28915,7 +28915,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -28980,7 +28980,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -29045,7 +29045,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -29110,7 +29110,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -29175,7 +29175,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -29240,7 +29240,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29305,7 +29305,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29370,7 +29370,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -29435,7 +29435,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29500,7 +29500,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29565,7 +29565,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -29630,7 +29630,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29695,7 +29695,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29760,7 +29760,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -29825,7 +29825,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -29890,7 +29890,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -29955,7 +29955,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30020,7 +30020,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30085,7 +30085,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -30150,7 +30150,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -30215,7 +30215,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -30280,7 +30280,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -30345,7 +30345,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30410,7 +30410,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -30475,7 +30475,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30540,7 +30540,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -30605,7 +30605,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -30670,7 +30670,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30735,7 +30735,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30800,7 +30800,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -30865,7 +30865,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -30930,7 +30930,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -30995,7 +30995,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -31060,7 +31060,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -31125,7 +31125,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -31190,7 +31190,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31255,7 +31255,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -31320,7 +31320,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31385,7 +31385,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31450,7 +31450,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31515,7 +31515,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31580,7 +31580,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31645,7 +31645,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31710,7 +31710,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31775,7 +31775,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -31840,7 +31840,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31905,7 +31905,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -31970,7 +31970,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -32035,7 +32035,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32100,7 +32100,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32165,7 +32165,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32230,7 +32230,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -32295,7 +32295,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32360,7 +32360,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32425,7 +32425,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32490,7 +32490,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -32555,7 +32555,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -32620,7 +32620,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32685,7 +32685,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32750,7 +32750,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -32815,7 +32815,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -32880,7 +32880,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -32945,7 +32945,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33010,7 +33010,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -33075,7 +33075,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33140,7 +33140,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33205,7 +33205,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -33270,7 +33270,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -33335,7 +33335,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33400,7 +33400,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -33465,7 +33465,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -33530,7 +33530,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33595,7 +33595,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33660,7 +33660,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -33725,7 +33725,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -33790,7 +33790,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -33855,7 +33855,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -33920,7 +33920,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -33985,7 +33985,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -34050,7 +34050,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -34115,7 +34115,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -34180,7 +34180,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -34245,7 +34245,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -34310,7 +34310,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -34375,7 +34375,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -34440,7 +34440,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -34505,7 +34505,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -34570,7 +34570,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -34635,7 +34635,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -34700,7 +34700,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -34759,7 +34759,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -34818,7 +34818,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -34877,7 +34877,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -34936,7 +34936,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -34995,7 +34995,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -35054,7 +35054,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -35113,7 +35113,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -35172,7 +35172,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -35231,7 +35231,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -35290,7 +35290,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -35349,7 +35349,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -35408,7 +35408,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -35467,7 +35467,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         }
@@ -35520,7 +35520,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -35579,7 +35579,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -35638,7 +35638,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -35697,7 +35697,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -35756,7 +35756,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -35815,7 +35815,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -35874,7 +35874,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -35933,7 +35933,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -35992,7 +35992,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -36051,7 +36051,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -36110,7 +36110,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -36169,7 +36169,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -36228,7 +36228,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -36287,7 +36287,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -36346,7 +36346,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": false
         },
@@ -36405,7 +36405,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -36464,7 +36464,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -36523,7 +36523,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -36582,7 +36582,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -36641,7 +36641,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -36700,7 +36700,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -36759,7 +36759,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -36818,7 +36818,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -36877,7 +36877,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         },
@@ -36936,7 +36936,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": false
         }
@@ -36989,7 +36989,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -37048,7 +37048,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -37107,7 +37107,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -37166,7 +37166,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -37225,7 +37225,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -37284,7 +37284,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -37343,7 +37343,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -37402,7 +37402,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },
@@ -37461,7 +37461,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -37520,7 +37520,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "non",
           "won": true
         },
@@ -37579,7 +37579,7 @@
         },
         {
           "partyId": "conseil-federal",
-          "party": "Conseil federal",
+          "party": "Conseil fédéral",
           "recommendation": "oui",
           "won": true
         },

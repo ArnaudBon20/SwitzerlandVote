@@ -316,7 +316,7 @@ def normalize_party_name(raw: str) -> str:
     if folded.startswith("verts"):
         return "Verts"
     if "conseil federal" in folded:
-        return "Conseil federal"
+        return "Conseil fédéral"
 
     return clean
 
