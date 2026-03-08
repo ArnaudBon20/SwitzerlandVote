@@ -77,15 +77,6 @@ If BK is temporarily unavailable, the script falls back to local BK link cache (
 - `.github/workflows/build-data.yml`: dataset consistency check.
 - `.github/workflows/bk-results-refresh.yml`: scheduled BK refresh.
 
-## Run locally
-
-```bash
-cd /Users/arnaudbonvin/Documents/SwitzerlandVote
-python3 -m http.server 8000
-```
-
-Open [http://localhost:8000](http://localhost:8000).
-
 ## Update data manually
 
 1. Replace the source file:
