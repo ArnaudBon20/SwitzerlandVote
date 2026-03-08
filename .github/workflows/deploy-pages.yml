@@ -35,7 +35,9 @@ jobs:
         run: |
           python scripts/build_data.py \
             --input data/source/recommandations-de-vote-des-partis.xlsx \
-            --output data/votes.json
+            --output data/votes.json \
+            --refresh-bk-results \
+            --recent-year-window 2
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

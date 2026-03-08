@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-08T16:08:32+00:00",
+  "generatedAt": "2026-03-08T16:45:04+00:00",
   "sourceFile": "recommandations-de-vote-des-partis.xlsx",
   "stats": {
     "objects": 702,
     "fromYear": 1848,
     "toYear": 2026,
-    "withResult": 697,
-    "upcoming": 5
+    "withResult": 702,
+    "upcoming": 0
   },
   "parties": [
     {
@@ -64,9 +64,9 @@
       "liberteDeVote": 0,
       "neutre": 0,
       "pasDePosition": 7,
-      "wins": 426,
+      "wins": 431,
       "losses": 271,
-      "alignmentRate": 61.1
+      "alignmentRate": 61.4
     },
     {
       "partyId": "jlr",
@@ -77,9 +77,9 @@
       "liberteDeVote": 3,
       "neutre": 0,
       "pasDePosition": 0,
-      "wins": 108,
-      "losses": 45,
-      "alignmentRate": 70.6
+      "wins": 110,
+      "losses": 48,
+      "alignmentRate": 69.6
     },
     {
       "partyId": "le-centre",
@@ -90,9 +90,9 @@
       "liberteDeVote": 6,
       "neutre": 14,
       "pasDePosition": 0,
-      "wins": 471,
-      "losses": 156,
-      "alignmentRate": 75.1
+      "wins": 475,
+      "losses": 157,
+      "alignmentRate": 75.2
     },
     {
       "partyId": "pbd",
@@ -116,9 +116,9 @@
       "liberteDeVote": 2,
       "neutre": 10,
       "pasDePosition": 0,
-      "wins": 456,
+      "wins": 461,
       "losses": 201,
-      "alignmentRate": 69.4
+      "alignmentRate": 69.6
     },
     {
       "partyId": "pls",
@@ -155,9 +155,9 @@
       "liberteDeVote": 30,
       "neutre": 15,
       "pasDePosition": 0,
-      "wins": 353,
-      "losses": 312,
-      "alignmentRate": 53.1
+      "wins": 357,
+      "losses": 313,
+      "alignmentRate": 53.3
     },
     {
       "partyId": "pvl",
@@ -168,9 +168,9 @@
       "liberteDeVote": 5,
       "neutre": 0,
       "pasDePosition": 0,
-      "wins": 110,
-      "losses": 43,
-      "alignmentRate": 71.9
+      "wins": 114,
+      "losses": 44,
+      "alignmentRate": 72.2
     },
     {
       "partyId": "udc",
@@ -181,9 +181,9 @@
       "liberteDeVote": 5,
       "neutre": 8,
       "pasDePosition": 0,
-      "wins": 426,
-      "losses": 191,
-      "alignmentRate": 69.0
+      "wins": 427,
+      "losses": 195,
+      "alignmentRate": 68.6
     },
     {
       "partyId": "verts",
@@ -194,9 +194,9 @@
       "liberteDeVote": 16,
       "neutre": 2,
       "pasDePosition": 1,
-      "wins": 178,
-      "losses": 196,
-      "alignmentRate": 47.6
+      "wins": 182,
+      "losses": 197,
+      "alignmentRate": 48.0
     }
   ],
   "votes": [
@@ -27465,7 +27465,7 @@
       "id": "2007-002",
       "year": 2007,
       "object": "Loi fédérale sur l'assurance-invalidité",
-      "yesPercent": null,
+      "yesPercent": 59.1,
       "noPercent": 40.9,
       "result": "oui",
       "recommendations": [
@@ -34587,7 +34587,7 @@
       "id": "2020-008",
       "year": 2020,
       "object": "Initiative « Entreprises responsables – pour protéger l’être humain et l’environnement »",
-      "yesPercent": null,
+      "yesPercent": 50.7,
       "noPercent": 49.3,
       "result": "non",
       "recommendations": [
@@ -36304,8 +36304,8 @@
       "id": "2024-001",
       "year": 2024,
       "object": "13ème rente AVS",
-      "yesPercent": 58.2,
-      "noPercent": 41.8,
+      "yesPercent": 58.3,
+      "noPercent": 41.7,
       "result": "oui",
       "recommendations": [
         {
@@ -36363,8 +36363,8 @@
       "id": "2024-002",
       "year": 2024,
       "object": "Initiative sur les rentes",
-      "yesPercent": 25.3,
-      "noPercent": 74.7,
+      "yesPercent": 25.2,
+      "noPercent": 74.8,
       "result": "non",
       "recommendations": [
         {
@@ -36481,8 +36481,8 @@
       "id": "2024-004",
       "year": 2024,
       "object": "Initiative frein aux coûts",
-      "yesPercent": 37.23,
-      "noPercent": 62.77,
+      "yesPercent": 37.2,
+      "noPercent": 62.8,
       "result": "non",
       "recommendations": [
         {
@@ -36658,8 +36658,8 @@
       "id": "2024-007",
       "year": 2024,
       "object": "LPP",
-      "yesPercent": 36.97,
-      "noPercent": 63.03,
+      "yesPercent": 37.0,
+      "noPercent": 63.0,
       "result": "non",
       "recommendations": [
         {
@@ -36708,7 +36708,7 @@
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "oui",
-          "won": true
+          "won": false
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20240922/det671.html"
@@ -36717,8 +36717,8 @@
       "id": "2024-008",
       "year": 2024,
       "object": "Initiative sur la biodiversité",
-      "yesPercent": 32.88,
-      "noPercent": 67.12,
+      "yesPercent": 32.9,
+      "noPercent": 67.1,
       "result": "non",
       "recommendations": [
         {
@@ -36767,7 +36767,7 @@
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "non",
-          "won": false
+          "won": true
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20240922/det672.html"
@@ -36826,7 +36826,7 @@
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "oui",
-          "won": true
+          "won": false
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20241124/det673.html"
@@ -36835,8 +36835,8 @@
       "id": "2024-010",
       "year": 2024,
       "object": "Droit du bail (sous-location)",
-      "yesPercent": 48.42,
-      "noPercent": 51.58,
+      "yesPercent": 48.4,
+      "noPercent": 51.6,
       "result": "non",
       "recommendations": [
         {
@@ -36885,7 +36885,7 @@
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "oui",
-          "won": true
+          "won": false
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20241124/det674.html"
@@ -36894,8 +36894,8 @@
       "id": "2024-011",
       "year": 2024,
       "object": "Droit du bail (besoin propre)",
-      "yesPercent": 46.16,
-      "noPercent": 53.83,
+      "yesPercent": 46.2,
+      "noPercent": 53.8,
       "result": "non",
       "recommendations": [
         {
@@ -36947,8 +36947,8 @@
       "id": "2024-012",
       "year": 2024,
       "object": "EFAS",
-      "yesPercent": 53.31,
-      "noPercent": 46.69,
+      "yesPercent": 53.3,
+      "noPercent": 46.7,
       "result": "oui",
       "recommendations": [
         {
@@ -37006,8 +37006,8 @@
       "id": "2025-001",
       "year": 2025,
       "object": "Initiative pour la responsabilité environnementale",
-      "yesPercent": 69.8,
-      "noPercent": 30.2,
+      "yesPercent": 30.2,
+      "noPercent": 69.8,
       "result": "non",
       "recommendations": [
         {
@@ -37065,8 +37065,8 @@
       "id": "2025-002",
       "year": 2025,
       "object": "Arrêté fédéral relatif à l’impôt immobilier cantonal sur les résidences secondaires",
-      "yesPercent": 57.7,
-      "noPercent": 42.3,
+      "yesPercent": 57.73,
+      "noPercent": 42.27,
       "result": "oui",
       "recommendations": [
         {
@@ -37124,8 +37124,8 @@
       "id": "2025-003",
       "year": 2025,
       "object": "Loi sur l’e-ID",
-      "yesPercent": 50.4,
-      "noPercent": 49.6,
+      "yesPercent": 50.39,
+      "noPercent": 49.61,
       "result": "oui",
       "recommendations": [
         {
@@ -37301,57 +37301,57 @@
       "id": "2026-001",
       "year": 2026,
       "object": "Initiative \"Oui à une monnaie suisse libre et indépendante sous forme de pièces ou de billets (l’argent liquide, c’est la liberté)»",
-      "yesPercent": null,
-      "noPercent": null,
-      "result": null,
+      "yesPercent": 45.6,
+      "noPercent": 54.4,
+      "result": "non",
       "recommendations": [
         {
           "partyId": "plr",
           "party": "PLR",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "ps",
           "party": "PS",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "le-centre",
           "party": "Le Centre",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "udc",
           "party": "UDC",
           "recommendation": "oui",
-          "won": null
+          "won": false
         },
         {
           "partyId": "pvl",
           "party": "PVL",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "verts",
           "party": "Verts",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "conseil-federal",
           "party": "Conseil federal",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "non",
-          "won": null
+          "won": true
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
@@ -37360,57 +37360,57 @@
       "id": "2026-002",
       "year": 2026,
       "object": "Contre-projet direct (arrêté fédéral sur la monnaie suisse et l’approvisionnement en numéraire)",
-      "yesPercent": null,
-      "noPercent": null,
-      "result": null,
+      "yesPercent": 73.41,
+      "noPercent": 26.59,
+      "result": "oui",
       "recommendations": [
         {
           "partyId": "plr",
           "party": "PLR",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "ps",
           "party": "PS",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "le-centre",
           "party": "Le Centre",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "udc",
           "party": "UDC",
           "recommendation": "non",
-          "won": null
+          "won": false
         },
         {
           "partyId": "pvl",
           "party": "PVL",
           "recommendation": "non",
-          "won": null
+          "won": false
         },
         {
           "partyId": "verts",
           "party": "Verts",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "conseil-federal",
           "party": "Conseil federal",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "oui",
-          "won": null
+          "won": true
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
@@ -37419,57 +37419,57 @@
       "id": "2026-003",
       "year": 2026,
       "object": "Initiative populaire « 200 francs, ça suffit ! » (initiative SSR)",
-      "yesPercent": null,
-      "noPercent": null,
-      "result": null,
+      "yesPercent": 38.09,
+      "noPercent": 61.91,
+      "result": "non",
       "recommendations": [
         {
           "partyId": "plr",
           "party": "PLR",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "ps",
           "party": "PS",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "le-centre",
           "party": "Le Centre",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "udc",
           "party": "UDC",
           "recommendation": "oui",
-          "won": null
+          "won": false
         },
         {
           "partyId": "pvl",
           "party": "PVL",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "verts",
           "party": "Verts",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "conseil-federal",
           "party": "Conseil federal",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "oui",
-          "won": null
+          "won": false
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
@@ -37478,57 +37478,57 @@
       "id": "2026-004",
       "year": 2026,
       "object": "Initiative populaire « Pour une politique énergétique et climatique équitable : investir pour la prospérité, le travail et l’environnement (initiative pour un fonds climat) »",
-      "yesPercent": null,
-      "noPercent": null,
-      "result": null,
+      "yesPercent": 29.27,
+      "noPercent": 70.73,
+      "result": "non",
       "recommendations": [
         {
           "partyId": "plr",
           "party": "PLR",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "ps",
           "party": "PS",
           "recommendation": "oui",
-          "won": null
+          "won": false
         },
         {
           "partyId": "le-centre",
           "party": "Le Centre",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "udc",
           "party": "UDC",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "pvl",
           "party": "PVL",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "verts",
           "party": "Verts",
           "recommendation": "oui",
-          "won": null
+          "won": false
         },
         {
           "partyId": "conseil-federal",
           "party": "Conseil federal",
           "recommendation": "non",
-          "won": null
+          "won": true
         },
         {
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "non",
-          "won": null
+          "won": true
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
@@ -37537,57 +37537,57 @@
       "id": "2026-005",
       "year": 2026,
       "object": "Loi fédérale sur l’imposition individuelle",
-      "yesPercent": null,
-      "noPercent": null,
-      "result": null,
+      "yesPercent": 54.22,
+      "noPercent": 45.78,
+      "result": "oui",
       "recommendations": [
         {
           "partyId": "plr",
           "party": "PLR",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "ps",
           "party": "PS",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "le-centre",
           "party": "Le Centre",
           "recommendation": "non",
-          "won": null
+          "won": false
         },
         {
           "partyId": "udc",
           "party": "UDC",
           "recommendation": "non",
-          "won": null
+          "won": false
         },
         {
           "partyId": "pvl",
           "party": "PVL",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "verts",
           "party": "Verts",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "conseil-federal",
           "party": "Conseil federal",
           "recommendation": "oui",
-          "won": null
+          "won": true
         },
         {
           "partyId": "jlr",
           "party": "JLR",
           "recommendation": "oui",
-          "won": null
+          "won": true
         }
       ],
       "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"

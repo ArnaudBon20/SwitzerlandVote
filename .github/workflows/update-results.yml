@@ -1,0 +1,72 @@
+name: Update BK Results
+
+on:
+  schedule:
+    - cron: "30 18,20 * * 0"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force update even if today is not an official voting Sunday"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check if today is a federal voting day
+        id: gate
+        run: |
+          run_update=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            run_update=true
+          else
+            is_voting_day="$(python scripts/is_votation_sunday.py)"
+            echo "Voting day according to BK calendar: ${is_voting_day}"
+            if [ "${is_voting_day}" = "true" ]; then
+              run_update=true
+            fi
+          fi
+          echo "run_update=${run_update}" >> "$GITHUB_OUTPUT"
+
+      - name: Regenerate dataset with BK official pages
+        if: steps.gate.outputs.run_update == 'true'
+        run: |
+          python scripts/build_data.py \
+            --input data/source/recommandations-de-vote-des-partis.xlsx \
+            --output data/votes.json \
+            --refresh-bk-results \
+            --recent-year-window 2
+
+      - name: Commit and push updated dataset
+        if: steps.gate.outputs.run_update == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/votes.json data/source/bk-objects-links.json
+          if git diff --cached --quiet; then
+            echo "No update to commit."
+            exit 0
+          fi
+
+          stamp="$(TZ=Europe/Zurich date '+%Y-%m-%d %H:%M %Z')"
+          git commit -m "Auto-update BK results (${stamp})"
+          git push origin main
+
+      - name: Skip (not a voting day)
+        if: steps.gate.outputs.run_update != 'true'
+        run: echo "No update: today is not listed as a federal voting date on BK."

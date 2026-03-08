@@ -22,6 +22,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
   - votations les plus refusées;
   - résultats par parti et par législature (découpage électoral officiel, y compris la législature 1917-1919).
 - Pipeline de données reproductible à partir du fichier source Excel.
+- Mise à jour automatique des résultats et statistiques le soir des dimanches de votation via GitHub Actions (calendrier BK officiel).
 
 ## Structure du projet
 
@@ -31,10 +32,14 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json` avec:
   - fusion des feuilles `JLR` et `PRD-PLS`;
   - enrichissement des objets avec `url` BK (fetch live + fallback sur cache local);
+  - enrichissement automatique des résultats BK récents (`yesPercent`, `noPercent`, `result`);
+  - recalcul automatique des statuts `won/perdu` pour les recommandations oui/non;
   - normalisation des recommandations (oui/non/liberté de vote/neutre/pas de position).
+- `scripts/is_votation_sunday.py`: vérification de la date de votation selon le calendrier BK officiel.
 - `data/votes.json`: base de données consommée par le frontend.
 - `.github/workflows/deploy-pages.yml`: publication automatique GitHub Pages.
 - `.github/workflows/build-data.yml`: vérification que `data/votes.json` est synchronisé.
+- `.github/workflows/update-results.yml`: rafraîchissement automatique des résultats BK les soirs de votation.
 
 ## Lancer localement
 
@@ -55,6 +60,16 @@ Puis ouvrir `http://localhost:8000`.
 ./scripts/build_data.py --input data/source/recommandations-de-vote-des-partis.xlsx --output data/votes.json
 ```
 
+Pour forcer le rafraîchissement des résultats officiels BK récents:
+
+```bash
+./scripts/build_data.py \
+  --input data/source/recommandations-de-vote-des-partis.xlsx \
+  --output data/votes.json \
+  --refresh-bk-results \
+  --recent-year-window 2
+```
+
 3. Commit + push sur `main`.
 
 Le workflow GitHub Pages republie automatiquement le site.
@@ -63,6 +78,13 @@ Notes:
 
 - La génération tente de récupérer les liens BK en ligne et met à jour `data/source/bk-objects-links.json`.
 - Si le réseau est indisponible, le script utilise automatiquement le cache local BK existant.
+
+## Automatisation du soir de votation
+
+- Le workflow `.github/workflows/update-results.yml` tourne chaque dimanche soir (`18:30` et `20:30` UTC).
+- Avant toute mise à jour, il vérifie la date du jour (timezone `Europe/Zurich`) via le calendrier BK et le répertoire chronologique BK.
+- Si oui, il régénère `data/votes.json` avec les résultats BK publiés, commit et push sur `main`.
+- Le push déclenche ensuite automatiquement la publication GitHub Pages.
 
 ## Ajouter rapidement de nouveaux objets de votation
 

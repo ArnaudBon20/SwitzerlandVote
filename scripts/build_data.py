@@ -34,6 +34,8 @@ SOURCE_DEFAULT = Path("data/source/recommandations-de-vote-des-partis.xlsx")
 OUTPUT_DEFAULT = Path("data/votes.json")
 BK_CHRONOLOGY_URL = "https://www.bk.admin.ch/ch/f/pore/va/vab_2_2_4_1_gesamt.html"
 BK_LINKS_CACHE_DEFAULT = Path("data/source/bk-objects-links.json")
+BK_INDEX_URL_TEMPLATE = "https://www.bk.admin.ch/ch/f/pore/va/{date_code}/index.html"
+BK_DATE_CODE_PATTERN = re.compile(r"/va/([0-9]{8})/")
 
 MATCH_YEAR_OFFSETS = (0, -1, 1, -2, 2, -3, 3)
 GENERIC_MATCH_WORDS = {
@@ -44,6 +46,30 @@ GENERIC_MATCH_WORDS = {
     "article",
     "constitutionnel",
     "loi",
+}
+MATCH_STOPWORDS = {
+    "a",
+    "au",
+    "aux",
+    "ce",
+    "ces",
+    "cette",
+    "d",
+    "de",
+    "des",
+    "du",
+    "en",
+    "et",
+    "l",
+    "la",
+    "le",
+    "les",
+    "ou",
+    "par",
+    "pour",
+    "sur",
+    "une",
+    "un",
 }
 # Known workbook typo in JLR sheet (2025 line).
 SUPPLEMENTAL_OBJECT_ALIASES = {
@@ -100,6 +126,23 @@ def normalize_match_text(value: str) -> str:
 def build_match_key(value: str) -> str:
     words = [word for word in normalize_match_text(value).split() if word not in GENERIC_MATCH_WORDS]
     return "".join(words)
+
+
+def build_match_tokens(value: str) -> set[str]:
+    tokens: set[str] = set()
+    for token in normalize_match_text(value).split():
+        if token in GENERIC_MATCH_WORDS or token in MATCH_STOPWORDS:
+            continue
+        if len(token) < 2:
+            continue
+        tokens.add(token)
+    return tokens
+
+
+def clean_html_text(value: str) -> str:
+    plain = re.sub(r"<[^>]+>", " ", value)
+    plain = html.unescape(plain).replace("\xa0", " ")
+    return normalize_spaces(plain)
 
 
 def col_to_index(cell_ref: str) -> int:
@@ -314,6 +357,25 @@ def normalize_result(raw: str) -> str | None:
     if lowered == "oui":
         return "oui"
     if lowered == "non":
+        return "non"
+    return None
+
+
+def normalize_bk_result(raw: str) -> str | None:
+    lowered = ascii_fold(normalize_spaces(raw)).lower()
+    if "le projet a ete accepte" in lowered:
+        return "oui"
+    if "le projet a ete rejete" in lowered:
+        return "non"
+    return None
+
+
+def infer_result_from_percentages(yes_percent: float | None, no_percent: float | None) -> str | None:
+    if yes_percent is None or no_percent is None:
+        return None
+    if yes_percent > no_percent:
+        return "oui"
+    if no_percent > yes_percent:
         return "non"
     return None
 
@@ -785,6 +847,246 @@ def fix_recent_bk_broken_links(votes: list[dict[str, Any]], recent_year_window: 
             vote["url"] = fallback
 
 
+def fetch_text(url: str, timeout: int = 30) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "SwitzerlandVote/1.0"})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read().decode("utf-8", "ignore")
+
+
+def extract_bk_date_code(url: str) -> str | None:
+    match = BK_DATE_CODE_PATTERN.search(url)
+    if match:
+        return match.group(1)
+    return None
+
+
+def extract_det_number(url: str) -> str | None:
+    match = re.search(r"/det([0-9]+)\.html$", url)
+    if match:
+        return match.group(1)
+    return None
+
+
+def parse_bk_vote_day_entries(content: str) -> list[dict[str, Any]]:
+    section_pattern = re.compile(
+        r"<h3[^>]*>(.*?)</h3>(.*?)(?=<h3[^>]*>|<div class=\"infoblock\"|</article>)",
+        re.IGNORECASE | re.DOTALL,
+    )
+    people_row_pattern = re.compile(r"<tr>\s*<td[^>]*>\s*Peuple\s*</td>.*?</tr>", re.IGNORECASE | re.DOTALL)
+    cell_pattern = re.compile(r"<td[^>]*>(.*?)</td>", re.IGNORECASE | re.DOTALL)
+    can_pattern = re.compile(r'href="\./can([0-9]+)\.html"', re.IGNORECASE)
+    det_pattern = re.compile(r'href="\./det([0-9]+)\.html"', re.IGNORECASE)
+
+    entries: list[dict[str, Any]] = []
+    for title_html, block_html in section_pattern.findall(content):
+        title = clean_html_text(title_html)
+        if not title:
+            continue
+
+        yes_percent: float | None = None
+        no_percent: float | None = None
+
+        people_row = people_row_pattern.search(block_html)
+        if people_row:
+            cells = [clean_html_text(value) for value in cell_pattern.findall(people_row.group(0))]
+            if len(cells) >= 3:
+                yes_percent = parse_percent(cells[-2])
+                no_percent = parse_percent(cells[-1])
+
+        result = normalize_bk_result(block_html)
+        if result is None:
+            result = infer_result_from_percentages(yes_percent, no_percent)
+
+        can_match = can_pattern.search(block_html)
+        det_match = det_pattern.search(block_html)
+
+        entries.append(
+            {
+                "title": title,
+                "key": build_match_key(title),
+                "tokens": build_match_tokens(title),
+                "norm": normalize_match_text(title),
+                "yesPercent": yes_percent,
+                "noPercent": no_percent,
+                "result": result,
+                "canId": can_match.group(1) if can_match else None,
+                "detId": det_match.group(1) if det_match else None,
+            }
+        )
+
+    return entries
+
+
+def select_entry_candidates(
+    vote: dict[str, Any], entries: list[dict[str, Any]], used_indices: set[int]
+) -> list[int]:
+    candidates = [idx for idx in range(len(entries)) if idx not in used_indices]
+
+    det_number = extract_det_number(vote.get("url", "") or "")
+    if not det_number:
+        return candidates
+
+    det_candidates = [
+        idx
+        for idx in candidates
+        if entries[idx].get("detId") == det_number
+        or (entries[idx].get("canId") is not None and str(entries[idx]["canId"]).startswith(det_number))
+    ]
+    if det_candidates:
+        return det_candidates
+    return candidates
+
+
+def match_vote_to_bk_entry(vote: dict[str, Any], entries: list[dict[str, Any]], used_indices: set[int]) -> int | None:
+    candidates = select_entry_candidates(vote, entries, used_indices)
+    if not candidates:
+        return None
+    if len(candidates) == 1:
+        return candidates[0]
+
+    vote_key = build_match_key(vote["object"])
+    vote_tokens = build_match_tokens(vote["object"])
+    vote_norm = normalize_match_text(vote["object"])
+
+    if "question subsidiaire" in vote_norm:
+        question_candidates = [idx for idx in candidates if "question subsidiaire" in entries[idx]["norm"]]
+        if question_candidates:
+            candidates = question_candidates
+    else:
+        non_question_candidates = [idx for idx in candidates if "question subsidiaire" not in entries[idx]["norm"]]
+        if non_question_candidates:
+            candidates = non_question_candidates
+
+    if "contre projet" in vote_norm:
+        counterproject_candidates = [idx for idx in candidates if "contre projet" in entries[idx]["norm"]]
+        if counterproject_candidates:
+            candidates = counterproject_candidates
+
+    if len(candidates) == 1:
+        return candidates[0]
+
+    exact_key = [idx for idx in candidates if entries[idx]["key"] and entries[idx]["key"] == vote_key]
+    if len(exact_key) == 1:
+        return exact_key[0]
+    if len(exact_key) > 1:
+        candidates = exact_key
+
+    best_idx: int | None = None
+    best_token_score = 0.0
+    best_seq_score = 0.0
+    best_score = 0.0
+
+    for idx in candidates:
+        entry = entries[idx]
+        entry_tokens = entry.get("tokens", set())
+        token_score = 0.0
+        if vote_tokens and entry_tokens:
+            token_score = len(vote_tokens.intersection(entry_tokens)) / len(vote_tokens)
+
+        seq_score = SequenceMatcher(None, vote_norm, entry["norm"]).ratio()
+        score = token_score * 0.7 + seq_score * 0.3
+
+        if score > best_score:
+            best_score = score
+            best_idx = idx
+            best_token_score = token_score
+            best_seq_score = seq_score
+
+    if best_idx is None:
+        return None
+
+    if best_token_score >= 0.45 or best_seq_score >= 0.82:
+        return best_idx
+
+    det_number = extract_det_number(vote.get("url", "") or "")
+    if det_number and best_token_score >= 0.3:
+        return best_idx
+
+    return None
+
+
+def refresh_recent_bk_results(votes: list[dict[str, Any]], recent_year_window: int = 2) -> None:
+    if not votes:
+        return
+
+    max_year = max(vote["year"] for vote in votes)
+    candidates = [
+        vote
+        for vote in votes
+        if vote.get("url")
+        and (
+            vote["year"] >= max_year - recent_year_window
+            or vote.get("result") is None
+            or vote.get("yesPercent") is None
+            or vote.get("noPercent") is None
+        )
+    ]
+
+    by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for vote in candidates:
+        date_code = extract_bk_date_code(vote["url"])
+        if date_code is None:
+            continue
+        by_date[date_code].append(vote)
+
+    entries_by_date: dict[str, list[dict[str, Any]]] = {}
+    for date_code in by_date:
+        index_url = BK_INDEX_URL_TEMPLATE.format(date_code=date_code)
+        try:
+            content = fetch_text(index_url, timeout=20)
+        except Exception:
+            continue
+        entries = parse_bk_vote_day_entries(content)
+        if entries:
+            entries_by_date[date_code] = entries
+
+    for date_code, date_votes in by_date.items():
+        entries = entries_by_date.get(date_code, [])
+        if not entries:
+            continue
+
+        used_indices: set[int] = set()
+        for vote in date_votes:
+            matched_idx = match_vote_to_bk_entry(vote, entries, used_indices)
+            if matched_idx is None:
+                continue
+
+            entry = entries[matched_idx]
+            used_indices.add(matched_idx)
+
+            if entry["yesPercent"] is not None:
+                vote["yesPercent"] = entry["yesPercent"]
+            if entry["noPercent"] is not None:
+                vote["noPercent"] = entry["noPercent"]
+            if entry["result"] is not None:
+                vote["result"] = entry["result"]
+
+
+def refresh_recommendation_outcomes(
+    votes: list[dict[str, Any]], *, overwrite_recent_year_window: int | None = None
+) -> None:
+    if not votes:
+        return
+
+    max_year = max(vote["year"] for vote in votes)
+
+    for vote in votes:
+        overwrite_vote = (
+            overwrite_recent_year_window is not None and vote["year"] >= max_year - overwrite_recent_year_window
+        )
+        if not overwrite_vote:
+            continue
+        result = vote.get("result")
+        for recommendation in vote["recommendations"]:
+            rec_value = recommendation.get("recommendation")
+            if rec_value not in {"oui", "non"}:
+                continue
+            if result in {"oui", "non"}:
+                recommendation["won"] = rec_value == result
+            else:
+                recommendation["won"] = None
+
+
 def parse_records(rows: list[list[str]], source_name: str) -> dict[str, Any]:
     if not rows:
         raise ValueError("No data rows found")
@@ -918,6 +1220,17 @@ def main() -> None:
         default="recommand",
         help="Sheet name hint (used for XLSX only, case-insensitive contains match)",
     )
+    parser.add_argument(
+        "--refresh-bk-results",
+        action="store_true",
+        help="Refresh recent yes/no percentages and outcomes from official BK vote-day pages.",
+    )
+    parser.add_argument(
+        "--recent-year-window",
+        type=int,
+        default=2,
+        help="Year window (relative to max year in dataset) for BK refresh/link fallback checks.",
+    )
     args = parser.parse_args()
 
     source = args.input
@@ -932,7 +1245,11 @@ def main() -> None:
         merge_supplemental_recommendations(payload["votes"], supplemental_records)
 
     attach_bk_urls(payload["votes"], load_bk_vote_links(BK_LINKS_CACHE_DEFAULT))
-    fix_recent_bk_broken_links(payload["votes"])
+    if args.refresh_bk_results:
+        refresh_recent_bk_results(payload["votes"], recent_year_window=args.recent_year_window)
+    fix_recent_bk_broken_links(payload["votes"], recent_year_window=args.recent_year_window)
+    overwrite_window = args.recent_year_window if args.refresh_bk_results else None
+    refresh_recommendation_outcomes(payload["votes"], overwrite_recent_year_window=overwrite_window)
     payload = build_payload(payload["votes"], source.name)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
