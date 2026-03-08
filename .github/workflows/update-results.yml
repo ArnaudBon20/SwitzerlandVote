@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: "30 18,20 * * 0"
   workflow_dispatch:
-    inputs:
-      force:
-        description: "Force update even if today is not an official voting Sunday"
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
@@ -31,7 +25,7 @@ jobs:
         id: gate
         run: |
           run_update=false
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             run_update=true
           else
             is_voting_day="$(python scripts/is_votation_sunday.py)"
