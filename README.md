@@ -9,6 +9,10 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - Recherche plein texte sur les objets de votation.
 - Filtres par période, résultat, parti et type de recommandation.
 - Vue synthétique des partis (alignement gagné/perdu sur la sélection).
+- Fusion automatique des recommandations historiques complémentaires:
+  - JLR;
+  - Parti radical (PRD);
+  - Parti libéral (PLS).
 - Onglet **Statistiques** avec:
   - votations les plus acceptées;
   - votations les plus refusées;
@@ -19,7 +23,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 
 - `index.html`, `styles.css`, `app.js`: interface web statique.
 - `data/source/recommandations-de-vote-des-partis.xlsx`: source brute.
-- `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json`.
+- `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json` (avec fusion des feuilles `JLR` et `PRD-PLS`).
 - `data/votes.json`: base de données consommée par le frontend.
 - `.github/workflows/deploy-pages.yml`: publication automatique GitHub Pages.
 - `.github/workflows/build-data.yml`: vérification que `data/votes.json` est synchronisé.

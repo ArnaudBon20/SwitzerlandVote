@@ -15,6 +15,7 @@ import unicodedata
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 from zipfile import ZipFile
@@ -29,6 +30,21 @@ XML_NS = {
 SOURCE_DEFAULT = Path("data/source/recommandations-de-vote-des-partis.xlsx")
 OUTPUT_DEFAULT = Path("data/votes.json")
 
+MATCH_YEAR_OFFSETS = (0, -1, 1, -2, 2, -3, 3)
+GENERIC_MATCH_WORDS = {
+    "initiative",
+    "populaire",
+    "arrete",
+    "federal",
+    "article",
+    "constitutionnel",
+    "loi",
+}
+# Known workbook typo in JLR sheet (2025 line).
+SUPPLEMENTAL_OBJECT_ALIASES = {
+    (2025, "initiative environnement respsonsable"): "initiative pour la responsabilite environnementale",
+}
+
 
 @dataclass(frozen=True)
 class PartyColumn:
@@ -36,6 +52,14 @@ class PartyColumn:
     party_name: str
     recommendation_idx: int
     won_idx: int | None
+
+
+@dataclass(frozen=True)
+class SupplementalPartyColumn:
+    party_id: str
+    party_name: str
+    recommendation_headers: tuple[str, ...]
+    won_headers: tuple[str, ...] = ()
 
 
 def strip_text(value: Any) -> str:
@@ -57,6 +81,20 @@ def normalize_key(value: str) -> str:
     folded = ascii_fold(value).lower()
     folded = re.sub(r"[^a-z0-9]+", "-", folded)
     return folded.strip("-")
+
+
+def normalize_match_text(value: str) -> str:
+    text = ascii_fold(normalize_spaces(value)).lower()
+    text = text.replace("’", "'")
+    text = text.replace("«", " ").replace("»", " ").replace("“", " ").replace("”", " ")
+    text = re.sub(r"\([^)]*\)", " ", text)
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return " ".join(text.split())
+
+
+def build_match_key(value: str) -> str:
+    words = [word for word in normalize_match_text(value).split() if word not in GENERIC_MATCH_WORDS]
+    return "".join(words)
 
 
 def col_to_index(cell_ref: str) -> int:
@@ -197,6 +235,15 @@ def find_column(headers: list[str], candidates: list[str]) -> int | None:
     return None
 
 
+def find_header_row(rows: list[list[str]], required_tokens: list[str]) -> int:
+    folded_required = [ascii_fold(token).lower() for token in required_tokens]
+    for idx, row in enumerate(rows[:40]):
+        folded_row = [ascii_fold(cell).lower() for cell in row]
+        if all(any(token in cell for cell in folded_row) for token in folded_required):
+            return idx
+    return 0
+
+
 def is_win_column(header: str) -> bool:
     folded = ascii_fold(header).lower()
     return folded.startswith("gagne/perdu")
@@ -301,6 +348,277 @@ def get_cell(row: list[str], idx: int | None) -> str:
     if idx < 0 or idx >= len(row):
         return ""
     return strip_text(row[idx])
+
+
+def build_party_summaries(votes: list[dict[str, Any]]) -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
+    parties: dict[str, str] = {}
+    for vote in votes:
+        for rec in vote["recommendations"]:
+            party_id = strip_text(rec.get("partyId"))
+            party_name = strip_text(rec.get("party"))
+            if not party_id or not party_name:
+                continue
+            parties.setdefault(party_id, party_name)
+
+    sorted_parties = sorted(
+        [{"id": party_id, "name": party_name} for party_id, party_name in parties.items()],
+        key=lambda item: item["name"],
+    )
+
+    party_stats: dict[str, dict[str, Any]] = {}
+    for party in sorted_parties:
+        party_stats[party["id"]] = {
+            "partyId": party["id"],
+            "party": party["name"],
+            "recommendations": 0,
+            "oui": 0,
+            "non": 0,
+            "liberteDeVote": 0,
+            "neutre": 0,
+            "pasDePosition": 0,
+            "wins": 0,
+            "losses": 0,
+            "alignmentRate": None,
+        }
+
+    for vote in votes:
+        for rec in vote["recommendations"]:
+            stats = party_stats.get(strip_text(rec.get("partyId")))
+            if stats is None:
+                continue
+
+            recommendation = rec.get("recommendation")
+            if recommendation is not None:
+                stats["recommendations"] += 1
+                if recommendation == "oui":
+                    stats["oui"] += 1
+                elif recommendation == "non":
+                    stats["non"] += 1
+                elif recommendation == "liberte de vote":
+                    stats["liberteDeVote"] += 1
+                elif recommendation == "neutre":
+                    stats["neutre"] += 1
+                elif recommendation == "pas de position":
+                    stats["pasDePosition"] += 1
+
+            won = rec.get("won")
+            if won is True:
+                stats["wins"] += 1
+            elif won is False:
+                stats["losses"] += 1
+
+    for stats in party_stats.values():
+        outcomes = stats["wins"] + stats["losses"]
+        if outcomes > 0:
+            stats["alignmentRate"] = round(stats["wins"] / outcomes * 100, 1)
+
+    return sorted_parties, list(party_stats.values())
+
+
+def build_payload(votes: list[dict[str, Any]], source_name: str) -> dict[str, Any]:
+    years = [vote["year"] for vote in votes]
+    sorted_parties, party_stats = build_party_summaries(votes)
+    return {
+        "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "sourceFile": source_name,
+        "stats": {
+            "objects": len(votes),
+            "fromYear": min(years),
+            "toYear": max(years),
+            "withResult": sum(1 for vote in votes if vote["result"] is not None),
+            "upcoming": sum(1 for vote in votes if vote["result"] is None),
+        },
+        "parties": sorted_parties,
+        "partyStats": party_stats,
+        "votes": votes,
+    }
+
+
+def parse_supplemental_records(
+    rows: list[list[str]],
+    *,
+    required_headers: list[str],
+    subject_headers: list[str],
+    party_columns: list[SupplementalPartyColumn],
+) -> list[dict[str, Any]]:
+    if not rows:
+        return []
+
+    header_idx = find_header_row(rows, required_headers)
+    headers = [normalize_spaces(cell) for cell in rows[header_idx]]
+    subject_idx = find_column(headers, subject_headers)
+    if subject_idx is None:
+        return []
+
+    year_idx = max(0, subject_idx - 1)
+
+    party_indices: list[tuple[SupplementalPartyColumn, int | None, int | None]] = []
+    for party in party_columns:
+        recommendation_idx = find_column(headers, list(party.recommendation_headers))
+        won_idx = find_column(headers, list(party.won_headers)) if party.won_headers else None
+        if recommendation_idx is None and won_idx is None:
+            continue
+        party_indices.append((party, recommendation_idx, won_idx))
+
+    if not party_indices:
+        return []
+
+    records: list[dict[str, Any]] = []
+    current_year: int | None = None
+
+    for row in rows[header_idx + 1 :]:
+        year_cell = get_cell(row, year_idx)
+        if year_cell:
+            try:
+                current_year = int(float(year_cell))
+            except ValueError:
+                pass
+
+        subject = normalize_spaces(get_cell(row, subject_idx))
+        if not subject or subject.startswith("*") or current_year is None:
+            continue
+
+        recommendations = []
+        for party, recommendation_idx, won_idx in party_indices:
+            recommendation = normalize_recommendation(get_cell(row, recommendation_idx))
+            won = normalize_won(get_cell(row, won_idx))
+            if recommendation is None and won is None:
+                continue
+            recommendations.append(
+                {
+                    "partyId": party.party_id,
+                    "party": party.party_name,
+                    "recommendation": recommendation,
+                    "won": won,
+                }
+            )
+
+        if recommendations:
+            records.append({"year": current_year, "object": subject, "recommendations": recommendations})
+
+    return records
+
+
+def collect_supplemental_records_from_xlsx(path: Path) -> list[dict[str, Any]]:
+    jlr_rows = parse_xlsx_rows(path, sheet_hint="JLR")
+    prd_pls_rows = parse_xlsx_rows(path, sheet_hint="PRD-PLS")
+
+    jlr_records = parse_supplemental_records(
+        jlr_rows,
+        required_headers=["Sujets de votations", "JLR"],
+        subject_headers=["Sujets de votations", "Objet"],
+        party_columns=[
+            SupplementalPartyColumn(
+                party_id="jlr",
+                party_name="JLR",
+                recommendation_headers=("JLR CH", "JLR"),
+                won_headers=("Gagne/perdu", "Gagné/perdu"),
+            )
+        ],
+    )
+
+    prd_pls_records = parse_supplemental_records(
+        prd_pls_rows,
+        required_headers=["Objet", "PRD", "PLS"],
+        subject_headers=["Objet", "Sujets de votations"],
+        party_columns=[
+            SupplementalPartyColumn(
+                party_id="prd",
+                party_name="PRD",
+                recommendation_headers=("PRD",),
+            ),
+            SupplementalPartyColumn(
+                party_id="pls",
+                party_name="PLS",
+                recommendation_headers=("PLS",),
+            ),
+        ],
+    )
+
+    return jlr_records + prd_pls_records
+
+
+def build_vote_lookup(votes: list[dict[str, Any]]) -> tuple[dict[tuple[int, str], list[int]], dict[int, list[int]], dict[int, str]]:
+    by_year_key: dict[tuple[int, str], list[int]] = defaultdict(list)
+    by_year: dict[int, list[int]] = defaultdict(list)
+    normalized_objects: dict[int, str] = {}
+
+    for idx, vote in enumerate(votes):
+        by_year_key[(vote["year"], build_match_key(vote["object"]))].append(idx)
+        by_year[vote["year"]].append(idx)
+        normalized_objects[idx] = normalize_match_text(vote["object"])
+
+    return by_year_key, by_year, normalized_objects
+
+
+def pick_best_index(indices: list[int], votes: list[dict[str, Any]], reference_year: int) -> int:
+    if len(indices) == 1:
+        return indices[0]
+    return sorted(indices, key=lambda idx: (abs(votes[idx]["year"] - reference_year), votes[idx]["id"]))[0]
+
+
+def find_best_vote_match(
+    record: dict[str, Any],
+    votes: list[dict[str, Any]],
+    by_year_key: dict[tuple[int, str], list[int]],
+    by_year: dict[int, list[int]],
+    normalized_objects: dict[int, str],
+) -> int | None:
+    year = record["year"]
+    raw_object = record["object"]
+    object_norm = normalize_match_text(raw_object)
+    alias = SUPPLEMENTAL_OBJECT_ALIASES.get((year, object_norm))
+    if alias:
+        object_norm = alias
+
+    match_key = build_match_key(object_norm)
+
+    for offset in MATCH_YEAR_OFFSETS:
+        indices = by_year_key.get((year + offset, match_key))
+        if indices:
+            return pick_best_index(indices, votes, year)
+
+    # Fuzzy fallback for remaining spelling/typographic drifts.
+    best_idx: int | None = None
+    best_score = 0.0
+    for candidate_year in range(year - 3, year + 4):
+        for idx in by_year.get(candidate_year, []):
+            ratio = SequenceMatcher(None, object_norm, normalized_objects[idx]).ratio()
+            if ratio > best_score:
+                best_score = ratio
+                best_idx = idx
+
+    if best_idx is not None and best_score >= 0.95:
+        return best_idx
+    return None
+
+
+def merge_supplemental_recommendations(votes: list[dict[str, Any]], supplemental_records: list[dict[str, Any]]) -> None:
+    if not supplemental_records:
+        return
+
+    by_year_key, by_year, normalized_objects = build_vote_lookup(votes)
+
+    for record in supplemental_records:
+        vote_idx = find_best_vote_match(record, votes, by_year_key, by_year, normalized_objects)
+        if vote_idx is None:
+            continue
+
+        vote = votes[vote_idx]
+        existing_by_party = {rec["partyId"]: rec for rec in vote["recommendations"]}
+
+        for rec in record["recommendations"]:
+            existing = existing_by_party.get(rec["partyId"])
+            if existing is None:
+                vote["recommendations"].append(rec)
+                existing_by_party[rec["partyId"]] = rec
+                continue
+
+            # Keep existing values unless supplemental source provides missing fields.
+            if existing.get("recommendation") is None and rec.get("recommendation") is not None:
+                existing["recommendation"] = rec["recommendation"]
+            if existing.get("won") is None and rec.get("won") is not None:
+                existing["won"] = rec["won"]
 
 
 def parse_records(rows: list[list[str]], source_name: str) -> dict[str, Any]:
@@ -414,77 +732,7 @@ def parse_records(rows: list[list[str]], source_name: str) -> dict[str, Any]:
 
     if not votes:
         raise ValueError("No vote records parsed from source")
-
-    sorted_parties = sorted(
-        [{"id": p.party_id, "name": p.party_name} for p in party_columns],
-        key=lambda item: item["name"],
-    )
-
-    party_stats: dict[str, dict[str, Any]] = {}
-    for party in sorted_parties:
-        party_stats[party["id"]] = {
-            "partyId": party["id"],
-            "party": party["name"],
-            "recommendations": 0,
-            "oui": 0,
-            "non": 0,
-            "liberteDeVote": 0,
-            "neutre": 0,
-            "pasDePosition": 0,
-            "wins": 0,
-            "losses": 0,
-            "alignmentRate": None,
-        }
-
-    for vote in votes:
-        for rec in vote["recommendations"]:
-            stats = party_stats.get(rec["partyId"])
-            if stats is None:
-                continue
-
-            recommendation = rec.get("recommendation")
-            if recommendation is not None:
-                stats["recommendations"] += 1
-
-                if recommendation == "oui":
-                    stats["oui"] += 1
-                elif recommendation == "non":
-                    stats["non"] += 1
-                elif recommendation == "liberte de vote":
-                    stats["liberteDeVote"] += 1
-                elif recommendation == "neutre":
-                    stats["neutre"] += 1
-                elif recommendation == "pas de position":
-                    stats["pasDePosition"] += 1
-
-            won = rec.get("won")
-            if won is True:
-                stats["wins"] += 1
-            elif won is False:
-                stats["losses"] += 1
-
-    for stats in party_stats.values():
-        total_outcomes = stats["wins"] + stats["losses"]
-        if total_outcomes > 0:
-            stats["alignmentRate"] = round(stats["wins"] / total_outcomes * 100, 1)
-
-    years = [vote["year"] for vote in votes]
-    payload = {
-        "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        "sourceFile": source_name,
-        "stats": {
-            "objects": len(votes),
-            "fromYear": min(years),
-            "toYear": max(years),
-            "withResult": sum(1 for vote in votes if vote["result"] is not None),
-            "upcoming": sum(1 for vote in votes if vote["result"] is None),
-        },
-        "parties": sorted_parties,
-        "partyStats": list(party_stats.values()),
-        "votes": votes,
-    }
-
-    return payload
+    return build_payload(votes, source_name)
 
 
 def load_rows(source: Path, sheet_hint: str | None = None) -> list[list[str]]:
@@ -514,6 +762,11 @@ def main() -> None:
 
     rows = load_rows(source, sheet_hint=args.sheet)
     payload = parse_records(rows, source.name)
+
+    if source.suffix.lower() == ".xlsx":
+        supplemental_records = collect_supplemental_records_from_xlsx(source)
+        merge_supplemental_recommendations(payload["votes"], supplemental_records)
+        payload = build_payload(payload["votes"], source.name)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
