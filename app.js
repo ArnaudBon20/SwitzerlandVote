@@ -21,6 +21,7 @@ const LEGISLATURE_DEFINITIONS = LEGISLATURE_ELECTION_YEARS.map((startYear, index
 
 const state = {
   data: null,
+  randomVote: null,
   filteredVotes: [],
   visibleCount: PAGE_SIZE,
   activeTab: "explorer",
@@ -45,6 +46,8 @@ const state = {
 
 const els = {
   datasetMeta: document.getElementById("dataset-meta"),
+  randomizeVote: document.getElementById("randomize-vote"),
+  randomVoteCard: document.getElementById("random-vote-card"),
   tabButtons: [...document.querySelectorAll(".tab-button")],
   viewExplorer: document.getElementById("view-explorer"),
   viewStatistics: document.getElementById("view-statistics"),
@@ -94,6 +97,7 @@ async function init() {
   }
 
   state.data = await response.json();
+  pickRandomVote();
   state.statistics.rows = buildLegislatureRows(state.data.votes);
   state.statistics.legislatureMeta = buildLegislatureMeta(state.data.votes);
 
@@ -238,6 +242,10 @@ function bindEvents() {
     state.statistics.filters.legislatureId = els.legislatureFilter.value;
     renderLegislatureTable();
   });
+
+  els.randomizeVote.addEventListener("click", () => {
+    pickRandomVote();
+  });
 }
 
 function setActiveTabFromHash() {
@@ -286,6 +294,64 @@ function renderExplorer() {
 function renderStatistics() {
   renderTopRankings();
   renderLegislatureTable();
+}
+
+function pickRandomVote() {
+  const withResult = state.data.votes.filter((vote) => vote.result !== null);
+  const pool = withResult.length ? withResult : state.data.votes;
+  const randomIndex = Math.floor(Math.random() * pool.length);
+  state.randomVote = pool[randomIndex] ?? null;
+  renderRandomVote();
+}
+
+function renderRandomVote() {
+  if (!state.randomVote) {
+    els.randomVoteCard.innerHTML = '<p class="result-count">Aucun objet disponible.</p>';
+    return;
+  }
+
+  const vote = state.randomVote;
+  const recs = sortRecommendations(vote.recommendations, "all");
+  const chips = recs.length
+    ? recs
+        .map((rec) => {
+          const label = recommendationLabels[rec.recommendation] ?? rec.recommendation ?? "Sans position";
+          const chipClass = `chip-${classNameFromRecommendation(rec.recommendation)}`;
+          return `<span class="chip ${chipClass}"><strong>${escapeHtml(rec.party)}</strong>${escapeHtml(label)}</span>`;
+        })
+        .join("")
+    : '<span class="chip chip-empty">Aucune recommandation disponible</span>';
+
+  const yes = typeof vote.yesPercent === "number" ? vote.yesPercent : null;
+  const no = typeof vote.noPercent === "number" ? vote.noPercent : null;
+  const hasPercent = yes !== null && no !== null;
+  const yesWidth = hasPercent ? clamp(yes, 0, 100) : 0;
+  const noWidth = hasPercent ? clamp(no, 0, 100) : 0;
+  const resultLabel = vote.result === "oui" ? "Accepté" : vote.result === "non" ? "Refusé" : "À venir";
+  const resultClass = vote.result ? `result-${vote.result}` : "result-upcoming";
+
+  els.randomVoteCard.innerHTML = `
+    <div class="vote-top">
+      <span class="year-badge">${vote.year}</span>
+      <span class="result-pill ${resultClass}">${resultLabel}</span>
+    </div>
+    <h3 class="vote-title">${escapeHtml(vote.object)}</h3>
+    ${
+      hasPercent
+        ? `
+          <div class="percent-row">
+            <span>Oui: ${yes.toFixed(2)} %</span>
+            <span>Non: ${no.toFixed(2)} %</span>
+          </div>
+          <div class="result-track">
+            <span class="result-yes" style="width: ${yesWidth}%"></span>
+            <span class="result-no" style="width: ${noWidth}%"></span>
+          </div>
+        `
+        : '<p class="percent-row">Résultat officiel non disponible</p>'
+    }
+    <div class="chips">${chips}</div>
+  `;
 }
 
 function applyFilters(votes, filters) {

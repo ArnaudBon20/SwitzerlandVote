@@ -5,6 +5,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 ## Fonctionnalités
 
 - Consultation publique sur GitHub Pages.
+- Bloc d'accueil avec un résultat tiré au hasard (renouvelé à chaque refresh).
 - Recherche plein texte sur les objets de votation.
 - Filtres par période, résultat, parti et type de recommandation.
 - Vue synthétique des partis (alignement gagné/perdu sur la sélection).

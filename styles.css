@@ -126,6 +126,15 @@ main {
   width: fit-content;
 }
 
+.random-spotlight {
+  background:
+    linear-gradient(125deg, color-mix(in srgb, var(--surface) 86%, #fce5d8 14%), color-mix(in srgb, var(--surface) 86%, #dfeee3 14%));
+}
+
+.spotlight-card {
+  margin-top: 0.25rem;
+}
+
 .tab-button {
   border: 1px solid rgba(131, 115, 102, 0.42);
   background: transparent;
