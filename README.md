@@ -5,7 +5,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 ## Fonctionnalités
 
 - Consultation publique sur GitHub Pages.
-- Bloc d'accueil avec un résultat tiré au hasard (renouvelé à chaque refresh).
+- Bloc d'accueil **Archives** avec un résultat tiré au hasard (renouvelé à chaque refresh, bouton `Nouvelle archive`).
 - Recherche plein texte sur les objets de votation.
 - Filtres par période, résultat, parti et type de recommandation.
 - Vue synthétique des partis (alignement gagné/perdu sur la sélection), avec distinction visuelle des partis historiques (PBD, PRD, PLS).
@@ -13,7 +13,10 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
   - JLR;
   - Parti radical (PRD);
   - Parti libéral (PLS).
-- Lien externe officiel sur chaque objet vers la page correspondante de la Chancellerie fédérale (BK).
+- Lien externe officiel sur chaque objet vers la page correspondante de la Chancellerie fédérale (BK), dans:
+  - la liste des objets;
+  - le bloc Archives;
+  - les classements de l'onglet Statistiques.
 - Onglet **Statistiques** avec:
   - votations les plus acceptées;
   - votations les plus refusées;
@@ -25,7 +28,10 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - `index.html`, `styles.css`, `app.js`: interface web statique.
 - `data/source/recommandations-de-vote-des-partis.xlsx`: source brute.
 - `data/source/bk-objects-links.json`: cache local des liens officiels BK.
-- `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json` (avec fusion des feuilles `JLR` et `PRD-PLS`).
+- `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json` avec:
+  - fusion des feuilles `JLR` et `PRD-PLS`;
+  - enrichissement des objets avec `url` BK (fetch live + fallback sur cache local);
+  - normalisation des recommandations (oui/non/liberté de vote/neutre/pas de position).
 - `data/votes.json`: base de données consommée par le frontend.
 - `.github/workflows/deploy-pages.yml`: publication automatique GitHub Pages.
 - `.github/workflows/build-data.yml`: vérification que `data/votes.json` est synchronisé.
@@ -52,6 +58,11 @@ Puis ouvrir `http://localhost:8000`.
 3. Commit + push sur `main`.
 
 Le workflow GitHub Pages republie automatiquement le site.
+
+Notes:
+
+- La génération tente de récupérer les liens BK en ligne et met à jour `data/source/bk-objects-links.json`.
+- Si le réseau est indisponible, le script utilise automatiquement le cache local BK existant.
 
 ## Ajouter rapidement de nouveaux objets de votation
 
