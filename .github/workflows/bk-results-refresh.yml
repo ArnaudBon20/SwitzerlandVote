@@ -61,4 +61,5 @@ jobs:
 
       - name: Skip (not a voting day)
         if: steps.gate.outputs.run_update != 'true'
-        run: echo "No update: today is not listed as a federal voting date on BK."
+        run: |
+          echo "No update: today is not listed as a federal voting date on BK."
