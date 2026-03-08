@@ -1,66 +1,102 @@
 # SwitzerlandVote
 
-Interface web publique, moderne et minimaliste pour consulter les recommandations de vote des partis politiques suisses pour les objets fédéraux depuis 1848.
+A public, modern, and minimal web app to explore Swiss federal ballot objects and party voting recommendations from **1848 to today**.
 
-## Fonctionnalités
+## Why this project?
 
-- Consultation publique sur GitHub Pages.
-- Bloc d'accueil **Archives** avec un résultat tiré au hasard (renouvelé à chaque refresh, bouton `Nouvelle archive`).
-- Recherche plein texte sur les objets de votation.
-- Filtres par période, résultat, parti et type de recommandation.
-- Vue synthétique des partis (alignement gagné/perdu sur la sélection), avec distinction visuelle des partis historiques (PBD, PRD, PLS).
-- Fusion automatique des recommandations historiques complémentaires:
-  - JLR;
-  - Parti radical (PRD);
-  - Parti libéral (PLS).
-- Lien externe officiel sur chaque objet vers la page correspondante de la Chancellerie fédérale (BK), dans:
-  - la liste des objets;
-  - le bloc Archives;
-  - les classements de l'onglet Statistiques.
-- Onglet **Statistiques** avec:
-  - votations les plus acceptées;
-  - votations les plus refusées;
-  - résultats par parti et par législature (découpage électoral officiel, y compris la législature 1917-1919).
-- Pipeline de données reproductible à partir du fichier source Excel.
-- Mise à jour automatique des résultats et statistiques le soir des dimanches de votation via GitHub Actions (calendrier BK officiel).
+Swiss vote history is rich, but hard to browse in one place with party-level context. SwitzerlandVote provides a fast public interface to:
 
-## Structure du projet
+- search and filter all federal ballot objects in the dataset;
+- compare party recommendations on each object;
+- track official outcomes and party alignment over time.
 
-- `index.html`, `styles.css`, `app.js`: interface web statique.
-- `data/source/recommandations-de-vote-des-partis.xlsx`: source brute.
-- `data/source/bk-objects-links.json`: cache local des liens officiels BK.
-- `scripts/build_data.py`: conversion Excel/CSV vers `data/votes.json` avec:
-  - fusion des feuilles `JLR` et `PRD-PLS`;
-  - enrichissement des objets avec `url` BK (fetch live + fallback sur cache local);
-  - enrichissement automatique des résultats BK récents (`yesPercent`, `noPercent`, `result`);
-  - recalcul automatique des statuts `won/perdu` pour les recommandations oui/non;
-  - normalisation des recommandations (oui/non/liberté de vote/neutre/pas de position).
-- `scripts/is_votation_sunday.py`: vérification de la date de votation selon le calendrier BK officiel.
-- `data/votes.json`: base de données consommée par le frontend.
-- `.github/workflows/deploy-pages.yml`: publication automatique GitHub Pages.
-- `.github/workflows/build-data.yml`: vérification que `data/votes.json` est synchronisé.
-- `.github/workflows/bk-results-refresh.yml`: rafraîchissement automatique des résultats BK les soirs de votation.
+## What you can do
 
-## Lancer localement
+### Explorer
+
+- Full-text search on ballot object titles.
+- Filters by year range, result, party, recommendation type, and sort mode.
+- Random **Archives** spotlight on the homepage (changes at every page refresh and with the button).
+- Official Federal Chancellery (BK) link attached to each object (cards, Archives block, and rankings).
+
+### Visual summaries
+
+- Clear **For vs Against** result breakdown on each object.
+- Grouped party positions: **For**, **Against**, and optional **Other positions**.
+- Party alignment summary on the current filtered selection.
+
+### Statistics tab
+
+- Most accepted federal ballots.
+- Most rejected federal ballots.
+- Results by party and legislature (official election-based legislature segmentation).
+
+### Historical party handling
+
+- Historical parties (**PBD, PRD, PLS**) are hidden by default and can be revealed with a toggle.
+- Historical parties are visually distinguished.
+- **PLR is counted only from 2009 onward** in legislature statistics (before that: PRD/PLS).
+
+### Public deployment and automation
+
+- Public GitHub Pages site.
+- Automatic deploy on pushes to `main`.
+- Automated BK refresh on voting Sundays (with date gating against BK calendar).
+
+## Data pipeline
+
+The dataset is generated from the source spreadsheet and enriched with official data.
+
+### Source
+
+- Main source: `data/source/recommandations-de-vote-des-partis.xlsx`
+- Supported formats: `.xlsx` and `.csv`
+
+### Build script
+
+`scripts/build_data.py`:
+
+- reads and normalizes recommendations (`oui/non/liberté de vote/neutre/pas de position`);
+- merges complementary historical sheets (`JLR`, `PRD-PLS`);
+- enriches each object with BK official URL;
+- refreshes recent official BK results (`yesPercent`, `noPercent`, `result`);
+- recomputes recommendation outcome alignment (`won/lost`) for yes/no recommendations;
+- writes `data/votes.json` consumed by the frontend.
+
+If BK is temporarily unavailable, the script falls back to local BK link cache (`data/source/bk-objects-links.json`).
+
+## Project structure
+
+- `index.html`, `styles.css`, `app.js`: static frontend.
+- `data/source/recommandations-de-vote-des-partis.xlsx`: raw source file.
+- `data/source/bk-objects-links.json`: BK links cache.
+- `data/votes.json`: generated dataset used by the app.
+- `scripts/build_data.py`: dataset generation and enrichment.
+- `scripts/is_votation_sunday.py`: BK voting-day check.
+- `.github/workflows/deploy-pages.yml`: GitHub Pages deployment.
+- `.github/workflows/build-data.yml`: dataset consistency check.
+- `.github/workflows/bk-results-refresh.yml`: scheduled BK refresh.
+
+## Run locally
 
 ```bash
 cd /Users/arnaudbonvin/Documents/SwitzerlandVote
 python3 -m http.server 8000
 ```
 
-Puis ouvrir `http://localhost:8000`.
+Open [http://localhost:8000](http://localhost:8000).
 
-## Mettre à jour les données
+## Update data manually
 
-1. Remplacer le fichier source:
+1. Replace the source file:
    - `data/source/recommandations-de-vote-des-partis.xlsx`
-2. Régénérer la base JSON:
+2. Regenerate dataset:
 
 ```bash
 ./scripts/build_data.py --input data/source/recommandations-de-vote-des-partis.xlsx --output data/votes.json
 ```
 
-Pour forcer le rafraîchissement des résultats officiels BK récents:
+Optional: force refresh of recent official BK results:
 
 ```bash
 ./scripts/build_data.py \
@@ -70,50 +106,19 @@ Pour forcer le rafraîchissement des résultats officiels BK récents:
   --recent-year-window 2
 ```
 
-3. Commit + push sur `main`.
+3. Commit and push to `main`.
 
-Le workflow GitHub Pages republie automatiquement le site.
+GitHub Pages redeploys automatically.
 
-Notes:
+## Voting Sunday automation
 
-- La génération tente de récupérer les liens BK en ligne et met à jour `data/source/bk-objects-links.json`.
-- Si le réseau est indisponible, le script utilise automatiquement le cache local BK existant.
+Workflow: `.github/workflows/bk-results-refresh.yml`
 
-## Automatisation du soir de votation
+- Scheduled every Sunday at `18:30` and `20:30` UTC.
+- Checks whether the date is an official federal voting day (BK calendar + chronology).
+- If yes (or if manually triggered), refreshes `data/votes.json` + BK link cache, then commits and pushes.
+- Push to `main` triggers GitHub Pages deployment.
 
-- Le workflow `.github/workflows/bk-results-refresh.yml` tourne chaque dimanche soir (`18:30` et `20:30` UTC).
-- Avant toute mise à jour, il vérifie la date du jour (timezone `Europe/Zurich`) via le calendrier BK et le répertoire chronologique BK.
-- Si oui, il régénère `data/votes.json` avec les résultats BK publiés, commit et push sur `main`.
-- Le push déclenche ensuite automatiquement la publication GitHub Pages.
+## Notes on source format
 
-## Ajouter rapidement de nouveaux objets de votation
-
-Option recommandée:
-
-1. Ajouter les nouveaux objets directement dans l'Excel source.
-2. Lancer la commande de génération ci-dessus.
-3. Push sur `main`.
-
-Le script conserve automatiquement les objets sans résultat officiel comme `À venir`.
-
-## Créer le dépôt GitHub (compte personnel)
-
-Si nécessaire, ré-authentifier GitHub CLI:
-
-```bash
-gh auth login -h github.com
-```
-
-Puis créer et pousser le dépôt public:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: SwitzerlandVote"
-gh repo create SwitzerlandVote --public --source=. --remote=origin --push
-```
-
-## Source Excel ou CSV?
-
-Le script accepte les deux (`.xlsx` et `.csv`).
-Pour votre cas actuel, le format Excel est préférable car il préserve mieux la structure d'origine et évite les collisions de colonnes dupliquées.
+Both Excel and CSV are supported, but **Excel is recommended** for this project because it preserves sheet structure and reduces column-collision issues.
