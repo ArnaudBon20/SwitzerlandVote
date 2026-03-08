@@ -361,21 +361,11 @@ function renderRandomVote() {
 
   const vote = state.randomVote;
   const recs = sortRecommendations(vote.recommendations, "all");
-  const chips = recs.length
-    ? recs
-        .map((rec) => {
-          const label = recommendationLabels[rec.recommendation] ?? rec.recommendation ?? "Sans position";
-          const chipClass = `chip-${classNameFromRecommendation(rec.recommendation)}`;
-          return `<span class="chip ${chipClass}"><strong>${escapeHtml(rec.party)}</strong>${escapeHtml(label)}</span>`;
-        })
-        .join("")
-    : '<span class="chip chip-empty">Aucune recommandation disponible</span>';
+  const recommendationGroups = renderRecommendationGroups(recs, "all");
 
   const yes = typeof vote.yesPercent === "number" ? vote.yesPercent : null;
   const no = typeof vote.noPercent === "number" ? vote.noPercent : null;
   const hasPercent = yes !== null && no !== null;
-  const yesWidth = hasPercent ? clamp(yes, 0, 100) : 0;
-  const noWidth = hasPercent ? clamp(no, 0, 100) : 0;
   const resultLabel = vote.result === "oui" ? "Accepté" : vote.result === "non" ? "Refusé" : "À venir";
   const resultClass = vote.result ? `result-${vote.result}` : "result-upcoming";
   const voteTitle = vote.url
@@ -390,19 +380,10 @@ function renderRandomVote() {
     <h3 class="vote-title">${voteTitle}</h3>
     ${
       hasPercent
-        ? `
-          <div class="percent-row">
-            <span>Oui: ${yes.toFixed(2)} %</span>
-            <span>Non: ${no.toFixed(2)} %</span>
-          </div>
-          <div class="result-track">
-            <span class="result-yes" style="width: ${yesWidth}%"></span>
-            <span class="result-no" style="width: ${noWidth}%"></span>
-          </div>
-        `
+        ? buildResultBreakdown(yes, no)
         : '<p class="percent-row">Résultat officiel non disponible</p>'
     }
-    <div class="chips">${chips}</div>
+    ${recommendationGroups}
   `;
 }
 
@@ -569,16 +550,7 @@ function renderVotes() {
 
   const cards = visible.map((vote) => {
     const recs = sortRecommendations(vote.recommendations, selectedPartyId);
-    const chips = recs.length
-      ? recs
-          .map((rec) => {
-            const label = recommendationLabels[rec.recommendation] ?? rec.recommendation ?? "Sans position";
-            const chipClass = `chip-${classNameFromRecommendation(rec.recommendation)}`;
-            const highlight = selectedPartyId !== "all" && rec.partyId === selectedPartyId ? " chip-highlight" : "";
-            return `<span class="chip ${chipClass}${highlight}"><strong>${escapeHtml(rec.party)}</strong>${escapeHtml(label)}</span>`;
-          })
-          .join("")
-      : '<span class="chip chip-empty">Aucune recommandation disponible</span>';
+    const recommendationGroups = renderRecommendationGroups(recs, selectedPartyId);
 
     const yes = typeof vote.yesPercent === "number" ? vote.yesPercent : null;
     const no = typeof vote.noPercent === "number" ? vote.noPercent : null;
@@ -590,9 +562,6 @@ function renderVotes() {
       ? `<a href="${escapeHtml(vote.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vote.object)}</a>`
       : escapeHtml(vote.object);
 
-    const yesWidth = hasPercent ? clamp(yes, 0, 100) : 0;
-    const noWidth = hasPercent ? clamp(no, 0, 100) : 0;
-
     return `
       <article class="vote-card">
         <div class="vote-top">
@@ -602,19 +571,10 @@ function renderVotes() {
         <h3 class="vote-title">${voteTitle}</h3>
         ${
           hasPercent
-            ? `
-              <div class="percent-row">
-                <span>Oui: ${yes.toFixed(2)} %</span>
-                <span>Non: ${no.toFixed(2)} %</span>
-              </div>
-              <div class="result-track">
-                <span class="result-yes" style="width: ${yesWidth}%"></span>
-                <span class="result-no" style="width: ${noWidth}%"></span>
-              </div>
-            `
+            ? buildResultBreakdown(yes, no)
             : '<p class="percent-row">Résultat officiel non disponible</p>'
         }
-        <div class="chips">${chips}</div>
+        ${recommendationGroups}
       </article>
     `;
   });
@@ -661,6 +621,83 @@ function renderRankingList(items, percentField, tone) {
       `;
     })
     .join("");
+}
+
+function buildResultBreakdown(yes, no) {
+  const yesWidth = clamp(yes, 0, 100);
+  const noWidth = clamp(no, 0, 100);
+  return `
+    <div class="result-split" role="img" aria-label="Pour ${yes.toFixed(2)} %, contre ${no.toFixed(2)} %">
+      <article class="result-block result-block-yes">
+        <p class="result-block-label">Pour</p>
+        <p class="result-block-value">${yes.toFixed(2)} %</p>
+      </article>
+      <article class="result-block result-block-no">
+        <p class="result-block-label">Contre</p>
+        <p class="result-block-value">${no.toFixed(2)} %</p>
+      </article>
+    </div>
+    <div class="result-track result-track-strong">
+      <span class="result-yes" style="width: ${yesWidth}%"></span>
+      <span class="result-no" style="width: ${noWidth}%"></span>
+    </div>
+  `;
+}
+
+function renderRecommendationGroups(recommendations, selectedPartyId) {
+  const groups = {
+    pro: [],
+    contre: [],
+    others: [],
+  };
+
+  for (const rec of recommendations) {
+    if (rec.recommendation === "oui") {
+      groups.pro.push(rec);
+    } else if (rec.recommendation === "non") {
+      groups.contre.push(rec);
+    } else {
+      groups.others.push(rec);
+    }
+  }
+
+  const sections = [
+    renderRecommendationGroup("Pour", groups.pro, "pro", selectedPartyId),
+    renderRecommendationGroup("Contre", groups.contre, "contre", selectedPartyId),
+  ];
+  if (groups.others.length) {
+    sections.push(renderRecommendationGroup("Autres positions", groups.others, "others", selectedPartyId));
+  }
+
+  return `
+    <div class="position-groups">
+      ${sections.join("")}
+    </div>
+  `;
+}
+
+function renderRecommendationGroup(title, rows, tone, selectedPartyId) {
+  const content = rows.length
+    ? rows
+        .map((rec) => {
+          const highlight = selectedPartyId !== "all" && rec.partyId === selectedPartyId ? " is-highlight" : "";
+          const recommendation =
+            recommendationLabels[rec.recommendation] ?? rec.recommendation ?? "Sans position";
+          const detail = tone === "others" ? `<em>${escapeHtml(recommendation)}</em>` : "";
+          return `<span class="stance-chip stance-chip-${tone}${highlight}"><strong>${escapeHtml(rec.party)}</strong>${detail}</span>`;
+        })
+        .join("")
+    : '<p class="position-empty">Aucun parti</p>';
+
+  return `
+    <article class="position-group position-group-${tone}">
+      <p class="position-group-title">
+        <span>${title}</span>
+        <span class="position-count">${rows.length}</span>
+      </p>
+      <div class="position-chip-list">${content}</div>
+    </article>
+  `;
 }
 
 function renderLegislatureTable() {
@@ -820,18 +857,6 @@ function getLegislatureForYear(year) {
     }
   }
   return selected;
-}
-
-function classNameFromRecommendation(recommendation) {
-  if (!recommendation) {
-    return "empty";
-  }
-  return recommendation
-    .toLowerCase()
-    .replaceAll(" ", "-")
-    .replaceAll("é", "e")
-    .replaceAll("è", "e")
-    .replaceAll("à", "a");
 }
 
 function fillYearSelect(selectEl, from, to, selected) {
