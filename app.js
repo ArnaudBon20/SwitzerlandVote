@@ -295,6 +295,41 @@ function bindEvents() {
   els.randomizeVote.addEventListener("click", () => {
     pickRandomVote();
   });
+
+  bindOtherPositionsToggles(els.votesList);
+  bindOtherPositionsToggles(els.randomVoteCard);
+}
+
+function bindOtherPositionsToggles(container) {
+  container.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) {
+      return;
+    }
+    const button = target.closest("[data-toggle-others]");
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+    const group = button.closest("[data-others-group]");
+    if (!group) {
+      return;
+    }
+    const panelId = button.getAttribute("aria-controls");
+    if (!panelId) {
+      return;
+    }
+    const panel = document.getElementById(panelId);
+    if (!(panel instanceof HTMLElement) || !group.contains(panel)) {
+      return;
+    }
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    const nextExpanded = !isExpanded;
+
+    button.setAttribute("aria-expanded", nextExpanded ? "true" : "false");
+    button.textContent = nextExpanded ? "Voir moins" : "Voir plus";
+    panel.hidden = !nextExpanded;
+    group.classList.toggle("is-expanded", nextExpanded);
+  });
 }
 
 function setActiveTabFromHash() {
@@ -361,7 +396,7 @@ function renderRandomVote() {
 
   const vote = state.randomVote;
   const recs = sortRecommendations(vote.recommendations, "all");
-  const recommendationGroups = renderRecommendationGroups(recs, "all");
+  const recommendationGroups = renderRecommendationGroups(recs, "all", `random-${vote.id}`);
 
   const yes = typeof vote.yesPercent === "number" ? vote.yesPercent : null;
   const no = typeof vote.noPercent === "number" ? vote.noPercent : null;
@@ -550,7 +585,7 @@ function renderVotes() {
 
   const cards = visible.map((vote) => {
     const recs = sortRecommendations(vote.recommendations, selectedPartyId);
-    const recommendationGroups = renderRecommendationGroups(recs, selectedPartyId);
+    const recommendationGroups = renderRecommendationGroups(recs, selectedPartyId, `list-${vote.id}`);
 
     const yes = typeof vote.yesPercent === "number" ? vote.yesPercent : null;
     const no = typeof vote.noPercent === "number" ? vote.noPercent : null;
@@ -627,24 +662,26 @@ function buildResultBreakdown(yes, no) {
   const yesWidth = clamp(yes, 0, 100);
   const noWidth = clamp(no, 0, 100);
   return `
-    <div class="result-split" role="img" aria-label="Pour ${yes.toFixed(2)} %, contre ${no.toFixed(2)} %">
-      <article class="result-block result-block-yes">
-        <p class="result-block-label">Pour</p>
-        <p class="result-block-value">${yes.toFixed(2)} %</p>
-      </article>
-      <article class="result-block result-block-no">
-        <p class="result-block-label">Contre</p>
-        <p class="result-block-value">${no.toFixed(2)} %</p>
-      </article>
-    </div>
-    <div class="result-track result-track-strong">
-      <span class="result-yes" style="width: ${yesWidth}%"></span>
-      <span class="result-no" style="width: ${noWidth}%"></span>
+    <div class="result-stack-wrap">
+      <div class="result-stack" role="img" aria-label="Pour ${yes.toFixed(2)} %, contre ${no.toFixed(2)} %">
+        <span class="result-stack-segment result-stack-yes" style="width: ${yesWidth}%"></span>
+        <span class="result-stack-segment result-stack-no" style="width: ${noWidth}%"></span>
+      </div>
+      <div class="result-legend">
+        <p class="result-legend-item result-legend-yes">
+          <span class="result-legend-label">Pour</span>
+          <strong>${yes.toFixed(2)} %</strong>
+        </p>
+        <p class="result-legend-item result-legend-no">
+          <span class="result-legend-label">Contre</span>
+          <strong>${no.toFixed(2)} %</strong>
+        </p>
+      </div>
     </div>
   `;
 }
 
-function renderRecommendationGroups(recommendations, selectedPartyId) {
+function renderRecommendationGroups(recommendations, selectedPartyId, voteId) {
   const groups = {
     pro: [],
     contre: [],
@@ -666,7 +703,7 @@ function renderRecommendationGroups(recommendations, selectedPartyId) {
     renderRecommendationGroup("Contre", groups.contre, "contre", selectedPartyId),
   ];
   if (groups.others.length) {
-    sections.push(renderRecommendationGroup("Autres positions", groups.others, "others", selectedPartyId));
+    sections.push(renderOtherRecommendationGroup(groups.others, selectedPartyId, voteId));
   }
 
   return `
@@ -696,6 +733,38 @@ function renderRecommendationGroup(title, rows, tone, selectedPartyId) {
         <span class="position-count">${rows.length}</span>
       </p>
       <div class="position-chip-list">${content}</div>
+    </article>
+  `;
+}
+
+function renderOtherRecommendationGroup(rows, selectedPartyId, voteId) {
+  const content = rows
+    .map((rec) => {
+      const highlight = selectedPartyId !== "all" && rec.partyId === selectedPartyId ? " is-highlight" : "";
+      const recommendation =
+        recommendationLabels[rec.recommendation] ?? rec.recommendation ?? "Sans position";
+      return `<span class="stance-chip stance-chip-others${highlight}"><strong>${escapeHtml(rec.party)}</strong><em>${escapeHtml(recommendation)}</em></span>`;
+    })
+    .join("");
+  const panelId = `others-${domSafeId(voteId)}`;
+  return `
+    <article class="position-group position-group-others" data-others-group>
+      <p class="position-group-title">
+        <span>Autres positions</span>
+        <span class="position-group-actions">
+          <span class="position-count">${rows.length}</span>
+          <button
+            class="ghost position-toggle"
+            type="button"
+            data-toggle-others
+            aria-expanded="false"
+            aria-controls="${panelId}"
+          >
+            Voir plus
+          </button>
+        </span>
+      </p>
+      <div class="position-chip-list" id="${panelId}" hidden>${content}</div>
     </article>
   `;
 }
@@ -887,6 +956,13 @@ function escapeHtml(value) {
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
+}
+
+function domSafeId(value) {
+  return String(value ?? "vote")
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function resetVisible() {
