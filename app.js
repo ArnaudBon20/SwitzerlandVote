@@ -1,7 +1,23 @@
 const PAGE_SIZE = 40;
 const TOP_LIMIT = 15;
-const LEGISLATURE_BASE_YEAR = 1848;
-const LEGISLATURE_SIZE = 4;
+const LEGISLATURE_ELECTION_YEARS = [
+  1848, 1851, 1854, 1857, 1860, 1863, 1866, 1869, 1872, 1875, 1878, 1881, 1884, 1887, 1890, 1893, 1896, 1899,
+  1902, 1905, 1908, 1911, 1914, 1917, 1919, 1922, 1925, 1928, 1931, 1935, 1939, 1943, 1947, 1951, 1955, 1959,
+  1963, 1967, 1971, 1975, 1979, 1983, 1987, 1991, 1995, 1999, 2003, 2007, 2011, 2015, 2019, 2023,
+];
+const LEGISLATURE_DEFINITIONS = LEGISLATURE_ELECTION_YEARS.map((startYear, index, years) => {
+  const number = index + 1;
+  const nextStartYear =
+    years[index + 1] ?? (startYear >= 1931 ? startYear + 4 : startYear + 3);
+
+  return {
+    id: `L${String(number).padStart(2, "0")}`,
+    number,
+    startYear,
+    nextStartYear,
+    period: `${startYear}-${nextStartYear}`,
+  };
+});
 
 const state = {
   data: null,
@@ -647,28 +663,25 @@ function buildLegislatureRows(votes) {
 }
 
 function buildLegislatureMeta(votes) {
-  const byId = new Map();
+  const years = votes.map((vote) => vote.year);
+  const minYear = Math.min(...years);
+  const maxYear = Math.max(...years);
 
-  for (const vote of votes) {
-    const leg = getLegislatureForYear(vote.year);
-    if (!byId.has(leg.id)) {
-      byId.set(leg.id, leg);
-    }
-  }
-
-  return [...byId.values()].sort((a, b) => b.number - a.number);
+  return LEGISLATURE_DEFINITIONS.filter(
+    (leg) => leg.startYear <= maxYear && leg.nextStartYear >= minYear
+  ).sort((a, b) => b.number - a.number);
 }
 
 function getLegislatureForYear(year) {
-  const number = Math.floor((year - LEGISLATURE_BASE_YEAR) / LEGISLATURE_SIZE) + 1;
-  const start = LEGISLATURE_BASE_YEAR + (number - 1) * LEGISLATURE_SIZE;
-  const end = start + LEGISLATURE_SIZE - 1;
-
-  return {
-    id: `L${String(number).padStart(2, "0")}`,
-    number,
-    period: `${start}-${end}`,
-  };
+  let selected = LEGISLATURE_DEFINITIONS[0];
+  for (const legislature of LEGISLATURE_DEFINITIONS) {
+    if (legislature.startYear <= year) {
+      selected = legislature;
+    } else {
+      break;
+    }
+  }
+  return selected;
 }
 
 function classNameFromRecommendation(recommendation) {

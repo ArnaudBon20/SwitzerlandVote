@@ -11,7 +11,7 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - Onglet **Statistiques** avec:
   - votations les plus acceptées;
   - votations les plus refusées;
-  - résultats par parti et par législature.
+  - résultats par parti et par législature (découpage électoral officiel, y compris la législature 1917-1919).
 - Pipeline de données reproductible à partir du fichier source Excel.
 
 ## Structure du projet
