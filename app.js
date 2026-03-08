@@ -1,9 +1,13 @@
 const PAGE_SIZE = 40;
+const TOP_LIMIT = 15;
+const LEGISLATURE_BASE_YEAR = 1848;
+const LEGISLATURE_SIZE = 4;
 
 const state = {
   data: null,
   filteredVotes: [],
   visibleCount: PAGE_SIZE,
+  activeTab: "explorer",
   filters: {
     search: "",
     yearFrom: null,
@@ -13,10 +17,21 @@ const state = {
     recommendation: "all",
     sortBy: "year-desc",
   },
+  statistics: {
+    rows: [],
+    legislatureMeta: [],
+    filters: {
+      partyId: "all",
+      legislatureId: "all",
+    },
+  },
 };
 
 const els = {
   datasetMeta: document.getElementById("dataset-meta"),
+  tabButtons: [...document.querySelectorAll(".tab-button")],
+  viewExplorer: document.getElementById("view-explorer"),
+  viewStatistics: document.getElementById("view-statistics"),
   search: document.getElementById("search"),
   yearFrom: document.getElementById("year-from"),
   yearTo: document.getElementById("year-to"),
@@ -33,6 +48,12 @@ const els = {
   votesList: document.getElementById("votes-list"),
   resultCount: document.getElementById("result-count"),
   loadMore: document.getElementById("load-more"),
+  topAcceptedList: document.getElementById("top-accepted-list"),
+  topRejectedList: document.getElementById("top-rejected-list"),
+  legislaturePartyFilter: document.getElementById("legislature-party-filter"),
+  legislatureFilter: document.getElementById("legislature-filter"),
+  legislatureSummary: document.getElementById("legislature-summary"),
+  legislatureTableBody: document.getElementById("legislature-table-body"),
 };
 
 const recommendationLabels = {
@@ -45,7 +66,9 @@ const recommendationLabels = {
 
 init().catch((error) => {
   console.error(error);
-  els.votesList.innerHTML = '<p class="result-count">Impossible de charger les données.</p>';
+  if (els.votesList) {
+    els.votesList.innerHTML = '<p class="result-count">Impossible de charger les données.</p>';
+  }
 });
 
 async function init() {
@@ -55,9 +78,13 @@ async function init() {
   }
 
   state.data = await response.json();
+  state.statistics.rows = buildLegislatureRows(state.data.votes);
+  state.statistics.legislatureMeta = buildLegislatureMeta(state.data.votes);
 
   setupFilters();
+  setupStatisticsFilters();
   bindEvents();
+  setActiveTabFromHash();
   render();
 }
 
@@ -80,11 +107,37 @@ function setupFilters() {
   els.datasetMeta.textContent = `Base: ${state.data.stats.objects} objets (${state.data.stats.fromYear}-${state.data.stats.toYear}), mise à jour le ${generated}.`;
 }
 
+function setupStatisticsFilters() {
+  const partyOptions = [
+    '<option value="all">Tous les partis</option>',
+    ...state.data.parties.map((party) => `<option value="${party.id}">${escapeHtml(party.name)}</option>`),
+  ];
+  els.legislaturePartyFilter.innerHTML = partyOptions.join("");
+
+  const legislatureOptions = [
+    '<option value="all">Toutes les législatures</option>',
+    ...state.statistics.legislatureMeta.map(
+      (leg) => `<option value="${leg.id}">${leg.id} (${leg.period})</option>`
+    ),
+  ];
+  els.legislatureFilter.innerHTML = legislatureOptions.join("");
+}
+
 function bindEvents() {
+  els.tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      setActiveTab(button.dataset.tab, true);
+    });
+  });
+
+  window.addEventListener("hashchange", () => {
+    setActiveTabFromHash();
+  });
+
   els.search.addEventListener("input", () => {
     state.filters.search = els.search.value.trim().toLowerCase();
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.yearFrom.addEventListener("change", () => {
@@ -94,7 +147,7 @@ function bindEvents() {
       els.yearTo.value = String(state.filters.yearTo);
     }
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.yearTo.addEventListener("change", () => {
@@ -104,30 +157,30 @@ function bindEvents() {
       els.yearFrom.value = String(state.filters.yearFrom);
     }
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.resultFilter.addEventListener("change", () => {
     state.filters.result = els.resultFilter.value;
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.partyFilter.addEventListener("change", () => {
     state.filters.partyId = els.partyFilter.value;
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.recommendationFilter.addEventListener("change", () => {
     state.filters.recommendation = els.recommendationFilter.value;
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.sortBy.addEventListener("change", () => {
     state.filters.sortBy = els.sortBy.value;
-    render();
+    renderExplorer();
   });
 
   els.resetFilters.addEventListener("click", () => {
@@ -152,22 +205,71 @@ function bindEvents() {
     els.sortBy.value = "year-desc";
 
     resetVisible();
-    render();
+    renderExplorer();
   });
 
   els.loadMore.addEventListener("click", () => {
     state.visibleCount += PAGE_SIZE;
     renderVotes();
   });
+
+  els.legislaturePartyFilter.addEventListener("change", () => {
+    state.statistics.filters.partyId = els.legislaturePartyFilter.value;
+    renderLegislatureTable();
+  });
+
+  els.legislatureFilter.addEventListener("change", () => {
+    state.statistics.filters.legislatureId = els.legislatureFilter.value;
+    renderLegislatureTable();
+  });
+}
+
+function setActiveTabFromHash() {
+  const hash = window.location.hash.replace("#", "");
+  if (hash === "statistics") {
+    setActiveTab("statistics", false);
+    return;
+  }
+  setActiveTab("explorer", false);
+}
+
+function setActiveTab(tab, syncHash) {
+  state.activeTab = tab === "statistics" ? "statistics" : "explorer";
+
+  els.tabButtons.forEach((button) => {
+    const active = button.dataset.tab === state.activeTab;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-selected", active ? "true" : "false");
+  });
+
+  els.viewExplorer.classList.toggle("hidden", state.activeTab !== "explorer");
+  els.viewStatistics.classList.toggle("hidden", state.activeTab !== "statistics");
+
+  if (syncHash) {
+    const nextHash = state.activeTab === "statistics" ? "#statistics" : "#explorer";
+    if (window.location.hash !== nextHash) {
+      window.history.replaceState(null, "", nextHash);
+    }
+  }
 }
 
 function render() {
+  renderExplorer();
+  renderStatistics();
+}
+
+function renderExplorer() {
   const filtered = applyFilters(state.data.votes, state.filters);
   state.filteredVotes = sortVotes(filtered, state.filters.sortBy);
 
   renderStats();
   renderPartyStats();
   renderVotes();
+}
+
+function renderStatistics() {
+  renderTopRankings();
+  renderLegislatureTable();
 }
 
 function applyFilters(votes, filters) {
@@ -376,8 +478,88 @@ function renderVotes() {
   });
 
   els.votesList.innerHTML = cards.join("");
-
   els.loadMore.style.display = state.visibleCount < total ? "inline-flex" : "none";
+}
+
+function renderTopRankings() {
+  const accepted = state.data.votes
+    .filter((vote) => vote.result === "oui" && typeof vote.yesPercent === "number")
+    .sort((a, b) => b.yesPercent - a.yesPercent || b.year - a.year)
+    .slice(0, TOP_LIMIT);
+
+  const rejected = state.data.votes
+    .filter((vote) => vote.result === "non" && typeof vote.noPercent === "number")
+    .sort((a, b) => b.noPercent - a.noPercent || b.year - a.year)
+    .slice(0, TOP_LIMIT);
+
+  els.topAcceptedList.innerHTML = renderRankingList(accepted, "yesPercent", "accepted");
+  els.topRejectedList.innerHTML = renderRankingList(rejected, "noPercent", "rejected");
+}
+
+function renderRankingList(items, percentField, tone) {
+  if (!items.length) {
+    return '<li class="ranking-empty">Aucune donnée disponible</li>';
+  }
+
+  return items
+    .map((vote, index) => {
+      const percent = vote[percentField];
+      return `
+        <li>
+          <p class="rank-line">
+            <span class="rank-index">${index + 1}.</span>
+            <span class="rank-percent rank-${tone}">${percent.toFixed(2)} %</span>
+            <span class="rank-year">${vote.year}</span>
+          </p>
+          <p class="rank-object">${escapeHtml(vote.object)}</p>
+        </li>
+      `;
+    })
+    .join("");
+}
+
+function renderLegislatureTable() {
+  const partyId = state.statistics.filters.partyId;
+  const legislatureId = state.statistics.filters.legislatureId;
+
+  const filteredRows = state.statistics.rows.filter((row) => {
+    if (partyId !== "all" && row.partyId !== partyId) {
+      return false;
+    }
+    if (legislatureId !== "all" && row.legislatureId !== legislatureId) {
+      return false;
+    }
+    return true;
+  });
+
+  if (!filteredRows.length) {
+    els.legislatureSummary.textContent = "0 ligne";
+    els.legislatureTableBody.innerHTML =
+      '<tr><td colspan="10" class="table-empty">Aucun résultat pour ce filtre.</td></tr>';
+    return;
+  }
+
+  els.legislatureSummary.textContent = `${filteredRows.length} ligne(s) affichée(s)`;
+
+  els.legislatureTableBody.innerHTML = filteredRows
+    .map((row) => {
+      const alignment = row.alignmentRate === null ? "-" : `${row.alignmentRate.toFixed(1)} %`;
+      return `
+        <tr>
+          <td>${row.legislatureId}</td>
+          <td>${row.period}</td>
+          <td>${escapeHtml(row.party)}</td>
+          <td>${row.recommendations}</td>
+          <td>${row.oui}</td>
+          <td>${row.non}</td>
+          <td>${row.other}</td>
+          <td>${row.wins}</td>
+          <td>${row.losses}</td>
+          <td>${alignment}</td>
+        </tr>
+      `;
+    })
+    .join("");
 }
 
 function sortRecommendations(recommendations, selectedPartyId) {
@@ -392,6 +574,101 @@ function sortRecommendations(recommendations, selectedPartyId) {
     }
     return a.party.localeCompare(b.party, "fr");
   });
+}
+
+function buildLegislatureRows(votes) {
+  const partyNames = new Map(state.data.parties.map((party) => [party.id, party.name]));
+  const rowsByKey = new Map();
+
+  for (const vote of votes) {
+    const legislature = getLegislatureForYear(vote.year);
+
+    for (const rec of vote.recommendations) {
+      if (!rec.recommendation && rec.won === null) {
+        continue;
+      }
+
+      const key = `${legislature.id}|${rec.partyId}`;
+      if (!rowsByKey.has(key)) {
+        rowsByKey.set(key, {
+          legislatureId: legislature.id,
+          legislatureNumber: legislature.number,
+          period: legislature.period,
+          partyId: rec.partyId,
+          party: partyNames.get(rec.partyId) ?? rec.party,
+          recommendations: 0,
+          oui: 0,
+          non: 0,
+          other: 0,
+          wins: 0,
+          losses: 0,
+          alignmentRate: null,
+        });
+      }
+
+      const row = rowsByKey.get(key);
+
+      if (rec.recommendation) {
+        row.recommendations += 1;
+        if (rec.recommendation === "oui") {
+          row.oui += 1;
+        } else if (rec.recommendation === "non") {
+          row.non += 1;
+        } else {
+          row.other += 1;
+        }
+      }
+
+      if (rec.won === true) {
+        row.wins += 1;
+      }
+      if (rec.won === false) {
+        row.losses += 1;
+      }
+    }
+  }
+
+  const rows = [...rowsByKey.values()];
+  for (const row of rows) {
+    const totalOutcomes = row.wins + row.losses;
+    if (totalOutcomes > 0) {
+      row.alignmentRate = (row.wins / totalOutcomes) * 100;
+    }
+  }
+
+  rows.sort((a, b) => {
+    if (a.legislatureNumber !== b.legislatureNumber) {
+      return b.legislatureNumber - a.legislatureNumber;
+    }
+    return a.party.localeCompare(b.party, "fr");
+  });
+
+  return rows;
+}
+
+function buildLegislatureMeta(votes) {
+  const byId = new Map();
+
+  for (const vote of votes) {
+    const leg = getLegislatureForYear(vote.year);
+    if (!byId.has(leg.id)) {
+      byId.set(leg.id, leg);
+    }
+  }
+
+  return [...byId.values()].sort((a, b) => b.number - a.number);
+}
+
+function getLegislatureForYear(year) {
+  const number = Math.floor((year - LEGISLATURE_BASE_YEAR) / LEGISLATURE_SIZE) + 1;
+  const start = LEGISLATURE_BASE_YEAR + (number - 1) * LEGISLATURE_SIZE;
+  const end = start + LEGISLATURE_SIZE - 1;
+
+  return {
+    id: `L${String(number).padStart(2, "0")}`,
+    number,
+    period: `${start}-${end}`,
+  };
 }
 
 function classNameFromRecommendation(recommendation) {

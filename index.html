@@ -30,102 +30,181 @@
     </header>
 
     <main>
-      <section class="panel controls reveal">
-        <div class="section-head">
-          <h2>Filtres</h2>
-          <button id="reset-filters" class="ghost" type="button">Réinitialiser</button>
-        </div>
+      <nav class="panel tabs reveal" aria-label="Navigation principale">
+        <button id="tab-explorer" class="tab-button active" data-tab="explorer" type="button" aria-selected="true">
+          Explorer
+        </button>
+        <button id="tab-statistics" class="tab-button" data-tab="statistics" type="button" aria-selected="false">
+          Statistiques
+        </button>
+      </nav>
 
-        <form id="filters" class="control-grid" autocomplete="off">
-          <label>
-            Recherche d'objet
-            <input id="search" name="search" type="search" placeholder="ex. initiative, AVS, énergie..." />
-          </label>
+      <section id="view-explorer" class="view">
+        <section class="panel controls reveal">
+          <div class="section-head">
+            <h2>Filtres</h2>
+            <button id="reset-filters" class="ghost" type="button">Réinitialiser</button>
+          </div>
 
-          <label>
-            De l'année
-            <select id="year-from" name="year-from"></select>
-          </label>
+          <form id="filters" class="control-grid" autocomplete="off">
+            <label>
+              Recherche d'objet
+              <input id="search" name="search" type="search" placeholder="ex. initiative, AVS, énergie..." />
+            </label>
 
-          <label>
-            À l'année
-            <select id="year-to" name="year-to"></select>
-          </label>
+            <label>
+              De l'année
+              <select id="year-from" name="year-from"></select>
+            </label>
 
-          <label>
-            Résultat
-            <select id="result-filter" name="result-filter">
-              <option value="all">Tous</option>
-              <option value="oui">Accepté (oui)</option>
-              <option value="non">Refusé (non)</option>
-              <option value="upcoming">À venir</option>
-            </select>
-          </label>
+            <label>
+              À l'année
+              <select id="year-to" name="year-to"></select>
+            </label>
 
-          <label>
-            Parti
-            <select id="party-filter" name="party-filter">
-              <option value="all">Tous les partis</option>
-            </select>
-          </label>
+            <label>
+              Résultat
+              <select id="result-filter" name="result-filter">
+                <option value="all">Tous</option>
+                <option value="oui">Accepté (oui)</option>
+                <option value="non">Refusé (non)</option>
+                <option value="upcoming">À venir</option>
+              </select>
+            </label>
 
-          <label>
-            Recommandation
-            <select id="recommendation-filter" name="recommendation-filter">
-              <option value="all">Toutes</option>
-              <option value="oui">Oui</option>
-              <option value="non">Non</option>
-              <option value="liberte de vote">Liberté de vote</option>
-              <option value="neutre">Neutre</option>
-              <option value="pas de position">Pas de position</option>
-            </select>
-          </label>
+            <label>
+              Parti
+              <select id="party-filter" name="party-filter">
+                <option value="all">Tous les partis</option>
+              </select>
+            </label>
 
-          <label>
-            Tri
-            <select id="sort-by" name="sort-by">
-              <option value="year-desc">Plus récent</option>
-              <option value="year-asc">Plus ancien</option>
-              <option value="yes-desc">% Oui décroissant</option>
-              <option value="no-desc">% Non décroissant</option>
-            </select>
-          </label>
-        </form>
+            <label>
+              Recommandation
+              <select id="recommendation-filter" name="recommendation-filter">
+                <option value="all">Toutes</option>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+                <option value="liberte de vote">Liberté de vote</option>
+                <option value="neutre">Neutre</option>
+                <option value="pas de position">Pas de position</option>
+              </select>
+            </label>
+
+            <label>
+              Tri
+              <select id="sort-by" name="sort-by">
+                <option value="year-desc">Plus récent</option>
+                <option value="year-asc">Plus ancien</option>
+                <option value="yes-desc">% Oui décroissant</option>
+                <option value="no-desc">% Non décroissant</option>
+              </select>
+            </label>
+          </form>
+        </section>
+
+        <section class="stats-grid reveal">
+          <article class="panel stat">
+            <p class="stat-label">Objets filtrés</p>
+            <p id="stat-total" class="stat-value">-</p>
+          </article>
+          <article class="panel stat">
+            <p class="stat-label">Période affichée</p>
+            <p id="stat-period" class="stat-value">-</p>
+          </article>
+          <article class="panel stat">
+            <p class="stat-label">Objets à venir</p>
+            <p id="stat-upcoming" class="stat-value">-</p>
+          </article>
+          <article class="panel stat">
+            <p class="stat-label">Taux moyen de oui</p>
+            <p id="stat-yes-average" class="stat-value">-</p>
+          </article>
+        </section>
+
+        <section class="panel reveal">
+          <div class="section-head">
+            <h2>Alignement des partis (sur la sélection)</h2>
+          </div>
+          <div id="party-stats" class="party-stats"></div>
+        </section>
+
+        <section class="panel reveal">
+          <div class="section-head">
+            <h2>Objets de votation</h2>
+            <p id="result-count" class="result-count"></p>
+          </div>
+          <div id="votes-list" class="votes-list"></div>
+          <button id="load-more" class="ghost wide" type="button">Charger plus</button>
+        </section>
       </section>
 
-      <section class="stats-grid reveal">
-        <article class="panel stat">
-          <p class="stat-label">Objets filtrés</p>
-          <p id="stat-total" class="stat-value">-</p>
-        </article>
-        <article class="panel stat">
-          <p class="stat-label">Période affichée</p>
-          <p id="stat-period" class="stat-value">-</p>
-        </article>
-        <article class="panel stat">
-          <p class="stat-label">Objets à venir</p>
-          <p id="stat-upcoming" class="stat-value">-</p>
-        </article>
-        <article class="panel stat">
-          <p class="stat-label">Taux moyen de oui</p>
-          <p id="stat-yes-average" class="stat-value">-</p>
-        </article>
-      </section>
+      <section id="view-statistics" class="view hidden">
+        <section class="panel reveal">
+          <div class="section-head">
+            <h2>Votations les plus marquées</h2>
+          </div>
+          <p class="section-note">
+            Classement basé sur le pourcentage national de oui/non pour les objets avec résultat officiel.
+          </p>
+          <div class="rank-grid">
+            <article class="rank-card">
+              <h3>Les plus acceptées</h3>
+              <ol id="top-accepted-list" class="ranking-list"></ol>
+            </article>
+            <article class="rank-card">
+              <h3>Les plus refusées</h3>
+              <ol id="top-rejected-list" class="ranking-list"></ol>
+            </article>
+          </div>
+        </section>
 
-      <section class="panel reveal">
-        <div class="section-head">
-          <h2>Alignement des partis (sur la sélection)</h2>
-        </div>
-        <div id="party-stats" class="party-stats"></div>
-      </section>
+        <section class="panel reveal">
+          <div class="section-head">
+            <h2>Résultats par parti et législature</h2>
+          </div>
+          <p class="section-note">
+            Législatures regroupées par périodes de 4 ans à partir de 1848 (L01 = 1848-1851).
+          </p>
 
-      <section class="panel reveal">
-        <div class="section-head">
-          <h2>Objets de votation</h2>
-          <p id="result-count" class="result-count"></p>
-        </div>
-        <div id="votes-list" class="votes-list"></div>
-        <button id="load-more" class="ghost wide" type="button">Charger plus</button>
+          <form class="legislature-filters" autocomplete="off">
+            <label>
+              Parti
+              <select id="legislature-party-filter" name="legislature-party-filter">
+                <option value="all">Tous les partis</option>
+              </select>
+            </label>
+
+            <label>
+              Législature
+              <select id="legislature-filter" name="legislature-filter">
+                <option value="all">Toutes les législatures</option>
+              </select>
+            </label>
+          </form>
+
+          <p id="legislature-summary" class="result-count"></p>
+
+          <div class="table-wrap">
+            <table class="legislature-table">
+              <thead>
+                <tr>
+                  <th>Législature</th>
+                  <th>Période</th>
+                  <th>Parti</th>
+                  <th>Recommandations</th>
+                  <th>Oui</th>
+                  <th>Non</th>
+                  <th>Autres</th>
+                  <th>Gagné</th>
+                  <th>Perdu</th>
+                  <th>Alignement</th>
+                </tr>
+              </thead>
+              <tbody id="legislature-table-body"></tbody>
+            </table>
+          </div>
+        </section>
       </section>
 
       <section class="panel info reveal">
@@ -140,9 +219,7 @@
     </main>
 
     <footer>
-      <p>
-        Données: fichier source fourni par l'utilisateur. Projet open source via GitHub Pages.
-      </p>
+      <p>Données: fichier source fourni par l'utilisateur. Projet open source via GitHub Pages.</p>
     </footer>
 
     <script type="module" src="app.js"></script>

@@ -102,12 +102,48 @@ main {
   gap: 1rem;
 }
 
+.view {
+  display: grid;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .panel {
   background: color-mix(in srgb, var(--surface) 88%, #ffffff 12%);
   border: 1px solid rgba(161, 136, 118, 0.22);
   border-radius: var(--radius);
   padding: 1rem;
   box-shadow: var(--shadow);
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 0.4rem;
+  padding: 0.4rem;
+  width: fit-content;
+}
+
+.tab-button {
+  border: 1px solid rgba(131, 115, 102, 0.42);
+  background: transparent;
+  border-radius: 11px;
+  padding: 0.45rem 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-button.active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.tab-button:hover {
+  border-color: var(--accent);
 }
 
 .section-head {
@@ -121,6 +157,12 @@ main {
 .section-head h2 {
   margin: 0;
   font-size: 1.2rem;
+}
+
+.section-note {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .control-grid {
@@ -356,6 +398,112 @@ button:focus {
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 35%, white 65%);
 }
 
+.rank-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.rank-card {
+  background: var(--surface-strong);
+  border: 1px solid rgba(146, 128, 115, 0.26);
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.rank-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+}
+
+.ranking-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.56rem;
+}
+
+.ranking-list li {
+  color: var(--ink);
+}
+
+.rank-line {
+  margin: 0;
+  display: flex;
+  gap: 0.42rem;
+  align-items: baseline;
+}
+
+.rank-index {
+  color: var(--muted);
+}
+
+.rank-percent {
+  font-weight: 700;
+}
+
+.rank-accepted {
+  color: var(--ok);
+}
+
+.rank-rejected {
+  color: var(--no);
+}
+
+.rank-year {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.rank-object {
+  margin: 0.15rem 0 0;
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+
+.ranking-empty {
+  color: var(--muted);
+}
+
+.legislature-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid rgba(136, 117, 103, 0.28);
+  border-radius: 12px;
+}
+
+.legislature-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 960px;
+  background: var(--surface-strong);
+}
+
+.legislature-table th,
+.legislature-table td {
+  text-align: left;
+  padding: 0.56rem 0.62rem;
+  border-bottom: 1px solid rgba(136, 117, 103, 0.22);
+  font-size: 0.84rem;
+}
+
+.legislature-table th {
+  position: sticky;
+  top: 0;
+  background: #efe5d6;
+  z-index: 1;
+}
+
+.table-empty {
+  color: var(--muted);
+}
+
 .ghost {
   border: 1px solid rgba(131, 115, 102, 0.44);
   background: transparent;
@@ -436,8 +584,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .control-grid {
+  .control-grid,
+  .rank-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .legislature-filters {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -449,12 +602,22 @@ footer {
   }
 
   .control-grid,
-  .stats-grid {
+  .stats-grid,
+  .rank-grid {
     grid-template-columns: 1fr;
   }
 
   .section-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab-button {
+    flex: 1;
+    text-align: center;
   }
 }

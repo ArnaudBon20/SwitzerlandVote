@@ -8,6 +8,10 @@ Interface web publique, moderne et minimaliste pour consulter les recommandation
 - Recherche plein texte sur les objets de votation.
 - Filtres par période, résultat, parti et type de recommandation.
 - Vue synthétique des partis (alignement gagné/perdu sur la sélection).
+- Onglet **Statistiques** avec:
+  - votations les plus acceptées;
+  - votations les plus refusées;
+  - résultats par parti et par législature.
 - Pipeline de données reproductible à partir du fichier source Excel.
 
 ## Structure du projet
