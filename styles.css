@@ -844,19 +844,6 @@ button:focus {
   font-size: 0.88rem;
 }
 
-.info ol {
-  margin: 0.45rem 0 0.4rem 1rem;
-  padding: 0;
-}
-
-.info pre {
-  overflow-x: auto;
-  padding: 0.72rem;
-  border-radius: 12px;
-  background: #191715;
-  color: #f5ebdd;
-}
-
 footer {
   padding: 0.6rem 0 2rem;
   color: var(--muted);
