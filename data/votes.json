@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T15:36:09+00:00",
+  "generatedAt": "2026-03-08T16:08:32+00:00",
   "sourceFile": "recommandations-de-vote-des-partis.xlsx",
   "stats": {
     "objects": 702,
@@ -37118,7 +37118,7 @@
           "won": true
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250928/det678.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250928/index.html"
     },
     {
       "id": "2025-003",
@@ -37177,7 +37177,7 @@
           "won": true
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250928/det679.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20250928/index.html"
     },
     {
       "id": "2025-004",
@@ -37236,7 +37236,7 @@
           "won": true
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20251130/det680.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20251130/index.html"
     },
     {
       "id": "2025-005",
@@ -37295,7 +37295,7 @@
           "won": true
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20251130/det681.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20251130/index.html"
     },
     {
       "id": "2026-001",
@@ -37354,7 +37354,7 @@
           "won": null
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det682.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
     },
     {
       "id": "2026-002",
@@ -37413,7 +37413,7 @@
           "won": null
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det682.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
     },
     {
       "id": "2026-003",
@@ -37472,7 +37472,7 @@
           "won": null
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det683.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
     },
     {
       "id": "2026-004",
@@ -37531,7 +37531,7 @@
           "won": null
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det684.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
     },
     {
       "id": "2026-005",
@@ -37590,7 +37590,7 @@
           "won": null
         }
       ],
-      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/det685.html"
+      "url": "https://www.bk.admin.ch/ch/f/pore/va/20260308/index.html"
     }
   ]
 }

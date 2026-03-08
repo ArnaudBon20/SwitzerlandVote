@@ -740,6 +740,51 @@ def attach_bk_urls(votes: list[dict[str, Any]], bk_links: list[dict[str, Any]]) 
             used_links.add(matched_idx)
 
 
+def url_exists(url: str) -> bool:
+    try:
+        request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "SwitzerlandVote/1.0"})
+        with urllib.request.urlopen(request, timeout=15) as response:
+            return 200 <= response.status < 400
+    except Exception:
+        return False
+
+
+def fallback_to_index_url(url: str) -> str:
+    return re.sub(r"/det[0-9]+\.html$", "/index.html", url)
+
+
+def fix_recent_bk_broken_links(votes: list[dict[str, Any]], recent_year_window: int = 2) -> None:
+    if not votes:
+        return
+
+    max_year = max(vote["year"] for vote in votes)
+    checked: dict[str, bool] = {}
+
+    for vote in votes:
+        url = vote.get("url")
+        if not url or vote["year"] < max_year - recent_year_window:
+            continue
+        if "/det" not in url:
+            continue
+
+        exists = checked.get(url)
+        if exists is None:
+            exists = url_exists(url)
+            checked[url] = exists
+
+        if exists:
+            continue
+
+        fallback = fallback_to_index_url(url)
+        fallback_exists = checked.get(fallback)
+        if fallback_exists is None:
+            fallback_exists = url_exists(fallback)
+            checked[fallback] = fallback_exists
+
+        if fallback_exists:
+            vote["url"] = fallback
+
+
 def parse_records(rows: list[list[str]], source_name: str) -> dict[str, Any]:
     if not rows:
         raise ValueError("No data rows found")
@@ -887,6 +932,7 @@ def main() -> None:
         merge_supplemental_recommendations(payload["votes"], supplemental_records)
 
     attach_bk_urls(payload["votes"], load_bk_vote_links(BK_LINKS_CACHE_DEFAULT))
+    fix_recent_bk_broken_links(payload["votes"])
     payload = build_payload(payload["votes"], source.name)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
