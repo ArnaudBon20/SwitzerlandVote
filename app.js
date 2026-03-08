@@ -694,16 +694,16 @@ function renderLegislatureTable() {
       const alignment = row.alignmentRate === null ? "-" : `${row.alignmentRate.toFixed(1)} %`;
       return `
         <tr>
-          <td>${row.legislatureId}</td>
-          <td>${row.period}</td>
-          <td>${escapeHtml(row.party)}</td>
-          <td>${row.recommendations}</td>
-          <td>${row.oui}</td>
-          <td>${row.non}</td>
-          <td>${row.other}</td>
-          <td>${row.wins}</td>
-          <td>${row.losses}</td>
-          <td>${alignment}</td>
+          <td data-label="Législature">${row.legislatureId}</td>
+          <td data-label="Période">${row.period}</td>
+          <td data-label="Parti">${escapeHtml(row.party)}</td>
+          <td data-label="Recommandations">${row.recommendations}</td>
+          <td data-label="Oui">${row.oui}</td>
+          <td data-label="Non">${row.non}</td>
+          <td data-label="Autres">${row.other}</td>
+          <td data-label="Gagné">${row.wins}</td>
+          <td data-label="Perdu">${row.losses}</td>
+          <td data-label="Alignement">${alignment}</td>
         </tr>
       `;
     })

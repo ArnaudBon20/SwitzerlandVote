@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -552,6 +556,7 @@ button:focus {
 
 .table-wrap {
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid rgba(136, 117, 103, 0.28);
   border-radius: 12px;
 }
@@ -657,6 +662,12 @@ footer {
   }
 }
 
+@media (max-width: 900px) {
+  .control-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 800px) {
   .stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -676,17 +687,20 @@ footer {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 740px) {
   header,
   main,
   footer {
-    width: calc(100% - 1rem);
+    width: calc(100% - 1.2rem);
   }
 
-  .control-grid,
-  .stats-grid,
-  .rank-grid {
-    grid-template-columns: 1fr;
+  .hero {
+    padding-top: 2.4rem;
+  }
+
+  .panel {
+    padding: 0.82rem;
+    border-radius: 15px;
   }
 
   .section-head {
@@ -701,5 +715,135 @@ footer {
   .tab-button {
     flex: 1;
     text-align: center;
+  }
+
+  .control-grid,
+  .rank-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vote-top {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .percent-row {
+    flex-wrap: wrap;
+    gap: 0.32rem 0.8rem;
+  }
+
+  input,
+  select,
+  .ghost,
+  .tab-button {
+    min-height: 44px;
+  }
+
+  .random-spotlight::before {
+    right: 0.62rem;
+    top: 0.66rem;
+    font-size: 0.67rem;
+    letter-spacing: 0.12em;
+  }
+
+  .table-wrap {
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .legislature-table {
+    min-width: 0;
+    background: transparent;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .legislature-table thead {
+    display: none;
+  }
+
+  .legislature-table tbody {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .legislature-table tr {
+    display: grid;
+    gap: 0;
+    background: var(--surface-strong);
+    border: 1px solid rgba(136, 117, 103, 0.24);
+    border-radius: 12px;
+    padding: 0.4rem 0.68rem;
+  }
+
+  .legislature-table td {
+    display: grid;
+    grid-template-columns: minmax(7.8rem, 45%) minmax(0, 1fr);
+    gap: 0.4rem;
+    align-items: baseline;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed rgba(136, 117, 103, 0.22);
+    font-size: 0.82rem;
+  }
+
+  .legislature-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .legislature-table td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.78rem;
+  }
+
+  .legislature-table td.table-empty {
+    display: block;
+    padding: 0.28rem 0;
+    border-bottom: 0;
+  }
+
+  .legislature-table td.table-empty::before {
+    content: none;
+  }
+}
+
+@media (max-width: 560px) {
+  header,
+  main,
+  footer {
+    width: calc(100% - 1rem);
+  }
+
+  .stats-grid,
+  .rank-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 430px) {
+  header,
+  main,
+  footer {
+    width: calc(100% - 0.75rem);
+  }
+
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .panel {
+    padding: 0.72rem;
+  }
+
+  .section-note,
+  .result-count,
+  .party-row p {
+    font-size: 0.8rem;
   }
 }
