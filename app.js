@@ -26,6 +26,7 @@ const state = {
   filteredVotes: [],
   visibleCount: PAGE_SIZE,
   activeTab: "explorer",
+  showHistoricalParties: false,
   filters: {
     search: "",
     yearFrom: null,
@@ -74,6 +75,7 @@ const els = {
   legislatureFilter: document.getElementById("legislature-filter"),
   legislatureSummary: document.getElementById("legislature-summary"),
   legislatureTableBody: document.getElementById("legislature-table-body"),
+  historicalToggles: [...document.querySelectorAll("[data-toggle-historical]")],
 };
 
 const recommendationLabels = {
@@ -104,6 +106,7 @@ async function init() {
 
   setupFilters();
   setupStatisticsFilters();
+  updateHistoricalToggleButtons();
   bindEvents();
   setActiveTabFromHash();
   render();
@@ -117,23 +120,14 @@ function setupFilters() {
 
   state.filters.yearFrom = fromYear;
   state.filters.yearTo = toYear;
-
-  const partyOptions = [
-    '<option value="all">Tous les partis</option>',
-    ...state.data.parties.map((party) => `<option value="${party.id}">${escapeHtml(party.name)}</option>`),
-  ];
-  els.partyFilter.innerHTML = partyOptions.join("");
+  refreshPartyFilterOptions();
 
   const generated = formatDate(state.data.generatedAt);
   els.datasetMeta.textContent = `Base: ${state.data.stats.objects} objets (${state.data.stats.fromYear}-${state.data.stats.toYear}), mise à jour le ${generated}.`;
 }
 
 function setupStatisticsFilters() {
-  const partyOptions = [
-    '<option value="all">Tous les partis</option>',
-    ...state.data.parties.map((party) => `<option value="${party.id}">${escapeHtml(party.name)}</option>`),
-  ];
-  els.legislaturePartyFilter.innerHTML = partyOptions.join("");
+  refreshPartyFilterOptions();
 
   const legislatureOptions = [
     '<option value="all">Toutes les législatures</option>',
@@ -142,6 +136,50 @@ function setupStatisticsFilters() {
     ),
   ];
   els.legislatureFilter.innerHTML = legislatureOptions.join("");
+}
+
+function getVisibleParties() {
+  if (state.showHistoricalParties) {
+    return state.data.parties;
+  }
+  return state.data.parties.filter((party) => !HISTORICAL_PARTY_IDS.has(party.id));
+}
+
+function buildPartyOptions(parties) {
+  return [
+    '<option value="all">Tous les partis</option>',
+    ...parties.map((party) => `<option value="${party.id}">${escapeHtml(party.name)}</option>`),
+  ];
+}
+
+function normalizeSelectedParty(selectedPartyId, parties) {
+  if (selectedPartyId === "all") {
+    return "all";
+  }
+  return parties.some((party) => party.id === selectedPartyId) ? selectedPartyId : "all";
+}
+
+function refreshPartyFilterOptions() {
+  const parties = getVisibleParties();
+  const partyOptions = buildPartyOptions(parties).join("");
+
+  const selectedExplorerParty = normalizeSelectedParty(state.filters.partyId, parties);
+  els.partyFilter.innerHTML = partyOptions;
+  els.partyFilter.value = selectedExplorerParty;
+  state.filters.partyId = selectedExplorerParty;
+
+  const selectedStatsParty = normalizeSelectedParty(state.statistics.filters.partyId, parties);
+  els.legislaturePartyFilter.innerHTML = partyOptions;
+  els.legislaturePartyFilter.value = selectedStatsParty;
+  state.statistics.filters.partyId = selectedStatsParty;
+}
+
+function updateHistoricalToggleButtons() {
+  const label = state.showHistoricalParties ? "Masquer les partis historiques" : "Afficher les partis historiques";
+  for (const button of els.historicalToggles) {
+    button.textContent = label;
+    button.setAttribute("aria-pressed", state.showHistoricalParties ? "true" : "false");
+  }
 }
 
 function bindEvents() {
@@ -242,6 +280,16 @@ function bindEvents() {
   els.legislatureFilter.addEventListener("change", () => {
     state.statistics.filters.legislatureId = els.legislatureFilter.value;
     renderLegislatureTable();
+  });
+
+  els.historicalToggles.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.showHistoricalParties = !state.showHistoricalParties;
+      refreshPartyFilterOptions();
+      updateHistoricalToggleButtons();
+      resetVisible();
+      render();
+    });
   });
 
   els.randomizeVote.addEventListener("click", () => {
@@ -479,6 +527,7 @@ function renderPartyStats() {
   }
 
   const html = [...stats.values()]
+    .filter((row) => state.showHistoricalParties || !HISTORICAL_PARTY_IDS.has(row.partyId))
     .sort((a, b) => a.party.localeCompare(b.party, "fr"))
     .map((row) => {
       const totalOutcomes = row.wins + row.losses;
@@ -619,6 +668,9 @@ function renderLegislatureTable() {
   const legislatureId = state.statistics.filters.legislatureId;
 
   const filteredRows = state.statistics.rows.filter((row) => {
+    if (!state.showHistoricalParties && HISTORICAL_PARTY_IDS.has(row.partyId)) {
+      return false;
+    }
     if (partyId !== "all" && row.partyId !== partyId) {
       return false;
     }

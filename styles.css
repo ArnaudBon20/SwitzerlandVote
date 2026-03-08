@@ -596,6 +596,10 @@ button:focus {
   color: var(--accent);
 }
 
+.historical-toggle {
+  white-space: nowrap;
+}
+
 .wide {
   width: 100%;
   margin-top: 0.8rem;
