@@ -40,6 +40,7 @@ Swiss vote history is rich, but hard to browse in one place with party-level con
 ### Public deployment and automation
 
 - Public GitHub Pages site.
+- Template proposal route available at `solid-state-proposal.html` (HTML5 UP Solid State integration draft).
 - Automatic deploy on pushes to `main`.
 - Automated BK refresh on voting Sundays (with date gating against BK calendar).
 
