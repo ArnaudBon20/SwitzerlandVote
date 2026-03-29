@@ -10,206 +10,277 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
-    <div class="bg-shape bg-shape-left" aria-hidden="true"></div>
-    <div class="bg-shape bg-shape-right" aria-hidden="true"></div>
-
-    <header class="hero reveal">
-      <p class="eyebrow">SwitzerlandVote</p>
-      <h1>Recommandations des partis suisses depuis 1848</h1>
-      <p class="hero-copy">
-        Consultez les objets soumis au vote fédéral, comparez les positions des partis, et suivez les objets déjà planifiés.
-      </p>
-      <p class="dataset-meta" id="dataset-meta"></p>
-    </header>
-
-    <main>
-      <nav class="panel tabs reveal" aria-label="Navigation principale">
-        <button id="tab-explorer" class="tab-button active" data-tab="explorer" type="button" aria-selected="true">
-          Explorer
-        </button>
-        <button id="tab-statistics" class="tab-button" data-tab="statistics" type="button" aria-selected="false">
-          Statistiques
-        </button>
-      </nav>
-
-      <section id="random-archives" class="panel random-spotlight reveal">
-        <div class="section-head">
-          <h2>Archives</h2>
-          <button id="randomize-vote" class="ghost" type="button">Nouvelle archive</button>
+    <div class="site-shell">
+      <header class="site-header reveal">
+        <div class="topbar">
+          <div class="brand-block">
+            <p class="eyebrow">SwitzerlandVote</p>
+            <p class="brand-note">Public data explorer des votations fédérales suisses</p>
+          </div>
+          <nav class="topbar-nav" aria-label="Navigation principale">
+            <button id="tab-explorer" class="tab-button active" data-tab="explorer" type="button" aria-selected="true">
+              Explorer
+            </button>
+            <button id="tab-statistics" class="tab-button" data-tab="statistics" type="button" aria-selected="false">
+              Statistiques
+            </button>
+          </nav>
         </div>
-        <p class="section-note">Un objet est tiré au hasard dans toute la base à chaque chargement de la page.</p>
-        <article id="random-vote-card" class="vote-card spotlight-card"></article>
-      </section>
 
-      <section id="view-explorer" class="view">
-        <section class="panel controls reveal">
-          <div class="section-head">
-            <h2>Filtres</h2>
-            <button id="reset-filters" class="ghost" type="button">Réinitialiser</button>
-          </div>
+        <div class="hero-grid">
+          <section class="hero-intro">
+            <p class="hero-kicker">Minimal civic data interface</p>
+            <h1>Recommandations des partis suisses depuis 1848</h1>
+            <p class="hero-copy">
+              Consultez les objets soumis au vote fédéral, comparez les positions des partis et naviguez dans les
+              résultats officiels avec une interface pensée pour la lecture, le filtrage et la comparaison historique.
+            </p>
+            <div class="hero-links">
+              <a class="hero-link" href="#explorer">Explorer les objets</a>
+              <a class="hero-link hero-link-secondary" href="#statistics">Voir les statistiques</a>
+            </div>
+          </section>
 
-          <form id="filters" class="control-grid" autocomplete="off">
-            <label>
-              Recherche d'objet
-              <input id="search" name="search" type="search" placeholder="ex. initiative, AVS, énergie..." />
-            </label>
+          <aside class="panel hero-aside">
+            <p class="summary-label">Base active</p>
+            <p class="hero-stat">Décisions fédérales, recommandations partisanes et résultats officiels de la BK.</p>
+            <div class="hero-highlights">
+              <div class="hero-highlight">
+                <span>Période</span>
+                <strong>1848 → aujourd'hui</strong>
+              </div>
+              <div class="hero-highlight">
+                <span>Fonctions</span>
+                <strong>Recherche, filtres, comparaisons</strong>
+              </div>
+            </div>
+            <p class="dataset-meta" id="dataset-meta"></p>
+          </aside>
+        </div>
+      </header>
 
-            <label>
-              De l'année
-              <select id="year-from" name="year-from"></select>
-            </label>
+      <main class="page-layout">
+        <section class="lead-grid reveal">
+          <section id="random-archives" class="panel random-spotlight">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Archives</p>
+                <h2>Un objet tiré au hasard</h2>
+              </div>
+              <button id="randomize-vote" class="ghost" type="button">Nouvelle archive</button>
+            </div>
+            <p class="section-note">Un objet est tiré au hasard dans toute la base à chaque chargement de la page.</p>
+            <article id="random-vote-card" class="vote-card spotlight-card"></article>
+          </section>
 
-            <label>
-              À l'année
-              <select id="year-to" name="year-to"></select>
-            </label>
-
-            <label>
-              Résultat
-              <select id="result-filter" name="result-filter">
-                <option value="all">Tous</option>
-                <option value="oui">Accepté (oui)</option>
-                <option value="non">Refusé (non)</option>
-                <option value="upcoming">À venir</option>
-              </select>
-            </label>
-
-            <label>
-              Parti
-              <select id="party-filter" name="party-filter">
-                <option value="all">Tous les partis</option>
-              </select>
-            </label>
-
-            <label>
-              Recommandation
-              <select id="recommendation-filter" name="recommendation-filter">
-                <option value="all">Toutes</option>
-                <option value="oui">Oui</option>
-                <option value="non">Non</option>
-                <option value="liberte de vote">Liberté de vote</option>
-                <option value="neutre">Neutre</option>
-                <option value="pas de position">Pas de position</option>
-              </select>
-            </label>
-
-            <label>
-              Tri
-              <select id="sort-by" name="sort-by">
-                <option value="year-desc">Plus récent</option>
-                <option value="year-asc">Plus ancien</option>
-                <option value="yes-desc">% Oui décroissant</option>
-                <option value="no-desc">% Non décroissant</option>
-              </select>
-            </label>
-          </form>
+          <aside class="panel method-card">
+            <p class="summary-label">Lecture rapide</p>
+            <h2>Comment lire la base</h2>
+            <ul class="method-list">
+              <li>Filtre par période, résultat, parti et type de recommandation.</li>
+              <li>Compare les rapports oui/non et l'alignement des partis avec le résultat final.</li>
+              <li>Affiche ou masque les partis historiques selon le contexte.</li>
+            </ul>
+          </aside>
         </section>
 
-        <section class="stats-grid reveal">
-          <article class="panel stat">
-            <p class="stat-label">Objets filtrés</p>
-            <p id="stat-total" class="stat-value">-</p>
-          </article>
-          <article class="panel stat">
-            <p class="stat-label">Période affichée</p>
-            <p id="stat-period" class="stat-value">-</p>
-          </article>
-          <article class="panel stat">
-            <p class="stat-label">Objets à venir</p>
-            <p id="stat-upcoming" class="stat-value">-</p>
-          </article>
-          <article class="panel stat">
-            <p class="stat-label">Taux moyen de oui</p>
-            <p id="stat-yes-average" class="stat-value">-</p>
-          </article>
-        </section>
+        <section id="view-explorer" class="view">
+          <section class="panel controls reveal" id="explorer">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Explorer</p>
+                <h2>Filtrer la base</h2>
+              </div>
+              <button id="reset-filters" class="ghost" type="button">Réinitialiser</button>
+            </div>
 
-        <section class="panel reveal">
-          <div class="section-head">
-            <h2>Alignement des partis (sur la sélection)</h2>
-            <button class="ghost historical-toggle" type="button" data-toggle-historical></button>
-          </div>
-          <div id="party-stats" class="party-stats"></div>
-        </section>
+            <p class="section-note">
+              Affinez la sélection pour isoler un objet, une période ou la trajectoire historique d'un parti.
+            </p>
 
-        <section class="panel reveal">
-          <div class="section-head">
-            <h2>Objets de votation</h2>
-            <p id="result-count" class="result-count"></p>
-          </div>
-          <div id="votes-list" class="votes-list"></div>
-          <button id="load-more" class="ghost wide" type="button">Charger plus</button>
-        </section>
-      </section>
+            <form id="filters" class="control-grid" autocomplete="off">
+              <label>
+                Recherche d'objet
+                <input id="search" name="search" type="search" placeholder="ex. initiative, AVS, énergie..." />
+              </label>
 
-      <section id="view-statistics" class="view hidden">
-        <section class="panel reveal">
-          <div class="section-head">
-            <h2>Votations les plus acceptées / refusées</h2>
-          </div>
-          <p class="section-note">
-            Classement basé sur le pourcentage national de oui/non pour les objets avec résultat officiel.
-          </p>
-          <div class="rank-grid">
-            <article class="rank-card">
-              <h3>Les plus acceptées</h3>
-              <ol id="top-accepted-list" class="ranking-list"></ol>
+              <label>
+                De l'année
+                <select id="year-from" name="year-from"></select>
+              </label>
+
+              <label>
+                À l'année
+                <select id="year-to" name="year-to"></select>
+              </label>
+
+              <label>
+                Résultat
+                <select id="result-filter" name="result-filter">
+                  <option value="all">Tous</option>
+                  <option value="oui">Accepté (oui)</option>
+                  <option value="non">Refusé (non)</option>
+                  <option value="upcoming">À venir</option>
+                </select>
+              </label>
+
+              <label>
+                Parti
+                <select id="party-filter" name="party-filter">
+                  <option value="all">Tous les partis</option>
+                </select>
+              </label>
+
+              <label>
+                Recommandation
+                <select id="recommendation-filter" name="recommendation-filter">
+                  <option value="all">Toutes</option>
+                  <option value="oui">Oui</option>
+                  <option value="non">Non</option>
+                  <option value="liberte de vote">Liberté de vote</option>
+                  <option value="neutre">Neutre</option>
+                  <option value="pas de position">Pas de position</option>
+                </select>
+              </label>
+
+              <label>
+                Tri
+                <select id="sort-by" name="sort-by">
+                  <option value="year-desc">Plus récent</option>
+                  <option value="year-asc">Plus ancien</option>
+                  <option value="yes-desc">% Oui décroissant</option>
+                  <option value="no-desc">% Non décroissant</option>
+                </select>
+              </label>
+            </form>
+          </section>
+
+          <section class="stats-grid reveal">
+            <article class="panel stat">
+              <p class="stat-label">Objets filtrés</p>
+              <p id="stat-total" class="stat-value">-</p>
             </article>
-            <article class="rank-card">
-              <h3>Les plus refusées</h3>
-              <ol id="top-rejected-list" class="ranking-list"></ol>
+            <article class="panel stat">
+              <p class="stat-label">Période affichée</p>
+              <p id="stat-period" class="stat-value">-</p>
             </article>
-          </div>
+            <article class="panel stat">
+              <p class="stat-label">Objets à venir</p>
+              <p id="stat-upcoming" class="stat-value">-</p>
+            </article>
+            <article class="panel stat">
+              <p class="stat-label">Taux moyen de oui</p>
+              <p id="stat-yes-average" class="stat-value">-</p>
+            </article>
+          </section>
+
+          <section class="panel reveal">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Synthèse</p>
+                <h2>Alignement des partis sur la sélection</h2>
+              </div>
+              <button class="ghost historical-toggle" type="button" data-toggle-historical></button>
+            </div>
+            <p class="section-note">
+              Le taux affiché correspond à la part des recommandations oui/non alignées avec le résultat final.
+            </p>
+            <div id="party-stats" class="party-stats"></div>
+          </section>
+
+          <section class="panel reveal">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Résultats</p>
+                <h2>Objets de votation</h2>
+              </div>
+              <p id="result-count" class="result-count"></p>
+            </div>
+            <div id="votes-list" class="votes-list"></div>
+            <button id="load-more" class="ghost wide" type="button">Charger plus</button>
+          </section>
         </section>
 
-        <section class="panel reveal">
-          <div class="section-head">
-            <h2>Résultats par parti et législature</h2>
-            <button class="ghost historical-toggle" type="button" data-toggle-historical></button>
-          </div>
-          <p class="section-note">
-            Découpage officiel basé sur les années d'élections fédérales du Conseil national (1848, 1851, …, 2023).
-            Comme la base contient l'année et non la date exacte, les objets d'une année électorale sont rattachés
-            à la nouvelle législature.
-          </p>
+        <section id="view-statistics" class="view hidden">
+          <section class="panel reveal" id="statistics">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Statistiques</p>
+                <h2>Votations les plus acceptées / refusées</h2>
+              </div>
+            </div>
+            <p class="section-note">
+              Classement basé sur le pourcentage national de oui/non pour les objets avec résultat officiel.
+            </p>
+            <div class="rank-grid">
+              <article class="rank-card">
+                <h3>Les plus acceptées</h3>
+                <ol id="top-accepted-list" class="ranking-list"></ol>
+              </article>
+              <article class="rank-card">
+                <h3>Les plus refusées</h3>
+                <ol id="top-rejected-list" class="ranking-list"></ol>
+              </article>
+            </div>
+          </section>
 
-          <form class="legislature-filters" autocomplete="off">
-            <label>
-              Parti
-              <select id="legislature-party-filter" name="legislature-party-filter">
-                <option value="all">Tous les partis</option>
-              </select>
-            </label>
+          <section class="panel reveal">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Historique</p>
+                <h2>Résultats par parti et législature</h2>
+              </div>
+              <button class="ghost historical-toggle" type="button" data-toggle-historical></button>
+            </div>
+            <p class="section-note">
+              Découpage officiel basé sur les années d'élections fédérales du Conseil national (1848, 1851, …, 2023).
+              Comme la base contient l'année et non la date exacte, les objets d'une année électorale sont rattachés à
+              la nouvelle législature.
+            </p>
 
-            <label>
-              Législature
-              <select id="legislature-filter" name="legislature-filter">
-                <option value="all">Toutes les législatures</option>
-              </select>
-            </label>
-          </form>
+            <form class="legislature-filters" autocomplete="off">
+              <label>
+                Parti
+                <select id="legislature-party-filter" name="legislature-party-filter">
+                  <option value="all">Tous les partis</option>
+                </select>
+              </label>
 
-          <p id="legislature-summary" class="result-count"></p>
-          <div id="legislature-blocks" class="legislature-groups"></div>
-          <button id="legislature-show-more" class="ghost wide" type="button">Voir plus</button>
+              <label>
+                Législature
+                <select id="legislature-filter" name="legislature-filter">
+                  <option value="all">Toutes les législatures</option>
+                </select>
+              </label>
+            </form>
+
+            <p id="legislature-summary" class="result-count"></p>
+            <div id="legislature-blocks" class="legislature-groups"></div>
+            <button id="legislature-show-more" class="ghost wide" type="button">Voir plus</button>
+          </section>
         </section>
-      </section>
+      </main>
 
-    </main>
-
-    <footer>
-      <p>
-        Données: fichier source fourni par l'utilisateur. Projet open source via GitHub Pages.
-        <a href="solid-state-proposal.html">Voir la proposition Solid State</a>.
-      </p>
-    </footer>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">SwitzerlandVote</p>
+            <p class="footer-copy">
+              Exploration publique des recommandations de vote des partis suisses et des résultats fédéraux officiels.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="https://github.com/ArnaudBon20/SwitzerlandVote" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="solid-state-proposal.html">Prototype précédent</a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script type="module" src="app.js"></script>
   </body>
