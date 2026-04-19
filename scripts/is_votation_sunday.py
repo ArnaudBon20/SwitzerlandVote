@@ -7,6 +7,7 @@ import argparse
 import datetime as dt
 import html
 import re
+import sys
 import urllib.request
 from zoneinfo import ZoneInfo
 
@@ -61,10 +62,20 @@ def main() -> None:
     args = parser.parse_args()
 
     target_date = parse_target_date(args.date, args.timezone)
-    dates_content = fetch_text(args.url)
-    chronology_content = fetch_text(args.chronology_url)
-    official_dates = extract_votation_dates(dates_content)
-    official_dates.update(extract_chronology_dates(chronology_content))
+
+    official_dates: set[dt.date] = set()
+    try:
+        dates_content = fetch_text(args.url)
+        official_dates.update(extract_votation_dates(dates_content))
+    except Exception as exc:
+        print(f"Warning: could not fetch votation dates page: {exc}", file=sys.stderr)
+
+    try:
+        chronology_content = fetch_text(args.chronology_url)
+        official_dates.update(extract_chronology_dates(chronology_content))
+    except Exception as exc:
+        print(f"Warning: could not fetch chronology page: {exc}", file=sys.stderr)
+
     print("true" if target_date in official_dates else "false")
 
 
